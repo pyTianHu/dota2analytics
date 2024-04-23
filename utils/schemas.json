@@ -1,0 +1,22 @@
+{
+    "tables": [
+      {
+        "name": "heroes",
+        "columns": [
+          {"name": "id", "type": "INTEGER", "constraints": "PRIMARY KEY"},
+          {"name": "name", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "localized_name", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "primary_attr", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "attack_type", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "roles", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "legs", "type": "INTEGER", "constraints": "NOT NULL"}
+        ]
+      },
+      {
+        "name": "hero_stats",
+        "columns": [
+          {}
+        ]
+      }
+    ]
+  }
