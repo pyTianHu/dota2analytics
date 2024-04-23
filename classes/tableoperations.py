@@ -10,6 +10,21 @@ class TableOperations:
         self.cursor = self.conn.cursor()
     
 
+    def check_if_table_exists(self):
+        query = f'''
+                SELECT name 
+                FROM sqlite_master 
+                WHERE type='table' 
+                AND name='{self.table_name}
+                '''
+        self.cursor.execute(query)
+        result = self.cursor.fetchone()
+
+        if result:
+            return f"Table {self.table_name} exists in {self.db_name}"
+        else:
+            return f"Table {self.table_name} does not exist in {self.db_name}"
+
     def create_table(self):
         query = f'''
                 CREATE TABLE IF NOT EXISTS {self.table_name} (
