@@ -55,4 +55,4 @@ def test_case_dot5(db_name, table_name):
     else:
         print(f"The table '{table_name}' does not exist in the database.")
 
-test_case_dot5('dot_dev_db.db','test_table')
+test_case_dot5('dot_dev.db','test_table')
