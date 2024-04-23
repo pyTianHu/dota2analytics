@@ -55,4 +55,16 @@ def test_case_dot5(db_name, table_name):
     else:
         print(f"The table '{table_name}' does not exist in the database.")
 
-test_case_dot5('dot_dev.db','test_table')
+#test_case_dot5('dot_dev.db','test_table')
+
+def test_case_dot13():
+    table_name = 'random'
+    existing_database = 'dot_raw_prod.db'
+    random_table = TableOperations(existing_database, table_name)
+    print(random_table.check_if_table_exists())
+
+    existing_table = 'heroes'
+    existing = TableOperations(existing_database, existing_table)
+    print(existing.check_if_table_exists())
+
+test_case_dot13()

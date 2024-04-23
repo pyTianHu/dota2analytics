@@ -15,7 +15,7 @@ class TableOperations:
                 SELECT name 
                 FROM sqlite_master 
                 WHERE type='table' 
-                AND name='{self.table_name}
+                AND name="{self.table_name}"
                 '''
         self.cursor.execute(query)
         result = self.cursor.fetchone()
