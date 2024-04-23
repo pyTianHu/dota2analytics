@@ -11,7 +11,17 @@ class TableOperations:
     
 
     def create_table(self):
-        pass
+        query = f'''
+                CREATE TABLE IF NOT EXISTS {self.table_name} (
+                {self.schema}
+                )
+                '''
+        try:
+            self.cursor.execute(query)
+            self.conn.commit()
+            return "Table is hereby created"
+        except Exception as e:
+            return f"Table is not created {e}"
     
 
     def add_new_column(self):
