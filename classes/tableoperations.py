@@ -33,7 +33,15 @@ class TableOperations:
 
 
     def drop_table(self):
-        pass
+        query = f'''
+                DROP TABLE {self.table_name}
+                '''
+        try:
+            self.cursor.execute(query)
+            self.conn.commit()
+            return "Table is hereby dropped"
+        except Exception as e:
+            return f"Table is not dropped {e}"
 
 
     def insert_df_into_table(self):
