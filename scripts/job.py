@@ -44,6 +44,9 @@ def heroes_creation(db_name, table_name):
         return "Data was inserted"
     except Exception as e:
         return print(f"No data was inserted: {e}")
+    
+def table_create_and_ingest(db_name, table_name):
+    
+    pass
 
-
-heroes_df = heroes_creation('dot_raw_prod.db','heroes')
+  
