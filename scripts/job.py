@@ -8,6 +8,11 @@ from utils.utils import open_schemas
 
 #get column names from schemas.json, pass it as schema into table_creation function, create table here by calling the method
 def heroes_creation(db_name, table_name):
+    
+    #Get data
+    heroes_df = heroes_ingestion()
+    
+    #Prep schema
     schemas = open_schemas()
     heroes_table = [table for table in schemas.get("tables", []) if table.get("name") == table_name]
 
@@ -20,18 +25,18 @@ def heroes_creation(db_name, table_name):
 
     schema_str = ', '.join(' '.join(column) for column in schema)
 
-    heroes = TableOperations(db_name, table_name, schema_str)
+    #instantiate object
+    heroes = TableOperations(db_name, table_name, schema_str, heroes_df)
     print(heroes.create_table())
 
-    heroes_df = heroes_ingestion()
+    #conn = sqlite3.connect(db_name)
 
-    conn = sqlite3.connect(db_name)
-
+    #execute insert
     try:
-        heroes_df.to_sql(table_name, conn, if_exists='replace', index=False)
+        print(heroes.insert_df_into_table())
         return "Data was inserted"
     except Exception as e:
-        return f"No data was inserted: {e}"
+        return print(f"No data was inserted: {e}")
 
 
 heroes_df = heroes_creation('dot_raw_prod.db','heroes')

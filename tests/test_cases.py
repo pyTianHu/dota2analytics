@@ -100,3 +100,16 @@ def test_case_dot6():
     test_table.drop_table()
 
 #test_case_dot6()
+
+def test_case_dot6_2():
+    db_name = 'dot_raw_prod.db'
+    table_name = 'heroes'
+
+    conn = sqlite3.connect(db_name)
+
+    #select * from table
+    query = f"SELECT * FROM {table_name}"
+    df = pd.read_sql_query(query, conn)
+    print(df)
+
+test_case_dot6_2()
