@@ -1,4 +1,5 @@
 import sqlite3
+import pandas as pd
 
 class TableOperations:
     def __init__(self, db_name, table_name, schema = None, data = None) -> None:
@@ -34,7 +35,7 @@ class TableOperations:
         try:
             self.cursor.execute(query)
             self.conn.commit()
-            return "Table is hereby created"
+            return f"Table {self.db_name}.{self.table_name} is hereby created"
         except Exception as e:
             return f"Table is not created {e}"
     
@@ -60,7 +61,11 @@ class TableOperations:
 
 
     def insert_df_into_table(self):
-        pass
+        try:
+            self.data.to_sql(self.table_name, self.conn, if_exists='replace', index=False)
+            return "Data was inserted"
+        except Exception as e:
+            return f"No data was inserted: {e}"
 
 
     def delete_all_from_table(self):
