@@ -5,6 +5,8 @@ sys.path.append('../dota2')
 
 from classes.tableoperations import TableOperations
 
+from scripts.data_ingestion import herostats_ingestion
+
 def test_case_d10(db_name, table_name):
     conn = sqlite3.connect(db_name)
     cursor = conn.cursor()
@@ -112,4 +114,12 @@ def test_case_dot6_2():
     df = pd.read_sql_query(query, conn)
     print(df)
 
-test_case_dot6_2()
+#test_case_dot6_2()
+
+def test_case_dot15():
+    
+    df = herostats_ingestion()
+    return df
+
+df = test_case_dot15()
+print(df.info())
