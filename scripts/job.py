@@ -27,9 +27,16 @@ def heroes_creation(db_name, table_name):
 
     #instantiate object
     heroes = TableOperations(db_name, table_name, schema_str, heroes_df)
-    print(heroes.create_table())
 
-    #conn = sqlite3.connect(db_name)
+    #check whether table already exists
+    exists = heroes.check_if_table_exists()
+    if exists:
+        print(exists)
+        pass
+    else:
+        #if table does not exist, create
+        print(exists)
+        print(heroes.create_table())
 
     #execute insert
     try:
