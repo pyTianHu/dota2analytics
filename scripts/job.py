@@ -2,21 +2,37 @@ import sys
 sys.path.append('../dota2')
 
 from classes.tableoperations import TableOperations
-from data_ingestion import heroes_ingestion
+from data_ingestion import heroes_ingestion, herostats_ingestion
 import sqlite3
 from utils.utils import open_schemas
 
-#get column names from schemas.json, pass it as schema into table_creation function, create table here by calling the method
-def heroes_creation(db_name, table_name):
+   
+def table_create_and_ingest(db_name, table_name):
     
-    #Get data
-    heroes_df = heroes_ingestion()
+    #mapping
+    table_function_mapping = {
+        'heroes': heroes_ingestion(),
+        'herostats': herostats_ingestion()
+    }
     
+    #calling and executing ingestion function, storing it in df variable
+    df = table_function_mapping.get(table_name)
+
+    print(df.info())
+    print(df)
+
+    # Data transformation
+    # lists into strings
+    for col in df.columns:
+        if df[col].apply(lambda x: isinstance(x, list)).any():
+            df[col] = df[col].astype(str)
+    
+
     #Prep schema
     schemas = open_schemas()
-    heroes_table = [table for table in schemas.get("tables", []) if table.get("name") == table_name]
+    data_table = [table for table in schemas.get("tables", []) if table.get("name") == table_name]
 
-    columns = heroes_table[0]['columns']
+    columns = data_table[0]['columns']
 
     schema = []
     for col in columns:
@@ -26,27 +42,27 @@ def heroes_creation(db_name, table_name):
     schema_str = ', '.join(' '.join(column) for column in schema)
 
     #instantiate object
-    heroes = TableOperations(db_name, table_name, schema_str, heroes_df)
+    ingested_table = TableOperations(db_name, table_name, schema_str, df)
 
     #check whether table already exists
-    exists = heroes.check_if_table_exists()
+    exists = ingested_table.check_if_table_exists()
     if exists:
         print(exists)
         pass
     else:
         #if table does not exist, create
         print(exists)
-        print(heroes.create_table())
+        print(ingested_table.create_table())
 
     #execute insert
+    # return has to be edited, as it returns invalid result. function runs successfully and that is what it returns.
     try:
-        print(heroes.insert_df_into_table())
-        return "Data was inserted"
+        print(ingested_table.insert_df_into_table())
+        return print("Data was inserted")
     except Exception as e:
         return print(f"No data was inserted: {e}")
-    
-def table_create_and_ingest(db_name, table_name):
-    
-    pass
+
+
+table_create_and_ingest('dot_dev.db', 'heroes')
 
   

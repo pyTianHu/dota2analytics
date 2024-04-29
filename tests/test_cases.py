@@ -121,5 +121,38 @@ def test_case_dot15():
     df = herostats_ingestion()
     return df
 
-df = test_case_dot15()
-print(df.info())
+#df = test_case_dot15()
+#print(df.info())
+
+
+def test_case_dot6_2():
+    db_name = 'dot_dev.db'
+    table_name = 'herostats'
+
+    conn = sqlite3.connect(db_name)
+
+    #select * from table
+    query = f"SELECT * FROM {table_name}"
+    df = pd.read_sql_query(query, conn)
+    print(df)
+
+#test_case_dot6_2()
+
+def test_case_dot24():
+    db_name = 'dot_dev.db'
+    table_name = 'heroes'
+
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+    #select * from table
+    query = f"DELETE FROM {table_name}"
+    cursor.execute(query)
+    conn.commit()
+
+    query = f"SELECT * FROM {table_name}"
+    df = pd.read_sql_query(query, conn)
+    print(df)
+
+
+test_case_dot24()
