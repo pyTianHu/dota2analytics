@@ -48,3 +48,17 @@ table_function_mapping = {
         'patch': patch_ingestion(),
         'lobby_type': lobby_type_ingestion()
     }
+
+selected_columns = {
+    'heroes': [],
+    'herostats': [],
+    'publicmatches': [],
+    'abilities': [],
+    'ability_ids': [],
+    'game_mode': [],
+    'hero_abilities': [],
+    'item_ids': [],
+    'items': [],
+    'patch': [],
+    'lobby_type': []
+}
