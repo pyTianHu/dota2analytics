@@ -36,7 +36,4 @@ def table_create_and_ingest(db_name, table_name):
     except Exception as e:
         return print(f"No data was inserted: {e}")
 
-
-table_create_and_ingest('dot_dev.db', 'publicmatches')
-
   

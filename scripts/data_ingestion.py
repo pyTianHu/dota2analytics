@@ -92,6 +92,3 @@ def lobby_type_ingestion():
     df = response_to_df(url)
     data = transponse_if_needed(data)
     return data
-
-
-print(item_ids_ingestion())
