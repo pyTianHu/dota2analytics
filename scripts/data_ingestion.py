@@ -86,4 +86,10 @@ def patch_ingestion():
     return df
 
 
-print(heroes_constants_ingestion().info())
+def lobby_type_ingestion():
+    url = "https://api.opendota.com/api/constants/lobby_type"
+    data = response_to_df(url)
+    df = transponse_if_needed(data)
+    return df
+
+print(lobby_type_ingestion())
