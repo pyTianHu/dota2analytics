@@ -1,4 +1,7 @@
 import json
+import sys
+
+sys.path.append('../dota2')
 from scripts.data_ingestion import *
 
 def open_schemas():
@@ -6,6 +9,9 @@ def open_schemas():
         data = json.load(json_file)
 
         return data
+    
+
+#print(open_schemas())
 
 def convert_list_to_string_df(df):
     for col in df.columns:
@@ -35,6 +41,7 @@ def write_status_log():
     # function's return result should be write_status_log(result) or write_status_log(exception)
     pass
 
+
 table_function_mapping = {
         'heroes': heroes_ingestion(),
         'herostats': herostats_ingestion(),
@@ -48,6 +55,8 @@ table_function_mapping = {
         'patch': patch_ingestion(),
         'lobby_type': lobby_type_ingestion()
     }
+    
+
 
 selected_columns = {
     'heroes': [],

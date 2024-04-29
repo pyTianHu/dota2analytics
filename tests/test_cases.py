@@ -1,11 +1,18 @@
+import warnings
+
+warnings.filterwarnings("ignore")
+
 import sqlite3
 import pandas as pd
+import json
 import sys
 sys.path.append('../dota2')
 
 from classes.tableoperations import TableOperations
 
 from scripts.data_ingestion import *
+
+from utils.utils import open_schemas, table_function_mapping
 
 def test_case_d10(db_name, table_name):
     conn = sqlite3.connect(db_name)
@@ -57,7 +64,7 @@ def test_case_dot5(db_name, table_name):
     else:
         print(f"The table '{table_name}' does not exist in the database.")
 
-#test_case_dot5('dot_dev.db','test_table')
+#test_case_dot5('dot_dev.db','publicmatches')
 
 def test_case_dot13():
     table_name = 'random'
@@ -127,7 +134,7 @@ def test_case_dot15():
 
 def test_case_dot6_2():
     db_name = 'dot_dev.db'
-    table_name = 'herostats'
+    table_name = 'game_mode'
 
     conn = sqlite3.connect(db_name)
 
@@ -136,7 +143,7 @@ def test_case_dot6_2():
     df = pd.read_sql_query(query, conn)
     print(df)
 
-#test_case_dot6_2()
+test_case_dot6_2()
 
 def test_case_dot24():
     db_name = 'dot_dev.db'
@@ -154,10 +161,12 @@ def test_case_dot24():
     print(df)
 
 
-test_case_dot24()
+#test_case_dot24()
 
 def test_case_dot26():
     df = publicmatches_ingestion()
     return print(df)
 
 #test_case_dot26()
+
+

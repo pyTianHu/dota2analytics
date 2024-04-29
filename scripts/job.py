@@ -1,6 +1,9 @@
 import sys
 sys.path.append('../dota2')
 
+import warnings
+warnings.filterwarnings("ignore")
+
 from classes.tableoperations import TableOperations
 from data_ingestion import heroes_ingestion, herostats_ingestion
 import sqlite3
@@ -21,7 +24,7 @@ def table_create_and_ingest(db_name, table_name):
     #instantiate object
     ingested_table = TableOperations(db_name, table_name, schema_str, df)
 
-    #check whether table already exists
+    #check whether table already exists => edit check, as it does not say the table was created
     exists = ingested_table.check_if_table_exists()
     print(exists)
     if exists:
@@ -36,6 +39,8 @@ def table_create_and_ingest(db_name, table_name):
     except Exception as e:
         return print(f"No data was inserted: {e}")
 
+
+table_create_and_ingest('dot_dev.db', 'game_mode')
 
 def bronze_transformation(db_name, table_name):
     # dropping unnecessary columns
