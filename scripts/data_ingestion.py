@@ -67,7 +67,8 @@ def hero_abilities_ingestion():
 
 def item_ids_ingestion():
     url = "https://api.opendota.com/api/constants/item_ids"
-    data = response_to_df(url)
+    response = requests.get(url, verify=False)
+    data = pd.DataFrame(response.json(), index=['row1'])
     df = transponse_if_needed(data)
     return df
 
@@ -93,3 +94,4 @@ def lobby_type_ingestion():
     return data
 
 
+print(item_ids_ingestion())
