@@ -14,6 +14,21 @@ def convert_list_to_string_df(df):
 
     return df
 
+def prepare_schema_for_df(table_name):
+    schemas = open_schemas()
+    data_table = [table for table in schemas.get("tables", []) if table.get("name") == table_name]
+
+    columns = data_table[0]['columns']
+
+    schema = []
+    for col in columns:
+        row = [col['name'], col['type'], col['constraints']]
+        schema.append(row)
+
+    schema_str = ', '.join(' '.join(column) for column in schema)
+
+    return schema_str
+
 table_function_mapping = {
         'heroes': heroes_ingestion(),
         'herostats': herostats_ingestion()

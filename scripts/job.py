@@ -4,7 +4,7 @@ sys.path.append('../dota2')
 from classes.tableoperations import TableOperations
 from data_ingestion import heroes_ingestion, herostats_ingestion
 import sqlite3
-from utils.utils import open_schemas, convert_list_to_string_df, table_function_mapping
+from utils.utils import open_schemas, convert_list_to_string_df, prepare_schema_for_df, table_function_mapping
 
    
 def table_create_and_ingest(db_name, table_name):
@@ -15,37 +15,24 @@ def table_create_and_ingest(db_name, table_name):
     # Data transformation
     convert_list_to_string_df(df)
 
-    #Prep schema
-    schemas = open_schemas()
-    data_table = [table for table in schemas.get("tables", []) if table.get("name") == table_name]
-
-    columns = data_table[0]['columns']
-
-    schema = []
-    for col in columns:
-        row = [col['name'], col['type'], col['constraints']]
-        schema.append(row)
-
-    schema_str = ', '.join(' '.join(column) for column in schema)
+    #compile schema string 
+    schema_str = prepare_schema_for_df(table_name)
 
     #instantiate object
     ingested_table = TableOperations(db_name, table_name, schema_str, df)
 
     #check whether table already exists
     exists = ingested_table.check_if_table_exists()
+    print(exists)
     if exists:
-        print(exists)
         pass
     else:
-        #if table does not exist, create
-        print(exists)
         print(ingested_table.create_table())
 
     #execute insert
     # return has to be edited, as it returns invalid result. function runs successfully and that is what it returns.
     try:
         print(ingested_table.insert_df_into_table())
-        return print("Data was inserted")
     except Exception as e:
         return print(f"No data was inserted: {e}")
 
