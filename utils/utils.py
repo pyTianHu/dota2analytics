@@ -7,6 +7,13 @@ def open_schemas():
 
         return data
 
+def convert_list_to_string_df(df):
+    for col in df.columns:
+        if df[col].apply(lambda x: isinstance(x, list)).any():
+            df[col] = df[col].astype(str)
+
+    return df
+
 table_function_mapping = {
         'heroes': heroes_ingestion(),
         'herostats': herostats_ingestion()
