@@ -1,5 +1,5 @@
 import json
-from scripts.data_ingestion import heroes_ingestion, herostats_ingestion
+from scripts.data_ingestion import *
 
 def open_schemas():
     with open('utils\schemas.json', "r") as json_file:
@@ -37,5 +37,6 @@ def write_status_log():
 
 table_function_mapping = {
         'heroes': heroes_ingestion(),
-        'herostats': herostats_ingestion()
+        'herostats': herostats_ingestion(),
+        'publicmatches': publicmatches_ingestion()
     }

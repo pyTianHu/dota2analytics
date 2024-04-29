@@ -76,6 +76,23 @@
           {"name": "pub_win", "type": "INTEGER", "constraints": "NULL"},
           {"name": "pub_win_trend", "type": "TEXT", "constraints": "NULL"}
         ]
+      },
+      {
+        "name": "publicmatches",
+        "columns": [
+          {"name": "match_id", "type": "INTEGER", "constraints": "PRIMARY KEY"},
+          {"name": "match_seq_num", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "radiant_win", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "start_time", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "duration", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "lobby_type", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "game_mode", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "avg_rank_tier", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "num_rank_tier", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "cluster", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "radiant_team", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "dire_team", "type": "INTEGER", "constraints": "NOT NULL"}
+        ]
       }
     ]
   }

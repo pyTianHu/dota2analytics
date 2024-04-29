@@ -5,7 +5,7 @@ sys.path.append('../dota2')
 
 from classes.tableoperations import TableOperations
 
-from scripts.data_ingestion import herostats_ingestion
+from scripts.data_ingestion import *
 
 def test_case_d10(db_name, table_name):
     conn = sqlite3.connect(db_name)
@@ -140,7 +140,7 @@ def test_case_dot6_2():
 
 def test_case_dot24():
     db_name = 'dot_dev.db'
-    table_name = 'heroes'
+    table_name = 'publicmatches'
 
     conn = sqlite3.connect(db_name)
     cursor = conn.cursor()
@@ -155,3 +155,9 @@ def test_case_dot24():
 
 
 test_case_dot24()
+
+def test_case_dot26():
+    df = publicmatches_ingestion()
+    return print(df)
+
+#test_case_dot26()

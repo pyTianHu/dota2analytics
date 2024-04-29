@@ -37,6 +37,6 @@ def table_create_and_ingest(db_name, table_name):
         return print(f"No data was inserted: {e}")
 
 
-table_create_and_ingest('dot_dev.db', 'herostats')
+table_create_and_ingest('dot_dev.db', 'publicmatches')
 
   
