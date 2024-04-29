@@ -4,16 +4,13 @@ sys.path.append('../dota2')
 from classes.tableoperations import TableOperations
 from data_ingestion import heroes_ingestion, herostats_ingestion
 import sqlite3
-from utils.utils import open_schemas
+from utils.utils import open_schemas, table_function_mapping
 
    
 def table_create_and_ingest(db_name, table_name):
     
     #mapping
-    table_function_mapping = {
-        'heroes': heroes_ingestion(),
-        'herostats': herostats_ingestion()
-    }
+    
     
     #calling and executing ingestion function, storing it in df variable
     df = table_function_mapping.get(table_name)

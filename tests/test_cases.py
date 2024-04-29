@@ -140,7 +140,7 @@ def test_case_dot6_2():
 
 def test_case_dot24():
     db_name = 'dot_dev.db'
-    table_name = 'heroes'
+    table_name = 'herostats'
 
     conn = sqlite3.connect(db_name)
     cursor = conn.cursor()
