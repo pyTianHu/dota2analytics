@@ -29,6 +29,12 @@ def prepare_schema_for_df(table_name):
 
     return schema_str
 
+def write_status_log():
+    # check if log file exists
+    # if exists, open, if not, create
+    # function's return result should be write_status_log(result) or write_status_log(exception)
+    pass
+
 table_function_mapping = {
         'heroes': heroes_ingestion(),
         'herostats': herostats_ingestion()
