@@ -65,13 +65,6 @@ def hero_abilities_ingestion():
     return df
 
 
-def heroes_constants_ingestion():
-    url = "https://api.opendota.com/api/constants/heroes"
-    data = response_to_df(url)
-    df = transponse_if_needed(data)
-    return df
-
-
 def item_ids_ingestion():
     url = "https://api.opendota.com/api/constants/item_ids"
     data = response_to_df(url)
@@ -91,3 +84,6 @@ def patch_ingestion():
     data = response_to_df(url)
     df = transponse_if_needed(data)
     return df
+
+
+print(heroes_constants_ingestion().info())
