@@ -93,6 +93,93 @@
           {"name": "radiant_team", "type": "INTEGER", "constraints": "NOT NULL"},
           {"name": "dire_team", "type": "INTEGER", "constraints": "NOT NULL"}
         ]
+      },
+      {
+        "name": "abilities",
+        "columns": [
+          {"name": "match_id", "type": "", "constraints": ""},
+          {"name": "dname", "type": "", "constraints": ""},
+          {"name": "attrib", "type": "", "constraints": ""},
+          {"name": "img", "type": "", "constraints": ""},
+          {"name": "behavior", "type": "", "constraints": ""},
+          {"name": "target_team", "type": "", "constraints": ""},
+          {"name": "mc", "type": "", "constraints": ""},
+          {"name": "desc", "type": "", "constraints": ""},
+          {"name": "cd", "type": "", "constraints": ""},
+          {"name": "dmg_type", "type": "", "constraints": ""},
+          {"name": "target_type", "type": "", "constraints": ""},
+          {"name": "dispellable", "type": "", "constraints": ""},
+          {"name": "bkbpierce", "type": "", "constraints": ""},
+          {"name": "lore", "type": "", "constraints": ""},
+          {"name": "dmg", "type": "", "constraints": ""}
+        ]
+      },
+      {
+        "name": "ability_ids",
+        "columns": [
+          {"name": "id", "type": "INTEGER", "constraints": "PRIMARY KEY"},
+          {"name": "name", "type": "TEXT", "constraints": "NOT NULL"}
+        ]
+      },
+      {
+        "name": "game_mode",
+        "columns": [
+          {"name": "id", "type": "INTEGER", "constraints": "PRIMARY KEY"},
+          {"name": "name", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "balance", "type": "TEXT", "constraints": "NOT NULL"}
+        ]
+      },
+      {
+        "name": "hero_abilities",
+        "columns": [
+          {"name": "name", "type": "TEXT", "constraints": "PRIMARY KEY"},
+          {"name": "abilities", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "talents", "type": "TEXT", "constraints": "NOT NULL"}
+        ]
+      },
+      {
+        "name": "items",
+        "columns": [
+          {"name": "hint", "type": "INTEGER", "constraints": "NULL"},
+          {"name": "id", "type": "INTEGER", "constraints": "PRIMARY KEY"},
+          {"name": "img", "type": "INTEGER", "constraints": "NULL"},
+          {"name": "dname", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "qual", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "cost", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "notes", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "attrib", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "mc", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "cd", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "lore", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "components", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "created", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "changes", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "desc", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "tier", "type": "INTEGER", "constraints": "NOT NULL"}        
+        ]
+      },
+      {
+        "name": "items_ids",
+        "columns": [
+          {"name": "id", "type": "INTEGER", "constraints": "PRIMARY KEY"},
+          {"name": "name", "type": "TEXT", "constraints": "NOT NULL"}
+        ]
+      },
+      {
+        "name": "patch",
+        "columns": [
+          {"name": "name", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "date", "type": "DATE", "constraints": "NOT NULL"},
+          {"name": "id", "type": "INTEGER", "constraints": "PRIMARY KEY"}
+        ]
+      },
+      {
+        "name": "lobby_type",
+        "columns": [
+          {"name": "id", "type": "INTEGER", "constraints": "PRIMARY KEY"},
+          {"name": "name", "type": "TEXT", "constraints": "NOT NULL"},
+          {"name": "balanced", "type": "TEXT", "constraints": "NOT NULL"}
+        ]
       }
     ]
   }

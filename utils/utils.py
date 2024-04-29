@@ -38,5 +38,13 @@ def write_status_log():
 table_function_mapping = {
         'heroes': heroes_ingestion(),
         'herostats': herostats_ingestion(),
-        'publicmatches': publicmatches_ingestion()
+        'publicmatches': publicmatches_ingestion(),
+        'abilities': abilities_ingestion(),
+        'ability_ids': ability_ids_ingestion(),
+        'game_mode': game_mode_ingestion(),
+        'hero_abilities': hero_abilities_ingestion(),
+        'item_ids': item_ids_ingestion(),
+        'items': items_ingestion(),
+        'patch': patch_ingestion(),
+        'lobby_type': lobby_type_ingestion()
     }
