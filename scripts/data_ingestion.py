@@ -85,11 +85,11 @@ def patch_ingestion():
     df = transponse_if_needed(data)
     return df
 
+
 def lobby_type_ingestion():
     url = "https://api.opendota.com/api/constants/lobby_type"
-    data = response_to_df(url)
-    df = transponse_if_needed(data)
-    return df
+    df = response_to_df(url)
+    data = transponse_if_needed(data)
+    return data
 
-print(lobby_type_ingestion())
 
