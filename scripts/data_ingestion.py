@@ -65,7 +65,7 @@ def hero_abilities_ingestion():
     return df
 
 
-def item_ids_ingestion():
+def items_ids_ingestion():
     url = "https://api.opendota.com/api/constants/item_ids"
     response = requests.get(url, verify=False)
     data = pd.DataFrame(response.json(), index=['row1'])

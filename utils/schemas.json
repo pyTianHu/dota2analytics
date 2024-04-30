@@ -97,21 +97,21 @@
       {
         "name": "abilities",
         "columns": [
-          {"name": "match_id", "type": "", "constraints": ""},
-          {"name": "dname", "type": "", "constraints": ""},
-          {"name": "attrib", "type": "", "constraints": ""},
-          {"name": "img", "type": "", "constraints": ""},
-          {"name": "behavior", "type": "", "constraints": ""},
-          {"name": "target_team", "type": "", "constraints": ""},
-          {"name": "mc", "type": "", "constraints": ""},
-          {"name": "desc", "type": "", "constraints": ""},
-          {"name": "cd", "type": "", "constraints": ""},
-          {"name": "dmg_type", "type": "", "constraints": ""},
-          {"name": "target_type", "type": "", "constraints": ""},
-          {"name": "dispellable", "type": "", "constraints": ""},
-          {"name": "bkbpierce", "type": "", "constraints": ""},
-          {"name": "lore", "type": "", "constraints": ""},
-          {"name": "dmg", "type": "", "constraints": ""}
+          {"name": "match_id", "type": "INTEGER", "constraints": "NOT NULL"},
+          {"name": "dname", "type": "TEXT", "constraints": "NULL"},
+          {"name": "attrib", "type": "TEXT", "constraints": "NULL"},
+          {"name": "img", "type": "TEXT", "constraints": "NULL"},
+          {"name": "behavior", "type": "TEXT", "constraints": "NULL"},
+          {"name": "target_team", "type": "TEXT", "constraints": "NULL"},
+          {"name": "mc", "type": "TEXT", "constraints": "NULL"},
+          {"name": "desc", "type": "TEXT", "constraints": "NULL"},
+          {"name": "cd", "type": "INTEGER", "constraints": "NULL"},
+          {"name": "dmg_type", "type": "TEXT", "constraints": "NULL"},
+          {"name": "target_type", "type": "TEXT", "constraints": "NULL"},
+          {"name": "dispellable", "type": "TEXT", "constraints": "NULL"},
+          {"name": "bkbpierce", "type": "TEXT", "constraints": "NULL"},
+          {"name": "lore", "type": "TEXT", "constraints": "NULL"},
+          {"name": "dmg", "type": "INTEGER", "constraints": "NULL"}
         ]
       },
       {

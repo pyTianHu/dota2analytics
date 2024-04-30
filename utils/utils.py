@@ -50,7 +50,7 @@ table_function_mapping = {
         'ability_ids': ability_ids_ingestion(),
         'game_mode': game_mode_ingestion(),
         'hero_abilities': hero_abilities_ingestion(),
-        'item_ids': item_ids_ingestion(),
+        'items_ids': items_ids_ingestion(),
         'items': items_ingestion(),
         'patch': patch_ingestion(),
         'lobby_type': lobby_type_ingestion()

@@ -11,6 +11,7 @@ sys.path.append('../dota2')
 from classes.tableoperations import TableOperations
 
 from scripts.data_ingestion import *
+from utils.utils import prepare_schema_for_df
 
 from utils.utils import open_schemas, table_function_mapping
 
@@ -143,7 +144,7 @@ def test_case_dot6_2():
     df = pd.read_sql_query(query, conn)
     print(df)
 
-test_case_dot6_2()
+#test_case_dot6_2()
 
 def test_case_dot24():
     db_name = 'dot_dev.db'
@@ -170,3 +171,15 @@ def test_case_dot26():
 #test_case_dot26()
 
 
+def test_case_prepschema():
+    #data = prepare_schema_for_df("item_ids")
+
+    table_name = "items_ids"
+
+    schemas = open_schemas()
+    data_table = [table for table in schemas.get("tables", []) if table.get("name") == table_name]
+
+
+    return print(data_table)
+
+print(test_case_prepschema())

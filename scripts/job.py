@@ -5,7 +5,6 @@ import warnings
 warnings.filterwarnings("ignore")
 
 from classes.tableoperations import TableOperations
-from data_ingestion import heroes_ingestion, herostats_ingestion
 import sqlite3
 from utils.utils import open_schemas, convert_list_to_string_df, prepare_schema_for_df, table_function_mapping
 
@@ -39,8 +38,6 @@ def table_create_and_ingest(db_name, table_name):
     except Exception as e:
         return print(f"No data was inserted: {e}")
 
-
-table_create_and_ingest('dot_dev.db', 'game_mode')
 
 def bronze_transformation(db_name, table_name):
     # dropping unnecessary columns
