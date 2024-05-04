@@ -65,31 +65,50 @@ class logger():
         #       checking if there is already a file with today's date, and getting the latest.
                 #this scenario can happen, as on given day multiple manually triggered runs can take place, so we need to check the current version and increment by 1 to create the new version
         
-        files = []
+        files = [0]
 
+        #check directory and collect file names that contain today's date
         for file in self.found_files:
-            
-            
-            if any(self.today in file for file in self.found_files):
-                todays_file_version = int(file.replace(".json","")[11:])
-                files.append(todays_file_version)            
-                
-            else:
-                return "file with today's date is not found in logs folder"
+            # if file with today's date is found in dir, add its version number to a list
+                if self.today in file:
+                    todays_file_version = int(file.replace(".json","")[11:])
+                    files.append(todays_file_version) 
+        
         
         self.new_version = max(files)+1
         self.ongoing_file = f"{self.today}_{self.new_version}_ongoing.json"
-        
-        return "create_new_log method,", self.write_status_log()
-       
+
+        #create new json with filename
+        try:
+            # Open the file in write mode ('w')
+            with open(f"logs/{self.ongoing_file}", "w") as json_file:
+                pass
+            # Output a message indicating the file creation
+            return self.write_status_log()
+        except Exception as e:
+            print(f"Error occurred while creating the file: {e}")      
         
 
     def write_status_log(self):
+        # open file that contains "ongoing" in its title
+
+        # write content
+
+        # call rename_log_file
         
-        return f"write_status_log => writing status log is in progress. file name: TBA", self.rename_log_file()
+        return f"write_status_log => writing status log is in progress. file name: {self.ongoing_file}"
+        #self.rename_log_file()
 
     def rename_log_file(self):
         #rename log_file from date_versionnumber_ongoing.json to date_versionnumber.json
+        
+        # save file as
+        
+        
+        # close file
+
+
+        # delete any files with "ongoing" string in its name
         return "rename_log_file methodrenaming log file in progress"
     
 
