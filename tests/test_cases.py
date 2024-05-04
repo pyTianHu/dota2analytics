@@ -13,7 +13,7 @@ from classes.tableoperations import TableOperations
 from scripts.data_ingestion import *
 from utils.utils import prepare_schema_for_df
 
-from utils.utils import open_schemas, table_function_mapping
+from utils.utils import open_schemas, table_function_mapping, logger
 
 def test_case_d10(db_name, table_name):
     conn = sqlite3.connect(db_name)
@@ -182,4 +182,7 @@ def test_case_prepschema():
 
     return print(data_table)
 
-print(test_case_prepschema())
+#print(test_case_prepschema())
+
+l1 = logger("OK")
+print(l1.current_log_version())

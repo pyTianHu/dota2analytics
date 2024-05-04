@@ -1,5 +1,7 @@
 import json
 import sys
+import os
+from datetime import datetime
 
 sys.path.append('../dota2')
 from scripts.data_ingestion import *
@@ -9,9 +11,7 @@ def open_schemas():
         data = json.load(json_file)
 
         return data
-    
 
-#print(open_schemas())
 
 def convert_list_to_string_df(df):
     for col in df.columns:
@@ -19,6 +19,7 @@ def convert_list_to_string_df(df):
             df[col] = df[col].astype(str)
 
     return df
+
 
 def prepare_schema_for_df(table_name):
     schemas = open_schemas()
@@ -35,11 +36,34 @@ def prepare_schema_for_df(table_name):
 
     return schema_str
 
-def write_status_log():
+class logger():
     # check if log file exists
-    # if exists, open, if not, create
+    # if exists, get its ID, create new with ID incremented by 1
     # function's return result should be write_status_log(result) or write_status_log(exception)
-    pass
+    #2nd stage: add deleted, updated, inserted records as well - this will lead to versioning, disaster recovery etc later.
+    def __init__(self, message) -> None:
+        self.message = message
+        self.timestamp = datetime.now()
+        self.log_directory = "logs"
+
+        self.current_log_version()
+
+    def current_log_version(self):
+        files_in_dir = os.listdir(self.log_directory)
+
+        
+
+        return files_in_dir
+        #return self.create_new_log()
+
+    def create_new_log(self):
+        #return self.write_status_log()
+        pass
+
+    def write_status_log(self):
+        pass
+
+    
 
 
 table_function_mapping = {
