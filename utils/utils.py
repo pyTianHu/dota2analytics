@@ -51,21 +51,11 @@ class logger():
         self.log_directory = "logs"
 
     def new_or_existing_run(self):
-        #determines whether the currently called run is already ongoing or a new one
-        # this is based on file name - if there is a file name with "ongoing" in its name, we open that and continue populating it.
-        # if no file with such name, create a new log file
-
-        #list of file names
         self.found_files = os.listdir("logs")
 
-        #check for "ongoing" string in any elements of the list, if not found, create
-        #for file in self.found_files:
         if any("ongoing" in file for file in self.found_files):
-            #self.ongoing_file = file
-            print("new_or_existing_run method => ongoing term is found in one of the files in the folder, passing to write_status_log function")
             return self.write_status_log()
         else:
-            print("new_or_existing_run method => ongoing term is not found in any of the files in the directory, calling create_new_log function")
             return self.create_new_log()
 
 
