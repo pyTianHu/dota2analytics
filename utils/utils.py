@@ -37,6 +37,9 @@ def prepare_schema_for_df(table_name):
     return schema_str
 
 class logger():
+    # each run should start with determining whether this is the very beginning of a new run, or a continuation of an existing run. 
+    # in theory 1 load per day should run. Hence, version number should be the date of the run itself.
+        # if more runs are run, there is a _x identifier that helps identifying the latest run.
     # check if log file exists
     # if exists, get its ID, create new with ID incremented by 1
     # function's return result should be write_status_log(result) or write_status_log(exception)
@@ -46,23 +49,54 @@ class logger():
         self.timestamp = datetime.now()
         self.log_directory = "logs"
 
-        self.current_log_version()
+    def new_or_existing_run(self):
+        #determines whether the currently called run is already ongoing or a new one
+        # this is based on file name - if there is a file name with "ongoing" in its name, we open that and continue populating it.
+        # if no file with such name, create a new log file
 
-    def current_log_version(self):
-        files_in_dir = os.listdir(self.log_directory)
+        #list of file names
+        self.found_files = os.listdir("logs")
 
-        
+        #check for "ongoing" string in any elements of the list, if not found, create
+        for file in self.found_files:
+            if any("ongoing" in file for file in self.found_files):
+                self.ongoing_file = file
+                return self.write_status_log()
+            else:
+                return self.create_new_log()
 
-        return files_in_dir
-        #return self.create_new_log()
 
     def create_new_log(self):
+        #file does not exist, process is just starting, creating new log file.
+        #   creating file name => date_version_ongoing.json
+        #       checking if there is already a file with today's date, and getting the latest 
+        
+        files = []
+
+        for file in self.found_files:
+            if any(datetime.today().strftime("%Y-%m-%d") in file for file in self.found_files):
+                todays_file_version = int(file.replace(".json","")[11:])
+                files.append(todays_file_version)            
+                
+            else:
+                return "file with today's date is not found in logs folder"
+        return max(files)
+        #file_name = f"{datetime.today().strftime('%Y-%m-%d')}_{self.run_version}.json"
+        
+
+
+        #self.ongoing_file = file
         #return self.write_status_log()
-        pass
+        
+        
 
     def write_status_log(self):
-        pass
+        
+        return "writing status log is in progress"
 
+    def rename_log_file(self):
+        #rename log_file from date_versionnumber_ongoing.json to date_versionnumber.json
+        pass
     
 
 

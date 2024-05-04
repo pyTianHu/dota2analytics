@@ -179,10 +179,9 @@ def test_case_prepschema():
     schemas = open_schemas()
     data_table = [table for table in schemas.get("tables", []) if table.get("name") == table_name]
 
-
     return print(data_table)
 
 #print(test_case_prepschema())
 
 l1 = logger("OK")
-print(l1.current_log_version())
+print(l1.new_or_existing_run())
