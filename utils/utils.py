@@ -56,6 +56,10 @@ class logger():
         self.found_files = os.listdir("logs")
 
         if any("ongoing" in file for file in self.found_files):
+            for f in self.found_files:
+                if "ongoing" in f:
+                    self.ongoing_file = f
+                    break
             return self.write_status_log()
         else:
             return self.create_new_log()
@@ -93,12 +97,12 @@ class logger():
 
     def write_status_log(self):
         # open file that contains "ongoing" in its title
-
+        
         # write content
 
         # call rename_log_file
         
-        return f"write_status_log => writing status log is in progress. file name: {self.ongoing_file}"
+        return f"write_status_log => writing status log is in progress. file name: {self.ongoing_file} message: {self.message}"
         #self.rename_log_file()
 
     def rename_log_file(self):

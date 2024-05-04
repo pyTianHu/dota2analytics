@@ -183,5 +183,5 @@ def test_case_prepschema():
 
 #print(test_case_prepschema())
 
-l1 = logger("OK")
+l1 = logger("this is another message to test")
 print(l1.new_or_existing_run())
