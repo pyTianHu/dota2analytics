@@ -4,6 +4,7 @@ import requests
 def response_to_df(url):
     response = requests.get(url, verify=False)
     df = pd.DataFrame(response.json())
+    #call logger method with function name and df, no source, only target
     return df
 
 
@@ -20,6 +21,7 @@ def heroes_ingestion():
     url = "https://api.opendota.com/api/heroes" 
     data = response_to_df(url)
     df = transponse_if_needed(data)
+    #call logger method with function name and df, no source, only target
     return df
 
 
@@ -27,6 +29,7 @@ def herostats_ingestion():
     url = "https://api.opendota.com/api/heroStats"
     data = response_to_df(url)
     df = transponse_if_needed(data)
+    #call logger method with function name and df, no source, only target
     return df
 
 
@@ -34,12 +37,14 @@ def publicmatches_ingestion():
     url = "https://api.opendota.com/api/publicMatches"
     data = response_to_df(url)
     df = transponse_if_needed(data)
+    #call logger method with function name and df, no source, only target
     return df
 
 def abilities_ingestion():
     url = "https://api.opendota.com/api/constants/abilities"
     data = response_to_df(url)
     df = transponse_if_needed(data)
+    #call logger method with function name and df, no source, only target
     return df
 
 def ability_ids_ingestion():
@@ -48,6 +53,7 @@ def ability_ids_ingestion():
     response = requests.get(url, verify=False)
     data = pd.DataFrame(response.json(), index=['row1'])
     df = transponse_if_needed(data)
+    #call logger method with function name and df, no source, only target
     return df
 
 def game_mode_ingestion():
@@ -55,6 +61,7 @@ def game_mode_ingestion():
     url = "https://api.opendota.com/api/constants/game_mode"
     data = response_to_df(url)
     df = transponse_if_needed(data)
+    #call logger method with function name and df, no source, only target
     return df
 
 
@@ -62,6 +69,7 @@ def hero_abilities_ingestion():
     url = "https://api.opendota.com/api/constants/hero_abilities"
     data = response_to_df(url)
     df = transponse_if_needed(data)
+    #call logger method with function name and df, no source, only target
     return df
 
 
@@ -70,6 +78,7 @@ def items_ids_ingestion():
     response = requests.get(url, verify=False)
     data = pd.DataFrame(response.json(), index=['row1'])
     df = transponse_if_needed(data)
+    #call logger method with function name and df, no source, only target
     return df
 
 
@@ -77,6 +86,7 @@ def items_ingestion():
     url = "https://api.opendota.com/api/constants/items"
     data = response_to_df(url)
     df = transponse_if_needed(data)
+    #call logger method with function name and df, no source, only target
     return df
 
 
@@ -84,6 +94,7 @@ def patch_ingestion():
     url = "https://api.opendota.com/api/constants/patch"
     data = response_to_df(url)
     df = transponse_if_needed(data)
+    #call logger method with function name and df, no source, only target
     return df
 
 
@@ -91,4 +102,5 @@ def lobby_type_ingestion():
     url = "https://api.opendota.com/api/constants/lobby_type"
     data = response_to_df(url)
     df = transponse_if_needed(data)
+    #call logger method with function name and df, no source, only target
     return df

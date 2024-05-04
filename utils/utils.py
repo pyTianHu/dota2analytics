@@ -14,6 +14,7 @@ def open_schemas():
 
 
 def convert_list_to_string_df(df):
+    #call logger function, source: function name
     for col in df.columns:
         if df[col].apply(lambda x: isinstance(x, list)).any():
             df[col] = df[col].astype(str)
@@ -22,6 +23,7 @@ def convert_list_to_string_df(df):
 
 
 def prepare_schema_for_df(table_name):
+    #call logger function, source: function name
     schemas = open_schemas()
     data_table = [table for table in schemas.get("tables", []) if table.get("name") == table_name]
 

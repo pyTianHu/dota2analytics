@@ -22,8 +22,10 @@ class TableOperations:
         result = self.cursor.fetchone()
 
         if result:
+            #call logger function w result
             return f"Table {self.table_name} exists in {self.db_name}"
         else:
+            #call logger function w result
             return f"Table {self.table_name} does not exist in {self.db_name}"
 
     def create_table(self):
@@ -35,8 +37,10 @@ class TableOperations:
         try:
             self.cursor.execute(query)
             self.conn.commit()
+            #call logger function w result
             return f"Table {self.db_name}.{self.table_name} is hereby created"
         except Exception as e:
+            #call logger function w exceptiont
             return f"Table is not created {e}"
     
 
@@ -55,16 +59,20 @@ class TableOperations:
         try:
             self.cursor.execute(query)
             self.conn.commit()
+            #call logger function w result
             return "Table is hereby dropped"
         except Exception as e:
+            #call logger function w exception
             return f"Table is not dropped {e}"
 
 
     def insert_df_into_table(self):
         try:
             self.data.to_sql(self.table_name, self.conn, if_exists='replace', index=False)
+            #call logger function w result
             return "Data was inserted"
         except Exception as e:
+            #call logger function w exception
             return f"No data was inserted: {e}"
 
 
