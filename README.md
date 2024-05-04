@@ -15,6 +15,7 @@ The data is collected via opendota API: https://docs.opendota.com/
 - Ingest data from the API
 - Transform the data and prepare it for analysis
 - Analyze data from multiple perspective
+- But mainly to practice data engineering skills so I can understand engineers better, and so become a better scrum master / BA / Team Lead
 
 # Tools used for the project
 - python 3.11
