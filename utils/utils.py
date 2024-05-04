@@ -47,6 +47,7 @@ class logger():
     def __init__(self, message) -> None:
         self.message = message
         self.timestamp = datetime.now()
+        self.today = datetime.today().strftime("%Y-%m-%d")
         self.log_directory = "logs"
 
     def new_or_existing_run(self):
@@ -58,45 +59,48 @@ class logger():
         self.found_files = os.listdir("logs")
 
         #check for "ongoing" string in any elements of the list, if not found, create
-        for file in self.found_files:
-            if any("ongoing" in file for file in self.found_files):
-                self.ongoing_file = file
-                return self.write_status_log()
-            else:
-                return self.create_new_log()
+        #for file in self.found_files:
+        if any("ongoing" in file for file in self.found_files):
+            #self.ongoing_file = file
+            print("new_or_existing_run method => ongoing term is found in one of the files in the folder, passing to write_status_log function")
+            return self.write_status_log()
+        else:
+            print("new_or_existing_run method => ongoing term is not found in any of the files in the directory, calling create_new_log function")
+            return self.create_new_log()
 
 
     def create_new_log(self):
         #file does not exist, process is just starting, creating new log file.
         #   creating file name => date_version_ongoing.json
-        #       checking if there is already a file with today's date, and getting the latest 
+        #       checking if there is already a file with today's date, and getting the latest.
+                #this scenario can happen, as on given day multiple manually triggered runs can take place, so we need to check the current version and increment by 1 to create the new version
         
         files = []
 
         for file in self.found_files:
-            if any(datetime.today().strftime("%Y-%m-%d") in file for file in self.found_files):
+            
+            
+            if any(self.today in file for file in self.found_files):
                 todays_file_version = int(file.replace(".json","")[11:])
                 files.append(todays_file_version)            
                 
             else:
                 return "file with today's date is not found in logs folder"
-        return max(files)
-        #file_name = f"{datetime.today().strftime('%Y-%m-%d')}_{self.run_version}.json"
         
-
-
-        #self.ongoing_file = file
-        #return self.write_status_log()
+        self.new_version = max(files)+1
+        self.ongoing_file = f"{self.today}_{self.new_version}_ongoing.json"
         
+        return "create_new_log method,", self.write_status_log()
+       
         
 
     def write_status_log(self):
         
-        return "writing status log is in progress"
+        return f"write_status_log => writing status log is in progress. file name: TBA", self.rename_log_file()
 
     def rename_log_file(self):
         #rename log_file from date_versionnumber_ongoing.json to date_versionnumber.json
-        pass
+        return "rename_log_file methodrenaming log file in progress"
     
 
 
