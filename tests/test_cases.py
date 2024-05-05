@@ -1,4 +1,5 @@
 import warnings
+import os
 
 warnings.filterwarnings("ignore")
 
@@ -183,5 +184,10 @@ def test_case_prepschema():
 
 #print(test_case_prepschema())
 
-l1 = logger("this is another message to test")
+l1 = logger("6 testing again", "6 new functin name")
 print(l1.new_or_existing_run())
+
+#with open(f"logs/2024-05-05_2_ongoing.json", "rb+") as json_file:
+#            #move to end of file - 2nd to last spot, just before the ] closing character of the json array
+#            json_file.seek(-1,2)+1
+#           json_file.truncate()

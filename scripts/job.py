@@ -6,11 +6,13 @@ warnings.filterwarnings("ignore")
 
 from classes.tableoperations import TableOperations
 import sqlite3
-from utils.utils import open_schemas, convert_list_to_string_df, prepare_schema_for_df, table_function_mapping
+from utils.utils import open_schemas, convert_list_to_string_df, prepare_schema_for_df, table_function_mapping, logger
 
    
 def table_create_and_ingest(db_name, table_name):
     #call logger method with function name and df => source db, table => nothing, as no source yet, just call function to record start time
+    tci = logger("table_create_and_ingest function started", "table_create_and_ingest")
+    tci.new_or_existing_run
     #calling and executing ingestion function, storing it in df variable
     df = table_function_mapping.get(table_name)
 
@@ -38,9 +40,22 @@ def table_create_and_ingest(db_name, table_name):
     except Exception as e:
         #call logger with function name and no data was inserted {e} exception
         return print(f"No data was inserted: {e}")
+    
+    tci2 = logger("table_create_and_ingest function finished", "table_create_and_ingest")
+    tci2.new_or_existing_run
 
 
 def bronze_transformation(db_name, table_name):
     # dropping unnecessary columns
+
+    pass
+
+
+def bronze_to_silver_transformation(db_name, table_name):
+
+    pass
+
+
+def silver_to_gold_transformation(db_name, table_name):
 
     pass

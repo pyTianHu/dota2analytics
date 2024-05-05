@@ -1,5 +1,6 @@
 import sqlite3
 import pandas as pd
+from utils.utils import logger
 
 class TableOperations:
     def __init__(self, db_name, table_name, schema = None, data = None) -> None:
@@ -12,6 +13,8 @@ class TableOperations:
     
 
     def check_if_table_exists(self):
+        table_exists = logger(f"tableoperations.check_if_table_exists method started, table to check: {self.table_name}, database:{self.db_name}", "check_if_table_exists")
+        table_exists.new_or_existing_run()
         query = f'''
                 SELECT name 
                 FROM sqlite_master 
@@ -23,12 +26,19 @@ class TableOperations:
 
         if result:
             #call logger function w result
+            table_exists = logger(f"Table {self.table_name} exists in {self.db_name}", "check_if_table_exists")
+            table_exists.new_or_existing_run()
             return f"Table {self.table_name} exists in {self.db_name}"
         else:
             #call logger function w result
+            table_exists = logger(f"Table {self.table_name} does not exist in {self.db_name}", "check_if_table_exists")
+            table_exists.new_or_existing_run()
             return f"Table {self.table_name} does not exist in {self.db_name}"
+        
 
     def create_table(self):
+        ct = logger(f"tableoperation.create_table method started, table to create: {self.table_name}, database:{self.db_name}", "create_table")
+        ct.new_or_existing_run
         query = f'''
                 CREATE TABLE IF NOT EXISTS {self.table_name} (
                 {self.schema}
@@ -45,14 +55,34 @@ class TableOperations:
     
 
     def add_new_column(self):
+        ct = logger(f"tableoperation.add_new_column method started, table to alter: {self.table_name}, database:{self.db_name}", "add_new_column")
+        ct.new_or_existing_run
+
+
+        ct2 = logger(f"Column {self.column_name} is hereby added to {self.table_name}, database:{self.db_name}", "add_new_column")
+        ct2.new_or_existing_run
+
+        ct2 = logger(f"Column {self.column_name} is not added to {self.table_name} due to exception: {e}, database:{self.db_name}", "add_new_column")
+        ct2.new_or_existing_run
         pass
 
 
     def remove_existing_column(self):
+        ct = logger(f"tableoperation.remove_existing_column method started, table to alter: {self.table_name}, database:{self.db_name}", "remove_existing_column")
+        ct.new_or_existing_run
+
+
+        ct2 = logger(f"Column {self.column_name} is hereby removed from {self.table_name}, database:{self.db_name}", "remove_existing_column")
+        ct2.new_or_existing_run
+
+        ct2 = logger(f"Column {self.column_name} is not removed from {self.table_name} due to exception: {e}, database:{self.db_name}", "remove_existing_column")
+        ct2.new_or_existing_run
         pass
 
 
     def drop_table(self):
+        ct = logger(f"tableoperation.drop_table method started, table to drop: {self.table_name}, database:{self.db_name}", "drop_table")
+        ct.new_or_existing_run
         query = f'''
                 DROP TABLE {self.table_name}
                 '''
@@ -60,10 +90,14 @@ class TableOperations:
             self.cursor.execute(query)
             self.conn.commit()
             #call logger function w result
-            return "Table is hereby dropped"
+            ct = logger(f"Table {self.table_name} is hereby dropped, database:{self.db_name}", "drop_table")
+            ct.new_or_existing_run
+            #return "Table is hereby dropped"
         except Exception as e:
             #call logger function w exception
-            return f"Table is not dropped {e}"
+            ct = logger(f"Table {self.table_name} has not been dropped due to exception: {e}, database:{self.db_name}", "drop_table")
+            ct.new_or_existing_run
+            #return f"Table is not dropped {e}"
 
 
     def insert_df_into_table(self):

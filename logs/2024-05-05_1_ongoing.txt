@@ -1,0 +1,68 @@
+2024-05-05 02:30:27.316759 : function 5 new functin name, message: 5 testing again 
+2024-05-05 02:30:51.159251 : function 6 new functin name, message: 6 testing again 
+2024-05-05 02:31:09.453643 : function convert_list_to_string, message: convert_list_to_string function started 
+2024-05-05 02:31:09.453643 : function convert_list_to_string, message: convert_list_to_string function finished 
+2024-05-05 02:31:09.453643 : function prepare_schema_for_df, message: prepare_schema_for_df started 
+2024-05-05 02:31:09.453643 : function prepare_schema_for_df, message: prepare_schema_for_df finished 
+2024-05-05 02:31:09.473310 : function check_if_table_exists, message: tableoperations.check_if_table_exists method started, table to check: heroes, database:dot_dev.db 
+2024-05-05 02:31:09.479540 : function check_if_table_exists, message: Table heroes exists in dot_dev.db 
+2024-05-05 02:31:09.514358 : function convert_list_to_string, message: convert_list_to_string function started 
+2024-05-05 02:31:09.525805 : function convert_list_to_string, message: convert_list_to_string function finished 
+2024-05-05 02:31:09.525805 : function prepare_schema_for_df, message: prepare_schema_for_df started 
+2024-05-05 02:31:09.525805 : function prepare_schema_for_df, message: prepare_schema_for_df finished 
+2024-05-05 02:31:09.541466 : function check_if_table_exists, message: tableoperations.check_if_table_exists method started, table to check: herostats, database:dot_dev.db 
+2024-05-05 02:31:09.542633 : function check_if_table_exists, message: Table herostats exists in dot_dev.db 
+2024-05-05 02:31:09.590366 : function convert_list_to_string, message: convert_list_to_string function started 
+2024-05-05 02:31:09.593232 : function convert_list_to_string, message: convert_list_to_string function finished 
+2024-05-05 02:31:09.593232 : function prepare_schema_for_df, message: prepare_schema_for_df started 
+2024-05-05 02:31:09.593232 : function prepare_schema_for_df, message: prepare_schema_for_df finished 
+2024-05-05 02:31:09.593232 : function check_if_table_exists, message: tableoperations.check_if_table_exists method started, table to check: publicmatches, database:dot_dev.db 
+2024-05-05 02:31:09.593232 : function check_if_table_exists, message: Table publicmatches exists in dot_dev.db 
+2024-05-05 02:31:09.633275 : function convert_list_to_string, message: convert_list_to_string function started 
+2024-05-05 02:31:09.677015 : function convert_list_to_string, message: convert_list_to_string function finished 
+2024-05-05 02:31:09.678101 : function prepare_schema_for_df, message: prepare_schema_for_df started 
+2024-05-05 02:31:09.679113 : function prepare_schema_for_df, message: prepare_schema_for_df finished 
+2024-05-05 02:31:09.680209 : function check_if_table_exists, message: tableoperations.check_if_table_exists method started, table to check: abilities, database:dot_dev.db 
+2024-05-05 02:31:09.681159 : function check_if_table_exists, message: Table abilities exists in dot_dev.db 
+2024-05-05 02:31:09.742576 : function convert_list_to_string, message: convert_list_to_string function started 
+2024-05-05 02:31:09.742576 : function convert_list_to_string, message: convert_list_to_string function finished 
+2024-05-05 02:31:09.742576 : function prepare_schema_for_df, message: prepare_schema_for_df started 
+2024-05-05 02:31:09.742576 : function prepare_schema_for_df, message: prepare_schema_for_df finished 
+2024-05-05 02:31:09.742576 : function check_if_table_exists, message: tableoperations.check_if_table_exists method started, table to check: ability_ids, database:dot_dev.db 
+2024-05-05 02:31:09.742576 : function check_if_table_exists, message: Table ability_ids exists in dot_dev.db 
+2024-05-05 02:31:09.790544 : function convert_list_to_string, message: convert_list_to_string function started 
+2024-05-05 02:31:09.792637 : function convert_list_to_string, message: convert_list_to_string function finished 
+2024-05-05 02:31:09.794080 : function prepare_schema_for_df, message: prepare_schema_for_df started 
+2024-05-05 02:31:09.794080 : function prepare_schema_for_df, message: prepare_schema_for_df finished 
+2024-05-05 02:31:09.794080 : function check_if_table_exists, message: tableoperations.check_if_table_exists method started, table to check: game_mode, database:dot_dev.db 
+2024-05-05 02:31:09.794080 : function check_if_table_exists, message: Table game_mode exists in dot_dev.db 
+2024-05-05 02:31:09.829623 : function convert_list_to_string, message: convert_list_to_string function started 
+2024-05-05 02:31:09.831617 : function convert_list_to_string, message: convert_list_to_string function finished 
+2024-05-05 02:31:09.831617 : function prepare_schema_for_df, message: prepare_schema_for_df started 
+2024-05-05 02:31:09.831617 : function prepare_schema_for_df, message: prepare_schema_for_df finished 
+2024-05-05 02:31:09.831617 : function check_if_table_exists, message: tableoperations.check_if_table_exists method started, table to check: hero_abilities, database:dot_dev.db 
+2024-05-05 02:31:09.831617 : function check_if_table_exists, message: Table hero_abilities exists in dot_dev.db 
+2024-05-05 02:31:09.876729 : function convert_list_to_string, message: convert_list_to_string function started 
+2024-05-05 02:31:09.876729 : function convert_list_to_string, message: convert_list_to_string function finished 
+2024-05-05 02:31:09.876729 : function prepare_schema_for_df, message: prepare_schema_for_df started 
+2024-05-05 02:31:09.876729 : function prepare_schema_for_df, message: prepare_schema_for_df finished 
+2024-05-05 02:31:09.876729 : function check_if_table_exists, message: tableoperations.check_if_table_exists method started, table to check: items_ids, database:dot_dev.db 
+2024-05-05 02:31:09.876729 : function check_if_table_exists, message: Table items_ids exists in dot_dev.db 
+2024-05-05 02:31:09.914686 : function convert_list_to_string, message: convert_list_to_string function started 
+2024-05-05 02:31:09.930577 : function convert_list_to_string, message: convert_list_to_string function finished 
+2024-05-05 02:31:09.930577 : function prepare_schema_for_df, message: prepare_schema_for_df started 
+2024-05-05 02:31:09.931602 : function prepare_schema_for_df, message: prepare_schema_for_df finished 
+2024-05-05 02:31:09.931602 : function check_if_table_exists, message: tableoperations.check_if_table_exists method started, table to check: items, database:dot_dev.db 
+2024-05-05 02:31:09.931602 : function check_if_table_exists, message: Table items exists in dot_dev.db 
+2024-05-05 02:31:09.976793 : function convert_list_to_string, message: convert_list_to_string function started 
+2024-05-05 02:31:09.976793 : function convert_list_to_string, message: convert_list_to_string function finished 
+2024-05-05 02:31:09.976793 : function prepare_schema_for_df, message: prepare_schema_for_df started 
+2024-05-05 02:31:09.976793 : function prepare_schema_for_df, message: prepare_schema_for_df finished 
+2024-05-05 02:31:09.976793 : function check_if_table_exists, message: tableoperations.check_if_table_exists method started, table to check: patch, database:dot_dev.db 
+2024-05-05 02:31:09.976793 : function check_if_table_exists, message: Table patch exists in dot_dev.db 
+2024-05-05 02:31:10.015910 : function convert_list_to_string, message: convert_list_to_string function started 
+2024-05-05 02:31:10.024292 : function convert_list_to_string, message: convert_list_to_string function finished 
+2024-05-05 02:31:10.025288 : function prepare_schema_for_df, message: prepare_schema_for_df started 
+2024-05-05 02:31:10.026680 : function prepare_schema_for_df, message: prepare_schema_for_df finished 
+2024-05-05 02:31:10.027732 : function check_if_table_exists, message: tableoperations.check_if_table_exists method started, table to check: lobby_type, database:dot_dev.db 
+2024-05-05 02:31:10.028931 : function check_if_table_exists, message: Table lobby_type exists in dot_dev.db 

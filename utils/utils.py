@@ -15,15 +15,21 @@ def open_schemas():
 
 def convert_list_to_string_df(df):
     #call logger function, source: function name
+    list_to_str = logger("convert_list_to_string function started", "convert_list_to_string")
+    list_to_str.new_or_existing_run()
     for col in df.columns:
         if df[col].apply(lambda x: isinstance(x, list)).any():
             df[col] = df[col].astype(str)
 
+    list_to_str = logger("convert_list_to_string function finished", "convert_list_to_string")
+    list_to_str.new_or_existing_run()
     return df
 
 
 def prepare_schema_for_df(table_name):
     #call logger function, source: function name
+    prep_schema = logger("prepare_schema_for_df started", "prepare_schema_for_df")
+    prep_schema.new_or_existing_run()
     schemas = open_schemas()
     data_table = [table for table in schemas.get("tables", []) if table.get("name") == table_name]
 
@@ -36,6 +42,8 @@ def prepare_schema_for_df(table_name):
 
     schema_str = ', '.join(' '.join(column) for column in schema)
 
+    prep_schema2 = logger("prepare_schema_for_df finished", "prepare_schema_for_df")
+    prep_schema2.new_or_existing_run()
     return schema_str
 
 class logger():
@@ -46,8 +54,9 @@ class logger():
     # if exists, get its ID, create new with ID incremented by 1
     # function's return result should be write_status_log(result) or write_status_log(exception)
     #2nd stage: add deleted, updated, inserted records as well - this will lead to versioning, disaster recovery etc later.
-    def __init__(self, message) -> None:
+    def __init__(self, message, function_name) -> None:
         self.message = message
+        self.function_name = function_name
         self.timestamp = datetime.now()
         self.today = datetime.today().strftime("%Y-%m-%d")
         self.log_directory = "logs"
@@ -77,17 +86,17 @@ class logger():
         for file in self.found_files:
             # if file with today's date is found in dir, add its version number to a list
                 if self.today in file:
-                    todays_file_version = int(file.replace(".json","")[11:])
+                    todays_file_version = int(file.replace(".txt","")[11:])
                     files.append(todays_file_version) 
         
         
         self.new_version = max(files)+1
-        self.ongoing_file = f"{self.today}_{self.new_version}_ongoing.json"
+        self.ongoing_file = f"{self.today}_{self.new_version}_ongoing.txt"
 
         #create new json with filename
         try:
             # Open the file in write mode ('w')
-            with open(f"logs/{self.ongoing_file}", "w") as json_file:
+            with open(f"logs/{self.ongoing_file}", "w") as text_file:
                 pass
             # Output a message indicating the file creation
             return self.write_status_log()
@@ -96,27 +105,29 @@ class logger():
         
 
     def write_status_log(self):
-        # open file that contains "ongoing" in its title
-        
         # write content
-
-        # call rename_log_file
+        content = f"{datetime.now()} : function {self.function_name}, message: {self.message} \n"
+    
+        # open file that contains "ongoing" in its title
+        with open(f"logs/{self.ongoing_file}", "a") as text_file:
+            # delete ]
+            text_file.write(content)
         
-        return f"write_status_log => writing status log is in progress. file name: {self.ongoing_file} message: {self.message}"
-        #self.rename_log_file()
+        return f"content added to json"
 
     def rename_log_file(self):
+        #this function is only called at the very end of the pipeline once all functions and methods were run.
         #rename log_file from date_versionnumber_ongoing.json to date_versionnumber.json
-        
-        # save file as
-        
-        
-        # close file
+        self.new_file_name = self.ongoing_file.replace("_ongoing","")
+        os.rename(f"logs/{self.ongoing_file}", f"logs/{self.new_file_name}")
 
 
         # delete any files with "ongoing" string in its name
         return "rename_log_file methodrenaming log file in progress"
     
+
+
+        
 
 
 table_function_mapping = {
