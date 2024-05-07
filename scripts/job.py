@@ -74,15 +74,15 @@ def bronze_transformation(db_name, table_name):
 
     #insert into bronze table
     df_to_table = TableOperations(bronze_db_dev, table_name, data = df)
-    df_to_table.insert_df_into_table()
+    res = df_to_table.insert_df_into_table()
 
-    return table
+    return res
 
 
 
 
 def bronze_to_silver_transformation(db_name, table_name):
-
+    # row filters, generic transformations (upper, lower, anything general)
 
     pass
 

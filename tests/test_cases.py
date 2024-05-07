@@ -21,20 +21,18 @@ from utils.utils import open_schemas, table_function_mapping, logger, selected_c
 def test_case_d10(db_name, table_name):
     conn = sqlite3.connect(db_name)
     cursor = conn.cursor()
-    
-    cols = selected_columns.get(table_name)
-    columns = ', '.join(cols)
 
-    query = f"SELECT {columns} FROM {table_name}"
+
+    query = f"SELECT * FROM {table_name}"
 
     df = pd.read_sql_query(query, conn)
 
     print(df)
 
-#test_case_d10('dot_dev.db', 'publicmatches')
+test_case_d10('dot_dev.db', 'game_mode')
 
-scols = TableOperations('dot_dev.db','publicmatches')
-print(scols.select_cols_to_df())
+#scols = TableOperations('dot_dev.db','publicmatches')
+#print(scols.select_cols_to_df())
 
 def test_case_dot5(db_name, table_name):
     conn = sqlite3.connect(db_name)

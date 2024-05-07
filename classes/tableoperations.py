@@ -102,9 +102,11 @@ class TableOperations:
             self.data.to_sql(self.table_name, self.conn, if_exists='replace', index=False)
             ct2 = logger(f"Data was inserted into {self.table_name}, database:{self.db_name}", f"{TableOperations.insert_df_into_table.__name__}")
             ct2.new_or_existing_run()
+            return True
         except Exception as e:
             ct2 = logger(f"Rows could not be inserted into {self.table_name} due to exception: {e}, database:{self.db_name}", f"{TableOperations.insert_df_into_table.__name__}")
             ct2.new_or_existing_run()
+            return e
 
 
     def delete_all_from_table(self):

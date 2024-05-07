@@ -114,3 +114,11 @@
                 ': no such column: 'match_id', 'radiant_win', 'lobby_type', 'game_mode', 'radiant_team', 'dire_team' 
 2024-05-08 01:07:18.665750 : function <function TableOperations.select_cols_to_df at 0x000001AD385EE0C0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev.db 
 2024-05-08 01:07:18.665750 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-08 01:11:24.603551 : function <function TableOperations.select_cols_to_df at 0x0000024B5ED3E020>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev.db 
+2024-05-08 01:11:24.603551 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-08 01:11:24.603551 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 01:11:24.603551 : function check_if_table_exists, message: Table publicmatches does not exist in dot_dev_bronze.db 
+2024-05-08 01:11:24.603551 : function create_table, message: create_table method started, table to create: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 01:11:24.619267 : function create_table, message: create_table method finished, publicmatches is hereby created in database:dot_dev_bronze.db 
+2024-05-08 01:11:24.619267 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 01:11:24.650437 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev_bronze.db 
