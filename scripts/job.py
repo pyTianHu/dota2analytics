@@ -11,8 +11,8 @@ from utils.utils import open_schemas, convert_list_to_string_df, prepare_schema_
    
 def table_create_and_ingest(db_name, table_name):
     #call logger method with function name and df => source db, table => nothing, as no source yet, just call function to record start time
-    tci = logger("table_create_and_ingest function started", "table_create_and_ingest")
-    tci.new_or_existing_run
+    tci = logger(f"{table_create_and_ingest.__name__} function started", f"{table_create_and_ingest.__name__}")
+    tci.new_or_existing_run()
     #calling and executing ingestion function, storing it in df variable
     df = table_function_mapping.get(table_name)
 
@@ -26,17 +26,21 @@ def table_create_and_ingest(db_name, table_name):
     ingested_table = TableOperations(db_name, table_name, schema_str, df)
 
     #check whether table already exists => edit check, as it does not say the table was created
+    cite = logger("check_if_table_exists function started", "table_create_and_ingest")
+    cite.new_or_existing_run()
     exists = ingested_table.check_if_table_exists()
-    print(exists)
+
+
     if exists:
         pass
     else:
-        print(ingested_table.create_table())
+        ingested_table.create_table()
+        ct = logger("create_table function started")
 
     #execute insert
     # return has to be edited, as it returns invalid result. function runs successfully and that is what it returns.
     try:
-        print(ingested_table.insert_df_into_table())
+        ingested_table.insert_df_into_table()
     except Exception as e:
         #call logger with function name and no data was inserted {e} exception
         return print(f"No data was inserted: {e}")

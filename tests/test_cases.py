@@ -184,10 +184,22 @@ def test_case_prepschema():
 
 #print(test_case_prepschema())
 
-l1 = logger("6 testing again", "6 new functin name")
-print(l1.new_or_existing_run())
+#l1 = logger("6 testing again", "6 new functin name")
+#print(l1.new_or_existing_run())
 
-#with open(f"logs/2024-05-05_2_ongoing.json", "rb+") as json_file:
-#            #move to end of file - 2nd to last spot, just before the ] closing character of the json array
-#            json_file.seek(-1,2)+1
-#           json_file.truncate()
+conn = sqlite3.connect('dot_dev.db')
+cursor = conn.cursor()
+cursor.execute("select name from sqlite_master WHERE type = 'table';")
+tables = cursor.fetchall()
+for table in tables:
+    #print(table)
+    #query = f"drop table {table[0]}"
+    query = f"select * from {table[0]} limit 1"
+    cursor.execute(query)
+    conn.commit
+    result = cursor.fetchone()
+    print(table, "\n \n \t", result)
+
+#cursor.execute("select name from sqlite_master WHERE type = 'table';")
+#tables = cursor.fetchall()
+#print(tables)

@@ -13,7 +13,7 @@ class TableOperations:
     
 
     def check_if_table_exists(self):
-        table_exists = logger(f"tableoperations.check_if_table_exists method started, table to check: {self.table_name}, database:{self.db_name}", "check_if_table_exists")
+        table_exists = logger(f"{TableOperations.check_if_table_exists.__name__} method started, table to check: {self.table_name}, database:{self.db_name}", f"{TableOperations.check_if_table_exists.__name__}")
         table_exists.new_or_existing_run()
         query = f'''
                 SELECT name 
@@ -26,19 +26,19 @@ class TableOperations:
 
         if result:
             #call logger function w result
-            table_exists = logger(f"Table {self.table_name} exists in {self.db_name}", "check_if_table_exists")
+            table_exists = logger(f"Table {self.table_name} exists in {self.db_name}", f"{TableOperations.check_if_table_exists.__name__}")
             table_exists.new_or_existing_run()
             return f"Table {self.table_name} exists in {self.db_name}"
         else:
             #call logger function w result
-            table_exists = logger(f"Table {self.table_name} does not exist in {self.db_name}", "check_if_table_exists")
+            table_exists = logger(f"Table {self.table_name} does not exist in {self.db_name}", f"{TableOperations.check_if_table_exists.__name__}")
             table_exists.new_or_existing_run()
             return f"Table {self.table_name} does not exist in {self.db_name}"
         
 
     def create_table(self):
-        ct = logger(f"tableoperation.create_table method started, table to create: {self.table_name}, database:{self.db_name}", "create_table")
-        ct.new_or_existing_run
+        ct = logger(f"{TableOperations.create_table.__name__} method started, table to create: {self.table_name}, database:{self.db_name}", f"{TableOperations.create_table.__name__}")
+        ct.new_or_existing_run()
         query = f'''
                 CREATE TABLE IF NOT EXISTS {self.table_name} (
                 {self.schema}
@@ -48,81 +48,120 @@ class TableOperations:
             self.cursor.execute(query)
             self.conn.commit()
             #call logger function w result
-            return f"Table {self.db_name}.{self.table_name} is hereby created"
+            ct2 = logger(f"{TableOperations.create_table.__name__} method finished, {self.table_name} is hereby created in database:{self.db_name}", f"{TableOperations.create_table.__name__}")
+            ct2.new_or_existing_run()
+            #return f"Table {self.db_name}.{self.table_name} is hereby created"
         except Exception as e:
             #call logger function w exceptiont
-            return f"Table is not created {e}"
-    
+            ct2 = logger(f"{TableOperations.create_table.__name__} method finished, {self.table_name} has not been created in database:{self.db_name} due to exception: {e}", f"{TableOperations.create_table.__name__}")
+            ct2.new_or_existing_run()
+            #return f"Table is not created {e}"
+            
 
     def add_new_column(self):
-        ct = logger(f"tableoperation.add_new_column method started, table to alter: {self.table_name}, database:{self.db_name}", "add_new_column")
-        ct.new_or_existing_run
+        ct = logger(f"{TableOperations.add_new_column.__name__} method started, table to alter: {self.table_name}, database:{self.db_name}", f"{TableOperations.add_new_column.__name__}")
+        ct.new_or_existing_run()
 
 
-        ct2 = logger(f"Column {self.column_name} is hereby added to {self.table_name}, database:{self.db_name}", "add_new_column")
-        ct2.new_or_existing_run
+        ct2 = logger(f"Column {self.column_name} is hereby added to {self.table_name}, database:{self.db_name}", f"{TableOperations.add_new_column.__name__}")
+        ct2.new_or_existing_run()
 
-        ct2 = logger(f"Column {self.column_name} is not added to {self.table_name} due to exception: {e}, database:{self.db_name}", "add_new_column")
-        ct2.new_or_existing_run
+        ct2 = logger(f"Column {self.column_name} is not added to {self.table_name} due to exception: {e}, database:{self.db_name}", f"{TableOperations.add_new_column.__name__}")
+        ct2.new_or_existing_run()
         pass
 
 
     def remove_existing_column(self):
-        ct = logger(f"tableoperation.remove_existing_column method started, table to alter: {self.table_name}, database:{self.db_name}", "remove_existing_column")
-        ct.new_or_existing_run
+        ct = logger(f"{TableOperations.remove_existing_column.__name__} method started, table to alter: {self.table_name}, database:{self.db_name}", f"{TableOperations.remove_existing_column.__name__}")
+        ct.new_or_existing_run()
 
 
-        ct2 = logger(f"Column {self.column_name} is hereby removed from {self.table_name}, database:{self.db_name}", "remove_existing_column")
-        ct2.new_or_existing_run
+        ct2 = logger(f"Column {self.column_name} is hereby removed from {self.table_name}, database:{self.db_name}", f"{TableOperations.remove_existing_column.__name__}")
+        ct2.new_or_existing_run()
 
-        ct2 = logger(f"Column {self.column_name} is not removed from {self.table_name} due to exception: {e}, database:{self.db_name}", "remove_existing_column")
-        ct2.new_or_existing_run
+        ct2 = logger(f"Column {self.column_name} is not removed from {self.table_name} due to exception: {e}, database:{self.db_name}", f"{TableOperations.remove_existing_column.__name__}")
+        ct2.new_or_existing_run()
         pass
 
 
     def drop_table(self):
-        ct = logger(f"tableoperation.drop_table method started, table to drop: {self.table_name}, database:{self.db_name}", "drop_table")
-        ct.new_or_existing_run
+        ct = logger(f"{TableOperations.drop_table.__name__} method started, table to drop: {self.table_name}, database:{self.db_name}", f"{TableOperations.drop_table.__name__}")
+        ct.new_or_existing_run()
         query = f'''
                 DROP TABLE {self.table_name}
                 '''
         try:
             self.cursor.execute(query)
             self.conn.commit()
-            #call logger function w result
-            ct = logger(f"Table {self.table_name} is hereby dropped, database:{self.db_name}", "drop_table")
-            ct.new_or_existing_run
-            #return "Table is hereby dropped"
+            ct = logger(f"Table {self.table_name} is hereby dropped, database:{self.db_name}", f"{TableOperations.drop_table.__name__}")
+            ct.new_or_existing_run()
         except Exception as e:
-            #call logger function w exception
-            ct = logger(f"Table {self.table_name} has not been dropped due to exception: {e}, database:{self.db_name}", "drop_table")
-            ct.new_or_existing_run
-            #return f"Table is not dropped {e}"
+            ct = logger(f"Table {self.table_name} has not been dropped due to exception: {e}, database:{self.db_name}", f"{TableOperations.drop_table.__name__}")
+            ct.new_or_existing_run()
 
 
     def insert_df_into_table(self):
+        ct = logger(f"{TableOperations.insert_df_into_table.__name__} method started, table to delete all from: {self.table_name}, database:{self.db_name}", f"{TableOperations.insert_df_into_table.__name__}")
+        ct.new_or_existing_run()
+
         try:
             self.data.to_sql(self.table_name, self.conn, if_exists='replace', index=False)
-            #call logger function w result
-            return "Data was inserted"
+            ct2 = logger(f"Data was inserted into {self.table_name}, database:{self.db_name}", f"{TableOperations.insert_df_into_table.__name__}")
+            ct2.new_or_existing_run()
         except Exception as e:
-            #call logger function w exception
-            return f"No data was inserted: {e}"
+            ct2 = logger(f"Rows could not be inserted into {self.table_name} due to exception: {e}, database:{self.db_name}", f"{TableOperations.insert_df_into_table.__name__}")
+            ct2.new_or_existing_run()
 
 
     def delete_all_from_table(self):
+        ct = logger(f"{TableOperations.delete_all_from_table.__name__} method started, table to delete all from: {self.table_name}, database:{self.db_name}", f"{TableOperations.delete_all_from_table.__name__}")
+        ct.new_or_existing_run()
+
+
+        ct2 = logger(f"All rows have been deleted from {self.table_name}, database:{self.db_name}", f"{TableOperations.delete_all_from_table.__name__}")
+        ct2.new_or_existing_run()
+
+        ct2 = logger(f"Rows could not be deleted from {self.table_name} due to exception: {e}, database:{self.db_name}", f"{TableOperations.delete_all_from_table.__name__}")
+        ct2.new_or_existing_run()
         pass
 
 
     def delete_from_table_where(self):
+        ct = logger(f"{TableOperations.delete_from_table_where.__name__} method started, table to alter: {self.table_name}, database:{self.db_name}", f"{TableOperations.delete_from_table_where.__name__}")
+        ct.new_or_existing_run()
+
+
+        ct2 = logger(f"Record {self.record_to_drop} has been deleted from {self.table_name}, database:{self.db_name}", f"{TableOperations.delete_from_table_where.__name__}")
+        ct2.new_or_existing_run()
+
+        ct2 = logger(f"Record {self.record_to_drop} could not be deleted from {self.table_name} due to exception: {e}, database:{self.db_name}", f"{TableOperations.delete_from_table_where.__name__}")
+        ct2.new_or_existing_run()
         pass
 
 
     def select_sample_from_table(self):
+        ct = logger(f"{TableOperations.select_sample_from_table.__name__} method started, table to query: {self.table_name}, database:{self.db_name}", f"{TableOperations.select_sample_from_table.__name__}")
+        ct.new_or_existing_run()
+
+
+        ct2 = logger(f"Sample data for {self.table_name}: {self.sample}, database:{self.db_name}", f"{TableOperations.select_sample_from_table.__name__}")
+        ct2.new_or_existing_run()
+
+        ct2 = logger(f"Sample data for {self.table_name} cannot be provided due to exception: {e}, database:{self.db_name}", f"{TableOperations.select_sample_from_table.__name__}")
+        ct2.new_or_existing_run()
         pass
 
 
     def print_schema(self):
+        ct = logger(f"{TableOperations.print_schema.__name__} method started for table {self.table_name}, database:{self.db_name}", f"{TableOperations.print_schema.__name__}")
+        ct.new_or_existing_run()
+
+
+        ct2 = logger(f"{self.table_name}'s schema: {self.schema}, database:{self.db_name}", f"{TableOperations.print_schema.__name__}")
+        ct2.new_or_existing_run()
+
+        ct2 = logger(f"Cannot print schema for {self.table_name} due to exception: {e}, database:{self.db_name}", f"{TableOperations.print_schema.__name__}")
+        ct2.new_or_existing_run()
         pass
 
 

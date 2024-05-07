@@ -15,20 +15,20 @@ def open_schemas():
 
 def convert_list_to_string_df(df):
     #call logger function, source: function name
-    list_to_str = logger("convert_list_to_string function started", "convert_list_to_string")
+    list_to_str = logger(f"{convert_list_to_string_df.__name__} function started", f"{convert_list_to_string_df.__name__}")
     list_to_str.new_or_existing_run()
     for col in df.columns:
         if df[col].apply(lambda x: isinstance(x, list)).any():
             df[col] = df[col].astype(str)
 
-    list_to_str = logger("convert_list_to_string function finished", "convert_list_to_string")
+    list_to_str = logger(f"{convert_list_to_string_df.__name__} function finished", f"{convert_list_to_string_df.__name__}")
     list_to_str.new_or_existing_run()
     return df
 
 
 def prepare_schema_for_df(table_name):
     #call logger function, source: function name
-    prep_schema = logger("prepare_schema_for_df started", "prepare_schema_for_df")
+    prep_schema = logger(f"{prepare_schema_for_df.__name__} function started", f"{prepare_schema_for_df.__name__}")
     prep_schema.new_or_existing_run()
     schemas = open_schemas()
     data_table = [table for table in schemas.get("tables", []) if table.get("name") == table_name]
@@ -42,7 +42,7 @@ def prepare_schema_for_df(table_name):
 
     schema_str = ', '.join(' '.join(column) for column in schema)
 
-    prep_schema2 = logger("prepare_schema_for_df finished", "prepare_schema_for_df")
+    prep_schema2 = logger(f"{prepare_schema_for_df.__name__} function finished", f"{prepare_schema_for_df.__name__}")
     prep_schema2.new_or_existing_run()
     return schema_str
 

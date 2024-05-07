@@ -66,3 +66,4 @@
 2024-05-05 02:31:10.026680 : function prepare_schema_for_df, message: prepare_schema_for_df finished 
 2024-05-05 02:31:10.027732 : function check_if_table_exists, message: tableoperations.check_if_table_exists method started, table to check: lobby_type, database:dot_dev.db 
 2024-05-05 02:31:10.028931 : function check_if_table_exists, message: Table lobby_type exists in dot_dev.db 
+2024-05-07 22:40:13.231475 : function 6 new functin name, message: 6 testing again 
