@@ -29,7 +29,7 @@ def test_case_d10(db_name, table_name):
 
     print(df)
 
-test_case_d10('dot_dev.db', 'game_mode')
+#test_case_d10('dot_dev_bronze.db', 'heroes')
 
 #scols = TableOperations('dot_dev.db','publicmatches')
 #print(scols.select_cols_to_df())
@@ -38,10 +38,8 @@ def test_case_dot5(db_name, table_name):
     conn = sqlite3.connect(db_name)
     cursor = conn.cursor()
     
-    #create test table
-    schema = ('id INTEGER NOT NULL, name TEXT NULL')
-    test_table = TableOperations(db_name, table_name)
-    test_table.create_table()
+    table = TableOperations(db_name, table_name)
+    
 
     #check if table exists
     check_table_query = f"SELECT name FROM sqlite_master WHERE type='table' AND name='{table_name}'"
@@ -57,7 +55,7 @@ def test_case_dot5(db_name, table_name):
         print(f"The table '{table_name}' does not exist in the database.")
 
     #drop table
-    test_table.drop_table()
+    table.drop_table()
 
     #check if table exists
     check_table_query = f"SELECT name FROM sqlite_master WHERE type='table' AND name='{table_name}'"
@@ -72,7 +70,9 @@ def test_case_dot5(db_name, table_name):
     else:
         print(f"The table '{table_name}' does not exist in the database.")
 
-#test_case_dot5('dot_dev.db','publicmatches')
+#test_case_dot5('dot_dev_bronze.db','game_mode')
+
+#print(bronze_transformation('dot_dev.db','heroes'))
 
 def test_case_dot13():
     table_name = 'random'
@@ -211,6 +211,6 @@ def test_case_prepschema():
 #print(tables)
 
 
-#print(bronze_transformation('dot_dev.db','publicmatches'))
+
 
 

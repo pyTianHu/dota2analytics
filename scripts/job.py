@@ -22,20 +22,16 @@ def table_create_and_ingest(db_name, table_name):
     #compile schema string 
     schema_str = prepare_schema_for_df(table_name)
 
-    #instantiate object
     ingested_table = TableOperations(db_name, table_name, schema_str, df)
 
     #check whether table already exists => edit check, as it does not say the table was created
-    cite = logger("check_if_table_exists function started", "table_create_and_ingest")
-    cite.new_or_existing_run()
     exists = ingested_table.check_if_table_exists()
 
-
-    if exists:
+    if exists == True:
         pass
     else:
         ingested_table.create_table()
-        ct = logger("create_table function started")
+
 
     #execute insert
     # return has to be edited, as it returns invalid result. function runs successfully and that is what it returns.
@@ -43,25 +39,27 @@ def table_create_and_ingest(db_name, table_name):
         ingested_table.insert_df_into_table()
     except Exception as e:
         #call logger with function name and no data was inserted {e} exception
-        return print(f"No data was inserted: {e}")
+        ndi = logger(f"{TableOperations.insert_df_into_table.__name__} function finished, no data was inserted into {table_name}")
+        tci.new_or_existing_run()
     
     tci2 = logger("table_create_and_ingest function finished", "table_create_and_ingest")
     tci2.new_or_existing_run
 
 
-def bronze_transformation(db_name, table_name):
+def bronze_transformation(raw_db_name, table_name):
     # data source: raw layer; output: bronze layer => dot_dev_bronze.db for dev env, dot_bronze.db for prod
     # dropping unnecessary columns & selecting only necessary ones
+    bt = logger(f"{bronze_transformation.__name__} function started", f"{bronze_transformation.__name__}")
+    bt.new_or_existing_run()
+
 
     bronze_db_dev = "dot_dev_bronze.db"
     bronze_db_prod = "dot_bronze_prod.db"
 
     #get selected cols from utils
     # if selected cols is empty, pass
-    # else proceed with selecting the column, establishing the new dataframe and saving it into the silver_layer
-    
-
-    table = TableOperations(db_name,table_name)
+    # else proceed with selecting the data with provided cols, establish the new dataframe and save it into the bronze layer
+    table = TableOperations(raw_db_name,table_name)
     df = table.select_cols_to_df()
 
     #check if table exists in bronze, if not, create it
@@ -75,6 +73,10 @@ def bronze_transformation(db_name, table_name):
     #insert into bronze table
     df_to_table = TableOperations(bronze_db_dev, table_name, data = df)
     res = df_to_table.insert_df_into_table()
+
+    bt2 = logger(f"{bronze_transformation.__name__} function finished: result of insert_df_into_table function => {res}", f"{bronze_transformation.__name__}")
+    bt2.new_or_existing_run()
+
 
     return res
 
