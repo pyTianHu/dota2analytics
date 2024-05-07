@@ -147,9 +147,9 @@ table_function_mapping = {
 
 
 selected_columns = {
-    'heroes': [],
+    'heroes': ["id", "localized_name"],
     'herostats': [],
-    'publicmatches': [],
+    'publicmatches': ["match_id", "radiant_win", "lobby_type", "game_mode", "radiant_team", "dire_team"],
     'abilities': [],
     'ability_ids': [],
     'game_mode': [],

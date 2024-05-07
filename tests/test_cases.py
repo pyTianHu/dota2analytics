@@ -5,6 +5,8 @@ warnings.filterwarnings("ignore")
 
 import sqlite3
 import pandas as pd
+pd.set_option('display.max_columns', None)
+pd.set_option('display.max_rows', None) 
 import json
 import sys
 sys.path.append('../dota2')
@@ -12,21 +14,27 @@ sys.path.append('../dota2')
 from classes.tableoperations import TableOperations
 
 from scripts.data_ingestion import *
-from utils.utils import prepare_schema_for_df
+from scripts.job import bronze_transformation
 
-from utils.utils import open_schemas, table_function_mapping, logger
+from utils.utils import open_schemas, table_function_mapping, logger, selected_columns
 
 def test_case_d10(db_name, table_name):
     conn = sqlite3.connect(db_name)
     cursor = conn.cursor()
+    
+    cols = selected_columns.get(table_name)
+    columns = ', '.join(cols)
 
-    query = f"SELECT * FROM {table_name}"
+    query = f"SELECT {columns} FROM {table_name}"
 
     df = pd.read_sql_query(query, conn)
 
     print(df)
 
-#test_case_d10('dot_raw_prod.db', 'heroes')
+#test_case_d10('dot_dev.db', 'publicmatches')
+
+scols = TableOperations('dot_dev.db','publicmatches')
+print(scols.select_cols_to_df())
 
 def test_case_dot5(db_name, table_name):
     conn = sqlite3.connect(db_name)
@@ -136,12 +144,12 @@ def test_case_dot15():
 
 def test_case_dot6_2():
     db_name = 'dot_dev.db'
-    table_name = 'game_mode'
+    table_name = 'publicmatches'
 
     conn = sqlite3.connect(db_name)
 
     #select * from table
-    query = f"SELECT * FROM {table_name}"
+    query = f"SELECT * FROM {table_name} limit 10"
     df = pd.read_sql_query(query, conn)
     print(df)
 
@@ -187,19 +195,24 @@ def test_case_prepschema():
 #l1 = logger("6 testing again", "6 new functin name")
 #print(l1.new_or_existing_run())
 
-conn = sqlite3.connect('dot_dev.db')
-cursor = conn.cursor()
-cursor.execute("select name from sqlite_master WHERE type = 'table';")
-tables = cursor.fetchall()
-for table in tables:
+#conn = sqlite3.connect('dot_dev.db')
+#cursor = conn.cursor()
+#cursor.execute("select name from sqlite_master WHERE type = 'table';")
+#tables = cursor.fetchall()
+#for table in tables:
     #print(table)
     #query = f"drop table {table[0]}"
-    query = f"select * from {table[0]} limit 1"
-    cursor.execute(query)
-    conn.commit
-    result = cursor.fetchone()
-    print(table, "\n \n \t", result)
+#    query = f"select * from {table[0]} limit 1"
+#    cursor.execute(query)
+#    conn.commit
+#    result = cursor.fetchone()
+#    print(table, "\n \n \t", result)
 
 #cursor.execute("select name from sqlite_master WHERE type = 'table';")
 #tables = cursor.fetchall()
 #print(tables)
+
+
+#print(bronze_transformation('dot_dev.db','publicmatches'))
+
+

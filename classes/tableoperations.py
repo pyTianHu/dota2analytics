@@ -1,6 +1,6 @@
 import sqlite3
 import pandas as pd
-from utils.utils import logger
+from utils.utils import logger, selected_columns
 
 class TableOperations:
     def __init__(self, db_name, table_name, schema = None, data = None) -> None:
@@ -25,15 +25,13 @@ class TableOperations:
         result = self.cursor.fetchone()
 
         if result:
-            #call logger function w result
             table_exists = logger(f"Table {self.table_name} exists in {self.db_name}", f"{TableOperations.check_if_table_exists.__name__}")
             table_exists.new_or_existing_run()
-            return f"Table {self.table_name} exists in {self.db_name}"
+            return True
         else:
-            #call logger function w result
             table_exists = logger(f"Table {self.table_name} does not exist in {self.db_name}", f"{TableOperations.check_if_table_exists.__name__}")
             table_exists.new_or_existing_run()
-            return f"Table {self.table_name} does not exist in {self.db_name}"
+            return False
         
 
     def create_table(self):
@@ -47,15 +45,11 @@ class TableOperations:
         try:
             self.cursor.execute(query)
             self.conn.commit()
-            #call logger function w result
             ct2 = logger(f"{TableOperations.create_table.__name__} method finished, {self.table_name} is hereby created in database:{self.db_name}", f"{TableOperations.create_table.__name__}")
             ct2.new_or_existing_run()
-            #return f"Table {self.db_name}.{self.table_name} is hereby created"
         except Exception as e:
-            #call logger function w exceptiont
             ct2 = logger(f"{TableOperations.create_table.__name__} method finished, {self.table_name} has not been created in database:{self.db_name} due to exception: {e}", f"{TableOperations.create_table.__name__}")
             ct2.new_or_existing_run()
-            #return f"Table is not created {e}"
             
 
     def add_new_column(self):
@@ -137,6 +131,44 @@ class TableOperations:
         ct2 = logger(f"Record {self.record_to_drop} could not be deleted from {self.table_name} due to exception: {e}, database:{self.db_name}", f"{TableOperations.delete_from_table_where.__name__}")
         ct2.new_or_existing_run()
         pass
+
+
+    def select_all_to_df(self):
+        satdf = logger(f"{TableOperations.select_all_to_df.__name__} method started, table to select all from and insert into a pandas dataframe: {self.table_name}, database: {self.db_name}", f"{TableOperations.select_all_to_df}")
+        satdf.new_or_existing_run()
+        query = f'''
+                SELECT *
+                FROM {self.table_name}
+                '''
+        try:
+            df = pd.read_sql_query(query, self.conn)
+            ct2 = logger(f"{TableOperations.select_all_to_df.__name__} method finished, {self.table_name} is hereby created as a dataframe", f"{TableOperations.select_all_to_df.__name__}")
+            ct2.new_or_existing_run()
+            return df
+        except Exception as e:
+            ct2 = logger(f"{TableOperations.select_all_to_df.__name__} method finished, {self.table_name} has not been created as a dataframe due to exception: {e}", f"{TableOperations.select_all_to_df.__name__}")
+            ct2.new_or_existing_run()
+
+
+    def select_cols_to_df(self):
+        sctdf = logger(f"{TableOperations.select_cols_to_df.__name__} method started, table to select all from and insert into a pandas dataframe: {self.table_name}, database: {self.db_name}", f"{TableOperations.select_cols_to_df}")
+        sctdf.new_or_existing_run()
+        cols = selected_columns.get(self.table_name)
+
+        coluns = ', '.join(cols)
+
+        query = f'''
+                SELECT {coluns}
+                FROM {self.table_name}
+                '''
+        try:
+            df = pd.read_sql_query(query, self.conn)
+            ct2 = logger(f"{TableOperations.select_all_to_df.__name__} method finished, {self.table_name} is hereby created as a dataframe", f"{TableOperations.select_cols_to_df.__name__}")
+            ct2.new_or_existing_run()
+            return df
+        except Exception as e:
+            ct2 = logger(f"{TableOperations.select_all_to_df.__name__} method finished, {self.table_name} has not been created as a dataframe due to exception: {e}", f"{TableOperations.select_cols_to_df.__name__}")
+            ct2.new_or_existing_run()        
 
 
     def select_sample_from_table(self):

@@ -108,3 +108,9 @@
 2024-05-07 23:15:09.140263 : function check_if_table_exists, message: Table lobby_type does not exist in dot_dev.db 
 2024-05-07 23:15:09.140263 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: lobby_type, database:dot_dev.db 
 2024-05-07 23:15:09.160265 : function insert_df_into_table, message: Data was inserted into lobby_type, database:dot_dev.db 
+2024-05-08 00:58:44.585022 : function select_all_to_df, message: select_all_to_df method finished, publicmatches has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT ['match_id', 'radiant_win', 'lobby_type', 'game_mode', 'radiant_team', 'dire_team']
+                FROM publicmatches
+                ': no such column: 'match_id', 'radiant_win', 'lobby_type', 'game_mode', 'radiant_team', 'dire_team' 
+2024-05-08 01:07:18.665750 : function <function TableOperations.select_cols_to_df at 0x000001AD385EE0C0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev.db 
+2024-05-08 01:07:18.665750 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
