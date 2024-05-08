@@ -1,7 +1,8 @@
 import sqlite3
 import pandas as pd
 from utils.utils import logger
-from utils.bronze_utils import selected_columns
+from utils.bronze_utils import bronze_selected_columns
+from utils.silver_utils import silver_selected_columns
 
 class TableOperations:
     def __init__(self, db_name, table_name, schema = None, data = None) -> None:
@@ -96,7 +97,7 @@ class TableOperations:
 
 
     def insert_df_into_table(self):
-        ct = logger(f"{TableOperations.insert_df_into_table.__name__} method started, table to delete all from: {self.table_name}, database:{self.db_name}", f"{TableOperations.insert_df_into_table.__name__}")
+        ct = logger(f"{TableOperations.insert_df_into_table.__name__} method started, table to insert into: {self.table_name}, database:{self.db_name}", f"{TableOperations.insert_df_into_table.__name__}")
         ct.new_or_existing_run()
 
         try:
@@ -153,11 +154,15 @@ class TableOperations:
             ct2.new_or_existing_run()
 
 
-    def select_cols_to_df(self):
+    def select_cols_to_df(self, layer):
         sctdf = logger(f"{TableOperations.select_cols_to_df.__name__} method started, table to select all from and insert into a pandas dataframe: {self.table_name}, database: {self.db_name}", f"{TableOperations.select_cols_to_df}")
         sctdf.new_or_existing_run()
 
-        cols = selected_columns.get(self.table_name)
+        if layer == "bronze":
+            cols = bronze_selected_columns.get(self.table_name)
+        elif layer == "silver":
+            cols = silver_selected_columns.get(self.table_name)
+        
         coluns = ', '.join(cols)
 
         query = f'''
@@ -166,11 +171,11 @@ class TableOperations:
                 '''
         try:
             df = pd.read_sql_query(query, self.conn)
-            ct2 = logger(f"{TableOperations.select_all_to_df.__name__} method finished, {self.table_name} is hereby created as a dataframe", f"{TableOperations.select_cols_to_df.__name__}")
+            ct2 = logger(f"{TableOperations.select_cols_to_df.__name__} method finished, {self.table_name} is hereby created as a dataframe", f"{TableOperations.select_cols_to_df.__name__}")
             ct2.new_or_existing_run()
             return df
         except Exception as e:
-            ct2 = logger(f"{TableOperations.select_all_to_df.__name__} method finished, {self.table_name} has not been created as a dataframe due to exception: {e}", f"{TableOperations.select_cols_to_df.__name__}")
+            ct2 = logger(f"{TableOperations.select_cols_to_df.__name__} method finished, {self.table_name} has not been created as a dataframe due to exception: {e}", f"{TableOperations.select_cols_to_df.__name__}")
             ct2.new_or_existing_run()        
 
 

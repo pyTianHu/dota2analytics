@@ -33,7 +33,7 @@ def test_case_d10(db_name, table_name):
 
     print(df)
 
-test_case_d10('dot_dev_silver.db', 'publicmatches')
+#test_case_d10('dot_dev_silver.db', 'publicmatches')
 
 #scols = TableOperations('dot_dev.db','publicmatches')
 #print(scols.select_cols_to_df())
@@ -75,19 +75,19 @@ def test_case_dot5(db_name, table_name):
         print(f"The table '{table_name}' does not exist in the database.")
 
 #test_case_dot5('dot_dev.db','publicmatches')
-#listoftables = ['heroes',
-#    'herostats',
-#    'publicmatches',
-#    'abilities',
-#    'ability_ids',
-#    'game_mode',
-#    'hero_abilities',
-#    'item_ids',
-#    'items',
-#    'patch',
-#    'lobby_type'] 
-#for table in listoftables:
-#    test_case_dot5('dot_dev.db',table)
+listoftables = ['heroes',
+    'herostats',
+    'publicmatches',
+    'abilities',
+    'ability_ids',
+    'game_mode',
+    'hero_abilities',
+    'item_ids',
+    'items',
+    'patch',
+    'lobby_type'] 
+for table in listoftables:
+    test_case_dot5('dot_dev_silver.db',table)
 
 #print(bronze_transformation('dot_dev.db','heroes'))
 

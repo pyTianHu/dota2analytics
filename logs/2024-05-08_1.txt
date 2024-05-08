@@ -87,3 +87,69 @@
 2024-05-08 16:52:13.419541 : function check_if_table_exists, message: Table publicmatches exists in dot_dev_silver.db 
 2024-05-08 16:52:13.419541 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev_silver.db 
 2024-05-08 16:52:13.466451 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev_silver.db 
+2024-05-08 23:18:35.555190 : function drop_table, message: drop_table method started, table to drop: heroes, database:dot_dev.db 
+2024-05-08 23:18:35.555190 : function drop_table, message: Table heroes has not been dropped due to exception: no such table: heroes, database:dot_dev.db 
+2024-05-08 23:18:35.555190 : function drop_table, message: drop_table method started, table to drop: herostats, database:dot_dev.db 
+2024-05-08 23:18:35.555190 : function drop_table, message: Table herostats has not been dropped due to exception: no such table: herostats, database:dot_dev.db 
+2024-05-08 23:18:35.568853 : function drop_table, message: drop_table method started, table to drop: publicmatches, database:dot_dev.db 
+2024-05-08 23:18:35.678751 : function drop_table, message: Table publicmatches is hereby dropped, database:dot_dev.db 
+2024-05-08 23:18:35.678751 : function drop_table, message: drop_table method started, table to drop: abilities, database:dot_dev.db 
+2024-05-08 23:18:35.678751 : function drop_table, message: Table abilities has not been dropped due to exception: no such table: abilities, database:dot_dev.db 
+2024-05-08 23:18:35.678751 : function drop_table, message: drop_table method started, table to drop: ability_ids, database:dot_dev.db 
+2024-05-08 23:18:35.687250 : function drop_table, message: Table ability_ids has not been dropped due to exception: no such table: ability_ids, database:dot_dev.db 
+2024-05-08 23:18:35.687250 : function drop_table, message: drop_table method started, table to drop: game_mode, database:dot_dev.db 
+2024-05-08 23:18:35.687250 : function drop_table, message: Table game_mode has not been dropped due to exception: no such table: game_mode, database:dot_dev.db 
+2024-05-08 23:18:35.694789 : function drop_table, message: drop_table method started, table to drop: hero_abilities, database:dot_dev.db 
+2024-05-08 23:18:35.694789 : function drop_table, message: Table hero_abilities has not been dropped due to exception: no such table: hero_abilities, database:dot_dev.db 
+2024-05-08 23:18:35.694789 : function drop_table, message: drop_table method started, table to drop: item_ids, database:dot_dev.db 
+2024-05-08 23:18:35.694789 : function drop_table, message: Table item_ids has not been dropped due to exception: no such table: item_ids, database:dot_dev.db 
+2024-05-08 23:18:35.694789 : function drop_table, message: drop_table method started, table to drop: items, database:dot_dev.db 
+2024-05-08 23:18:35.702801 : function drop_table, message: Table items has not been dropped due to exception: no such table: items, database:dot_dev.db 
+2024-05-08 23:18:35.702801 : function drop_table, message: drop_table method started, table to drop: patch, database:dot_dev.db 
+2024-05-08 23:18:35.702801 : function drop_table, message: Table patch has not been dropped due to exception: no such table: patch, database:dot_dev.db 
+2024-05-08 23:18:35.708358 : function drop_table, message: drop_table method started, table to drop: lobby_type, database:dot_dev.db 
+2024-05-08 23:18:35.709892 : function drop_table, message: Table lobby_type has not been dropped due to exception: no such table: lobby_type, database:dot_dev.db 
+2024-05-08 23:19:06.364206 : function drop_table, message: drop_table method started, table to drop: heroes, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.376238 : function drop_table, message: Table heroes is hereby dropped, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.383552 : function drop_table, message: drop_table method started, table to drop: herostats, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.391228 : function drop_table, message: Table herostats is hereby dropped, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.401312 : function drop_table, message: drop_table method started, table to drop: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.408232 : function drop_table, message: Table publicmatches is hereby dropped, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.417684 : function drop_table, message: drop_table method started, table to drop: abilities, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.417684 : function drop_table, message: Table abilities is hereby dropped, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.433514 : function drop_table, message: drop_table method started, table to drop: ability_ids, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.439622 : function drop_table, message: Table ability_ids is hereby dropped, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.448126 : function drop_table, message: drop_table method started, table to drop: game_mode, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.456389 : function drop_table, message: Table game_mode is hereby dropped, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.463696 : function drop_table, message: drop_table method started, table to drop: hero_abilities, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.473254 : function drop_table, message: Table hero_abilities is hereby dropped, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.473254 : function drop_table, message: drop_table method started, table to drop: item_ids, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.485516 : function drop_table, message: Table item_ids is hereby dropped, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.491176 : function drop_table, message: drop_table method started, table to drop: items, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.500538 : function drop_table, message: Table items is hereby dropped, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.505765 : function drop_table, message: drop_table method started, table to drop: patch, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.514839 : function drop_table, message: Table patch is hereby dropped, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.519835 : function drop_table, message: drop_table method started, table to drop: lobby_type, database:dot_dev_bronze.db 
+2024-05-08 23:19:06.531248 : function drop_table, message: Table lobby_type is hereby dropped, database:dot_dev_bronze.db 
+2024-05-08 23:19:29.088541 : function drop_table, message: drop_table method started, table to drop: heroes, database:dot_dev_silver.db 
+2024-05-08 23:19:29.088541 : function drop_table, message: Table heroes has not been dropped due to exception: no such table: heroes, database:dot_dev_silver.db 
+2024-05-08 23:19:29.104066 : function drop_table, message: drop_table method started, table to drop: herostats, database:dot_dev_silver.db 
+2024-05-08 23:19:29.104066 : function drop_table, message: Table herostats has not been dropped due to exception: no such table: herostats, database:dot_dev_silver.db 
+2024-05-08 23:19:29.108239 : function drop_table, message: drop_table method started, table to drop: publicmatches, database:dot_dev_silver.db 
+2024-05-08 23:19:29.115529 : function drop_table, message: Table publicmatches is hereby dropped, database:dot_dev_silver.db 
+2024-05-08 23:19:29.123202 : function drop_table, message: drop_table method started, table to drop: abilities, database:dot_dev_silver.db 
+2024-05-08 23:19:29.123202 : function drop_table, message: Table abilities has not been dropped due to exception: no such table: abilities, database:dot_dev_silver.db 
+2024-05-08 23:19:29.123202 : function drop_table, message: drop_table method started, table to drop: ability_ids, database:dot_dev_silver.db 
+2024-05-08 23:19:29.123202 : function drop_table, message: Table ability_ids has not been dropped due to exception: no such table: ability_ids, database:dot_dev_silver.db 
+2024-05-08 23:19:29.131654 : function drop_table, message: drop_table method started, table to drop: game_mode, database:dot_dev_silver.db 
+2024-05-08 23:19:29.133715 : function drop_table, message: Table game_mode has not been dropped due to exception: no such table: game_mode, database:dot_dev_silver.db 
+2024-05-08 23:19:29.136911 : function drop_table, message: drop_table method started, table to drop: hero_abilities, database:dot_dev_silver.db 
+2024-05-08 23:19:29.136911 : function drop_table, message: Table hero_abilities has not been dropped due to exception: no such table: hero_abilities, database:dot_dev_silver.db 
+2024-05-08 23:19:29.139472 : function drop_table, message: drop_table method started, table to drop: item_ids, database:dot_dev_silver.db 
+2024-05-08 23:19:29.142571 : function drop_table, message: Table item_ids has not been dropped due to exception: no such table: item_ids, database:dot_dev_silver.db 
+2024-05-08 23:19:29.142571 : function drop_table, message: drop_table method started, table to drop: items, database:dot_dev_silver.db 
+2024-05-08 23:19:29.142571 : function drop_table, message: Table items has not been dropped due to exception: no such table: items, database:dot_dev_silver.db 
+2024-05-08 23:19:29.147579 : function drop_table, message: drop_table method started, table to drop: patch, database:dot_dev_silver.db 
+2024-05-08 23:19:29.150572 : function drop_table, message: Table patch has not been dropped due to exception: no such table: patch, database:dot_dev_silver.db 
+2024-05-08 23:19:29.152958 : function drop_table, message: drop_table method started, table to drop: lobby_type, database:dot_dev_silver.db 
+2024-05-08 23:19:29.152958 : function drop_table, message: Table lobby_type has not been dropped due to exception: no such table: lobby_type, database:dot_dev_silver.db 

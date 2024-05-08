@@ -1,0 +1,419 @@
+2024-05-08 23:26:42.592907 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-08 23:26:42.594029 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 23:26:42.598674 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 23:26:42.598674 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 23:26:42.598674 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 23:26:42.598674 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:42.598674 : function check_if_table_exists, message: check_if_table_exists method started, table to check: heroes, database:dot_dev.db 
+2024-05-08 23:26:42.609193 : function check_if_table_exists, message: Table heroes does not exist in dot_dev.db 
+2024-05-08 23:26:42.609193 : function create_table, message: create_table method started, table to create: heroes, database:dot_dev.db 
+2024-05-08 23:26:42.613201 : function create_table, message: create_table method finished, heroes is hereby created in database:dot_dev.db 
+2024-05-08 23:26:42.613201 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: heroes, database:dot_dev.db 
+2024-05-08 23:26:42.644552 : function insert_df_into_table, message: Data was inserted into heroes, database:dot_dev.db 
+2024-05-08 23:26:42.660093 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:42.660093 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-08 23:26:42.660093 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 23:26:42.675821 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 23:26:42.675821 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 23:26:42.675821 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 23:26:42.675821 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:42.675821 : function check_if_table_exists, message: check_if_table_exists method started, table to check: herostats, database:dot_dev.db 
+2024-05-08 23:26:42.675821 : function check_if_table_exists, message: Table herostats does not exist in dot_dev.db 
+2024-05-08 23:26:42.675821 : function create_table, message: create_table method started, table to create: herostats, database:dot_dev.db 
+2024-05-08 23:26:42.691339 : function create_table, message: create_table method finished, herostats is hereby created in database:dot_dev.db 
+2024-05-08 23:26:42.691339 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: herostats, database:dot_dev.db 
+2024-05-08 23:26:42.738619 : function insert_df_into_table, message: Data was inserted into herostats, database:dot_dev.db 
+2024-05-08 23:26:42.738619 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:42.738619 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-08 23:26:42.754241 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 23:26:42.754241 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 23:26:42.754241 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 23:26:42.754241 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 23:26:42.754241 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:42.754241 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev.db 
+2024-05-08 23:26:42.769899 : function check_if_table_exists, message: Table publicmatches does not exist in dot_dev.db 
+2024-05-08 23:26:42.769899 : function create_table, message: create_table method started, table to create: publicmatches, database:dot_dev.db 
+2024-05-08 23:26:42.769899 : function create_table, message: create_table method finished, publicmatches is hereby created in database:dot_dev.db 
+2024-05-08 23:26:42.769899 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev.db 
+2024-05-08 23:26:42.809629 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev.db 
+2024-05-08 23:26:42.809629 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:42.809629 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-08 23:26:42.817137 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 23:26:42.864033 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 23:26:42.864033 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 23:26:42.864033 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 23:26:42.864033 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:42.864033 : function check_if_table_exists, message: check_if_table_exists method started, table to check: abilities, database:dot_dev.db 
+2024-05-08 23:26:42.864033 : function check_if_table_exists, message: Table abilities does not exist in dot_dev.db 
+2024-05-08 23:26:42.864033 : function create_table, message: create_table method started, table to create: abilities, database:dot_dev.db 
+2024-05-08 23:26:42.879650 : function create_table, message: create_table method finished, abilities is hereby created in database:dot_dev.db 
+2024-05-08 23:26:42.879650 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: abilities, database:dot_dev.db 
+2024-05-08 23:26:42.942566 : function insert_df_into_table, message: Data was inserted into abilities, database:dot_dev.db 
+2024-05-08 23:26:42.942566 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:42.942566 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-08 23:26:42.942566 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 23:26:42.942566 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 23:26:42.942566 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 23:26:42.958912 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 23:26:42.958912 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:42.958912 : function check_if_table_exists, message: check_if_table_exists method started, table to check: ability_ids, database:dot_dev.db 
+2024-05-08 23:26:42.963331 : function check_if_table_exists, message: Table ability_ids does not exist in dot_dev.db 
+2024-05-08 23:26:42.963773 : function create_table, message: create_table method started, table to create: ability_ids, database:dot_dev.db 
+2024-05-08 23:26:42.974606 : function create_table, message: create_table method finished, ability_ids is hereby created in database:dot_dev.db 
+2024-05-08 23:26:42.974606 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: ability_ids, database:dot_dev.db 
+2024-05-08 23:26:43.014976 : function insert_df_into_table, message: Data was inserted into ability_ids, database:dot_dev.db 
+2024-05-08 23:26:43.014976 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.014976 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-08 23:26:43.014976 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 23:26:43.014976 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 23:26:43.014976 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 23:26:43.014976 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 23:26:43.014976 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.014976 : function check_if_table_exists, message: check_if_table_exists method started, table to check: game_mode, database:dot_dev.db 
+2024-05-08 23:26:43.014976 : function check_if_table_exists, message: Table game_mode does not exist in dot_dev.db 
+2024-05-08 23:26:43.014976 : function create_table, message: create_table method started, table to create: game_mode, database:dot_dev.db 
+2024-05-08 23:26:43.035832 : function create_table, message: create_table method finished, game_mode is hereby created in database:dot_dev.db 
+2024-05-08 23:26:43.035832 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: game_mode, database:dot_dev.db 
+2024-05-08 23:26:43.069707 : function insert_df_into_table, message: Data was inserted into game_mode, database:dot_dev.db 
+2024-05-08 23:26:43.069707 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.069707 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-08 23:26:43.077721 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 23:26:43.079859 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 23:26:43.079859 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 23:26:43.079859 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 23:26:43.079859 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.079859 : function check_if_table_exists, message: check_if_table_exists method started, table to check: hero_abilities, database:dot_dev.db 
+2024-05-08 23:26:43.079859 : function check_if_table_exists, message: Table hero_abilities does not exist in dot_dev.db 
+2024-05-08 23:26:43.079859 : function create_table, message: create_table method started, table to create: hero_abilities, database:dot_dev.db 
+2024-05-08 23:26:43.101418 : function create_table, message: create_table method finished, hero_abilities is hereby created in database:dot_dev.db 
+2024-05-08 23:26:43.101418 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: hero_abilities, database:dot_dev.db 
+2024-05-08 23:26:43.134423 : function insert_df_into_table, message: Data was inserted into hero_abilities, database:dot_dev.db 
+2024-05-08 23:26:43.134423 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.134423 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-08 23:26:43.134423 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 23:26:43.134423 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 23:26:43.134423 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 23:26:43.150054 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 23:26:43.150054 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.150054 : function check_if_table_exists, message: check_if_table_exists method started, table to check: items_ids, database:dot_dev.db 
+2024-05-08 23:26:43.150054 : function check_if_table_exists, message: Table items_ids exists in dot_dev.db 
+2024-05-08 23:26:43.150054 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: items_ids, database:dot_dev.db 
+2024-05-08 23:26:43.182701 : function insert_df_into_table, message: Data was inserted into items_ids, database:dot_dev.db 
+2024-05-08 23:26:43.189740 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.189740 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-08 23:26:43.189740 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 23:26:43.214229 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 23:26:43.214229 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 23:26:43.214229 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 23:26:43.214229 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.222259 : function check_if_table_exists, message: check_if_table_exists method started, table to check: items, database:dot_dev.db 
+2024-05-08 23:26:43.222259 : function check_if_table_exists, message: Table items does not exist in dot_dev.db 
+2024-05-08 23:26:43.222259 : function create_table, message: create_table method started, table to create: items, database:dot_dev.db 
+2024-05-08 23:26:43.230459 : function create_table, message: create_table method finished, items is hereby created in database:dot_dev.db 
+2024-05-08 23:26:43.238473 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: items, database:dot_dev.db 
+2024-05-08 23:26:43.286640 : function insert_df_into_table, message: Data was inserted into items, database:dot_dev.db 
+2024-05-08 23:26:43.286640 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.286640 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-08 23:26:43.294671 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 23:26:43.296329 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 23:26:43.296329 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 23:26:43.296329 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 23:26:43.296329 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.302895 : function check_if_table_exists, message: check_if_table_exists method started, table to check: patch, database:dot_dev.db 
+2024-05-08 23:26:43.302895 : function check_if_table_exists, message: Table patch does not exist in dot_dev.db 
+2024-05-08 23:26:43.302895 : function create_table, message: create_table method started, table to create: patch, database:dot_dev.db 
+2024-05-08 23:26:43.312527 : function create_table, message: create_table method finished, patch is hereby created in database:dot_dev.db 
+2024-05-08 23:26:43.312527 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: patch, database:dot_dev.db 
+2024-05-08 23:26:43.351570 : function insert_df_into_table, message: Data was inserted into patch, database:dot_dev.db 
+2024-05-08 23:26:43.351570 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.351570 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-08 23:26:43.351570 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 23:26:43.359587 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 23:26:43.362590 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 23:26:43.362590 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 23:26:43.362590 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.362590 : function check_if_table_exists, message: check_if_table_exists method started, table to check: lobby_type, database:dot_dev.db 
+2024-05-08 23:26:43.362590 : function check_if_table_exists, message: Table lobby_type does not exist in dot_dev.db 
+2024-05-08 23:26:43.362590 : function create_table, message: create_table method started, table to create: lobby_type, database:dot_dev.db 
+2024-05-08 23:26:43.379744 : function create_table, message: create_table method finished, lobby_type is hereby created in database:dot_dev.db 
+2024-05-08 23:26:43.383756 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: lobby_type, database:dot_dev.db 
+2024-05-08 23:26:43.412678 : function insert_df_into_table, message: Data was inserted into lobby_type, database:dot_dev.db 
+2024-05-08 23:26:43.412678 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.423896 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:43.423896 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev.db 
+2024-05-08 23:26:43.429759 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-08 23:26:43.432303 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.432303 : function check_if_table_exists, message: check_if_table_exists method started, table to check: heroes, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.432303 : function check_if_table_exists, message: Table heroes does not exist in dot_dev_bronze.db 
+2024-05-08 23:26:43.432303 : function create_table, message: create_table method started, table to create: heroes, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.448546 : function create_table, message: create_table method finished, heroes is hereby created in database:dot_dev_bronze.db 
+2024-05-08 23:26:43.448546 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: heroes, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.488044 : function insert_df_into_table, message: Data was inserted into heroes, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.488044 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.488044 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:43.488044 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:43.496722 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: herostats, database: dot_dev.db 
+2024-05-08 23:26:43.496722 : function select_cols_to_df, message: select_all_to_df method finished, herostats has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT 
+                FROM herostats
+                ': near "FROM": syntax error 
+2024-05-08 23:26:43.496722 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.496722 : function check_if_table_exists, message: check_if_table_exists method started, table to check: herostats, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.504287 : function check_if_table_exists, message: Table herostats does not exist in dot_dev_bronze.db 
+2024-05-08 23:26:43.504287 : function create_table, message: create_table method started, table to create: herostats, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.512748 : function create_table, message: create_table method finished, herostats is hereby created in database:dot_dev_bronze.db 
+2024-05-08 23:26:43.512748 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: herostats, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.512748 : function insert_df_into_table, message: Rows could not be inserted into herostats due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 23:26:43.512748 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.512748 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:43.512748 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:43.512748 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev.db 
+2024-05-08 23:26:43.528393 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-08 23:26:43.529769 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.529769 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.529769 : function check_if_table_exists, message: Table publicmatches does not exist in dot_dev_bronze.db 
+2024-05-08 23:26:43.529769 : function create_table, message: create_table method started, table to create: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.546591 : function create_table, message: create_table method finished, publicmatches is hereby created in database:dot_dev_bronze.db 
+2024-05-08 23:26:43.546591 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.585462 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.585462 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.585462 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:43.585462 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:43.585462 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: abilities, database: dot_dev.db 
+2024-05-08 23:26:43.585462 : function select_cols_to_df, message: select_all_to_df method finished, abilities has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT 
+                FROM abilities
+                ': near "FROM": syntax error 
+2024-05-08 23:26:43.593495 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.593495 : function check_if_table_exists, message: check_if_table_exists method started, table to check: abilities, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.596350 : function check_if_table_exists, message: Table abilities does not exist in dot_dev_bronze.db 
+2024-05-08 23:26:43.596350 : function create_table, message: create_table method started, table to create: abilities, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.598946 : function create_table, message: create_table method finished, abilities is hereby created in database:dot_dev_bronze.db 
+2024-05-08 23:26:43.610473 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: abilities, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.610473 : function insert_df_into_table, message: Rows could not be inserted into abilities due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 23:26:43.613052 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.613903 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:43.613903 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:43.613903 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: ability_ids, database: dot_dev.db 
+2024-05-08 23:26:43.613903 : function select_cols_to_df, message: select_all_to_df method finished, ability_ids has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT 
+                FROM ability_ids
+                ': near "FROM": syntax error 
+2024-05-08 23:26:43.613903 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.613903 : function check_if_table_exists, message: check_if_table_exists method started, table to check: ability_ids, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.613903 : function check_if_table_exists, message: Table ability_ids does not exist in dot_dev_bronze.db 
+2024-05-08 23:26:43.625420 : function create_table, message: create_table method started, table to create: ability_ids, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.633659 : function create_table, message: create_table method finished, ability_ids is hereby created in database:dot_dev_bronze.db 
+2024-05-08 23:26:43.633659 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: ability_ids, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.641693 : function insert_df_into_table, message: Rows could not be inserted into ability_ids due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 23:26:43.641693 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.641693 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:43.646466 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:43.646875 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev.db 
+2024-05-08 23:26:43.649888 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-08 23:26:43.649888 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.649888 : function check_if_table_exists, message: check_if_table_exists method started, table to check: game_mode, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.657909 : function check_if_table_exists, message: Table game_mode does not exist in dot_dev_bronze.db 
+2024-05-08 23:26:43.657909 : function create_table, message: create_table method started, table to create: game_mode, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.662936 : function create_table, message: create_table method finished, game_mode is hereby created in database:dot_dev_bronze.db 
+2024-05-08 23:26:43.673949 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: game_mode, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.713027 : function insert_df_into_table, message: Data was inserted into game_mode, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.713027 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.713027 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:43.713027 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:43.713027 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: hero_abilities, database: dot_dev.db 
+2024-05-08 23:26:43.722046 : function select_cols_to_df, message: select_all_to_df method finished, hero_abilities has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT 
+                FROM hero_abilities
+                ': near "FROM": syntax error 
+2024-05-08 23:26:43.722046 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.722046 : function check_if_table_exists, message: check_if_table_exists method started, table to check: hero_abilities, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.722046 : function check_if_table_exists, message: Table hero_abilities does not exist in dot_dev_bronze.db 
+2024-05-08 23:26:43.730055 : function create_table, message: create_table method started, table to create: hero_abilities, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.738112 : function create_table, message: create_table method finished, hero_abilities is hereby created in database:dot_dev_bronze.db 
+2024-05-08 23:26:43.738112 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: hero_abilities, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.746921 : function insert_df_into_table, message: Rows could not be inserted into hero_abilities due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 23:26:43.746921 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.746921 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:43.746921 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:43.746921 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: item_ids, database: dot_dev.db 
+2024-05-08 23:26:43.754432 : function select_cols_to_df, message: select_all_to_df method finished, item_ids has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT 
+                FROM item_ids
+                ': near "FROM": syntax error 
+2024-05-08 23:26:43.754432 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.754432 : function check_if_table_exists, message: check_if_table_exists method started, table to check: item_ids, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.754432 : function check_if_table_exists, message: Table item_ids does not exist in dot_dev_bronze.db 
+2024-05-08 23:26:43.754432 : function create_table, message: create_table method started, table to create: item_ids, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.763036 : function create_table, message: create_table method finished, item_ids is hereby created in database:dot_dev_bronze.db 
+2024-05-08 23:26:43.763036 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: item_ids, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.763036 : function insert_df_into_table, message: Rows could not be inserted into item_ids due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 23:26:43.763036 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.779854 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:43.780346 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:43.780346 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: items, database: dot_dev.db 
+2024-05-08 23:26:43.780346 : function select_cols_to_df, message: select_all_to_df method finished, items has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT 
+                FROM items
+                ': near "FROM": syntax error 
+2024-05-08 23:26:43.780346 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.786907 : function check_if_table_exists, message: check_if_table_exists method started, table to check: items, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.786907 : function check_if_table_exists, message: Table items does not exist in dot_dev_bronze.db 
+2024-05-08 23:26:43.786907 : function create_table, message: create_table method started, table to create: items, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.803135 : function create_table, message: create_table method finished, items is hereby created in database:dot_dev_bronze.db 
+2024-05-08 23:26:43.803135 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: items, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.803135 : function insert_df_into_table, message: Rows could not be inserted into items due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 23:26:43.803135 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.810650 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:43.810650 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:43.813107 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev.db 
+2024-05-08 23:26:43.813107 : function select_cols_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-08 23:26:43.813107 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.826661 : function check_if_table_exists, message: check_if_table_exists method started, table to check: patch, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.829877 : function check_if_table_exists, message: Table patch does not exist in dot_dev_bronze.db 
+2024-05-08 23:26:43.830197 : function create_table, message: create_table method started, table to create: patch, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.842740 : function create_table, message: create_table method finished, patch is hereby created in database:dot_dev_bronze.db 
+2024-05-08 23:26:43.842740 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: patch, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.883241 : function insert_df_into_table, message: Data was inserted into patch, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.883241 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.883241 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:43.883241 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:43.883241 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev.db 
+2024-05-08 23:26:43.891257 : function select_cols_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-08 23:26:43.891257 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.897267 : function check_if_table_exists, message: check_if_table_exists method started, table to check: lobby_type, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.899289 : function check_if_table_exists, message: Table lobby_type does not exist in dot_dev_bronze.db 
+2024-05-08 23:26:43.899289 : function create_table, message: create_table method started, table to create: lobby_type, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.913218 : function create_table, message: create_table method finished, lobby_type is hereby created in database:dot_dev_bronze.db 
+2024-05-08 23:26:43.913218 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: lobby_type, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.947106 : function insert_df_into_table, message: Data was inserted into lobby_type, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.947106 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:43.947106 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:43.955142 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:43.955142 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev.db 
+2024-05-08 23:26:43.955142 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-08 23:26:43.963124 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:43.963558 : function check_if_table_exists, message: check_if_table_exists method started, table to check: heroes, database:dot_dev_bronze.db 
+2024-05-08 23:26:43.963558 : function check_if_table_exists, message: Table heroes exists in dot_dev_bronze.db 
+2024-05-08 23:26:43.963558 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: heroes, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.003315 : function insert_df_into_table, message: Data was inserted into heroes, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.003315 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:44.003315 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:44.010831 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:44.013301 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: herostats, database: dot_dev.db 
+2024-05-08 23:26:44.013301 : function select_cols_to_df, message: select_all_to_df method finished, herostats has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT 
+                FROM herostats
+                ': near "FROM": syntax error 
+2024-05-08 23:26:44.013301 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:44.013301 : function check_if_table_exists, message: check_if_table_exists method started, table to check: herostats, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.013301 : function check_if_table_exists, message: Table herostats exists in dot_dev_bronze.db 
+2024-05-08 23:26:44.013301 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: herostats, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.013301 : function insert_df_into_table, message: Rows could not be inserted into herostats due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 23:26:44.013301 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:44.013301 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:44.026816 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:44.026816 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev.db 
+2024-05-08 23:26:44.030114 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-08 23:26:44.035138 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:44.035138 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.038340 : function check_if_table_exists, message: Table publicmatches exists in dot_dev_bronze.db 
+2024-05-08 23:26:44.038340 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.080428 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.080428 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:44.080428 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:44.080428 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:44.086942 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: abilities, database: dot_dev.db 
+2024-05-08 23:26:44.086942 : function select_cols_to_df, message: select_all_to_df method finished, abilities has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT 
+                FROM abilities
+                ': near "FROM": syntax error 
+2024-05-08 23:26:44.086942 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:44.086942 : function check_if_table_exists, message: check_if_table_exists method started, table to check: abilities, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.086942 : function check_if_table_exists, message: Table abilities exists in dot_dev_bronze.db 
+2024-05-08 23:26:44.094959 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: abilities, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.096875 : function insert_df_into_table, message: Rows could not be inserted into abilities due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 23:26:44.096875 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:44.096875 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:44.096875 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:44.096875 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: ability_ids, database: dot_dev.db 
+2024-05-08 23:26:44.103393 : function select_cols_to_df, message: select_all_to_df method finished, ability_ids has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT 
+                FROM ability_ids
+                ': near "FROM": syntax error 
+2024-05-08 23:26:44.104024 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:44.104024 : function check_if_table_exists, message: check_if_table_exists method started, table to check: ability_ids, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.104024 : function check_if_table_exists, message: Table ability_ids exists in dot_dev_bronze.db 
+2024-05-08 23:26:44.104024 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: ability_ids, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.104024 : function insert_df_into_table, message: Rows could not be inserted into ability_ids due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 23:26:44.111039 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:44.111039 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:44.113506 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:44.114500 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev.db 
+2024-05-08 23:26:44.114500 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-08 23:26:44.114500 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:44.114500 : function check_if_table_exists, message: check_if_table_exists method started, table to check: game_mode, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.114500 : function check_if_table_exists, message: Table game_mode exists in dot_dev_bronze.db 
+2024-05-08 23:26:44.114500 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: game_mode, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.161479 : function insert_df_into_table, message: Data was inserted into game_mode, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.163578 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:44.163578 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:44.163578 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:44.170132 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: hero_abilities, database: dot_dev.db 
+2024-05-08 23:26:44.170132 : function select_cols_to_df, message: select_all_to_df method finished, hero_abilities has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT 
+                FROM hero_abilities
+                ': near "FROM": syntax error 
+2024-05-08 23:26:44.170132 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:44.170132 : function check_if_table_exists, message: check_if_table_exists method started, table to check: hero_abilities, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.170132 : function check_if_table_exists, message: Table hero_abilities exists in dot_dev_bronze.db 
+2024-05-08 23:26:44.180352 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: hero_abilities, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.180832 : function insert_df_into_table, message: Rows could not be inserted into hero_abilities due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 23:26:44.180832 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:44.180832 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:44.180832 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:44.180832 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: item_ids, database: dot_dev.db 
+2024-05-08 23:26:44.188840 : function select_cols_to_df, message: select_all_to_df method finished, item_ids has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT 
+                FROM item_ids
+                ': near "FROM": syntax error 
+2024-05-08 23:26:44.188840 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:44.188840 : function check_if_table_exists, message: check_if_table_exists method started, table to check: item_ids, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.188840 : function check_if_table_exists, message: Table item_ids exists in dot_dev_bronze.db 
+2024-05-08 23:26:44.188840 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: item_ids, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.188840 : function insert_df_into_table, message: Rows could not be inserted into item_ids due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 23:26:44.197525 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:44.197525 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:44.197525 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:44.197525 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: items, database: dot_dev.db 
+2024-05-08 23:26:44.197525 : function select_cols_to_df, message: select_all_to_df method finished, items has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT 
+                FROM items
+                ': near "FROM": syntax error 
+2024-05-08 23:26:44.197525 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:44.205538 : function check_if_table_exists, message: check_if_table_exists method started, table to check: items, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.205538 : function check_if_table_exists, message: Table items exists in dot_dev_bronze.db 
+2024-05-08 23:26:44.205538 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: items, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.205538 : function insert_df_into_table, message: Rows could not be inserted into items due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 23:26:44.211055 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:44.211055 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:44.213559 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:44.213559 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev.db 
+2024-05-08 23:26:44.213559 : function select_cols_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-08 23:26:44.213559 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:44.221572 : function check_if_table_exists, message: check_if_table_exists method started, table to check: patch, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.221572 : function check_if_table_exists, message: Table patch exists in dot_dev_bronze.db 
+2024-05-08 23:26:44.221572 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: patch, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.263667 : function insert_df_into_table, message: Data was inserted into patch, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.263667 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:44.263667 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 23:26:44.263667 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 23:26:44.270328 : function <function TableOperations.select_cols_to_df at 0x000001791F902CA0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev.db 
+2024-05-08 23:26:44.270328 : function select_cols_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-08 23:26:44.270328 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function started 
+2024-05-08 23:26:44.278342 : function check_if_table_exists, message: check_if_table_exists method started, table to check: lobby_type, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.280364 : function check_if_table_exists, message: Table lobby_type exists in dot_dev_bronze.db 
+2024-05-08 23:26:44.280364 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: lobby_type, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.314228 : function insert_df_into_table, message: Data was inserted into lobby_type, database:dot_dev_bronze.db 
+2024-05-08 23:26:44.321243 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
+2024-05-08 23:26:44.321243 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 

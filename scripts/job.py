@@ -65,7 +65,7 @@ def bronze_transformation(raw_db_name, table_name, bronze_db_name):
 
     #get source data
     table = TableOperations(raw_db_name,table_name)
-    data = table.select_cols_to_df()
+    data = table.select_cols_to_df('bronze')
 
     res = generic_table_creation_mechanism(bronze_db_name,table_name,data)
 

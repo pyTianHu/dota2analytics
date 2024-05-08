@@ -1,4 +1,4 @@
-from scripts.job import table_create_and_ingest, bronze_transformation
+from scripts.job import table_create_and_ingest, bronze_transformation, bronze_to_silver_transformation
 from utils.ingestion_utils import table_function_mapping
 from utils.bronze_utils import bronze_selected_columns
 from utils.silver_utils import silver_selected_columns
@@ -27,12 +27,15 @@ def main():
         #if len(cols) == 0:
         #    pass
         #else:
-            bronze_transformation(RAW_DB_DEV, table_name, BRONZE_DB_DEV)
+        bronze_transformation(RAW_DB_DEV, table_name, BRONZE_DB_DEV)
     
     # process data from bronze to silver once previous iteration finished
     #bronze_to_silver_transformation
     for table_name in silver_selected_columns:
-        bronze_transformation(RAW_DB_DEV, table_name, BRONZE_DB_DEV)
+        bronze_to_silver_transformation(BRONZE_DB_DEV, table_name, SILVER_DB_DEV)
+
+    # NEXT STEP => DELETE ALL TABLES FROM ALL DEV DATABASES AND RUN MAIN.PY TO SEE THE WHOLE PROCESS WITH A BRAND NEW LOG FILE. 
+    # THEN DO THE RENAME JOB OG LOGGER FUNCTION
 
 if __name__ == "__main__":
     main()
