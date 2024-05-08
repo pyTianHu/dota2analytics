@@ -1,5 +1,6 @@
 from scripts.job import table_create_and_ingest, bronze_transformation
-from utils.utils import table_function_mapping, selected_columns
+from utils.ingestion_utils import table_function_mapping
+from utils.bronze_utils import selected_columns
 
 
 def main():

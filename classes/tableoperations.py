@@ -1,6 +1,7 @@
 import sqlite3
 import pandas as pd
-from utils.utils import logger, selected_columns
+from utils.utils import logger
+from utils.bronze_utils import selected_columns
 
 class TableOperations:
     def __init__(self, db_name, table_name, schema = None, data = None) -> None:
@@ -155,7 +156,7 @@ class TableOperations:
     def select_cols_to_df(self):
         sctdf = logger(f"{TableOperations.select_cols_to_df.__name__} method started, table to select all from and insert into a pandas dataframe: {self.table_name}, database: {self.db_name}", f"{TableOperations.select_cols_to_df}")
         sctdf.new_or_existing_run()
-        
+
         cols = selected_columns.get(self.table_name)
         coluns = ', '.join(cols)
 

@@ -16,7 +16,10 @@ from classes.tableoperations import TableOperations
 from scripts.data_ingestion import *
 from scripts.job import bronze_transformation
 
-from utils.utils import open_schemas, table_function_mapping, logger, selected_columns
+from utils.utils import open_schemas, logger
+from utils.ingestion_utils import table_function_mapping
+from utils.bronze_utils import selected_columns
+
 
 def test_case_d10(db_name, table_name):
     conn = sqlite3.connect(db_name)

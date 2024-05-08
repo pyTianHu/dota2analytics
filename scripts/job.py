@@ -5,8 +5,8 @@ import warnings
 warnings.filterwarnings("ignore")
 
 from classes.tableoperations import TableOperations
-import sqlite3
-from utils.utils import open_schemas, convert_list_to_string_df, prepare_schema_for_df, table_function_mapping, logger, selected_columns
+from utils.utils import convert_list_to_string_df, prepare_schema_for_df, logger
+from utils.ingestion_utils import table_function_mapping
 
    
 def table_create_and_ingest(db_name, table_name):
