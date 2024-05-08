@@ -125,37 +125,3 @@ class logger():
         # delete any files with "ongoing" string in its name
         return "rename_log_file methodrenaming log file in progress"
     
-
-
-        
-
-
-table_function_mapping = {
-        'heroes': heroes_ingestion(),
-        'herostats': herostats_ingestion(),
-        'publicmatches': publicmatches_ingestion(),
-        'abilities': abilities_ingestion(),
-        'ability_ids': ability_ids_ingestion(),
-        'game_mode': game_mode_ingestion(),
-        'hero_abilities': hero_abilities_ingestion(),
-        'items_ids': items_ids_ingestion(),
-        'items': items_ingestion(),
-        'patch': patch_ingestion(),
-        'lobby_type': lobby_type_ingestion()
-    }
-    
-
-
-selected_columns = {
-    'heroes': ["id", "localized_name"],
-    'herostats': [],
-    'publicmatches': ["match_id", "start_time", "radiant_win", "lobby_type", "game_mode", "radiant_team", "dire_team"],
-    'abilities': [],
-    'ability_ids': [],
-    'game_mode': ["id", "name"],
-    'hero_abilities': [],
-    'item_ids': [],
-    'items': [],
-    'patch': ["name", "date", "id"],
-    'lobby_type': ["id", "name"]
-}

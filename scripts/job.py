@@ -5,6 +5,7 @@ import warnings
 warnings.filterwarnings("ignore")
 
 from classes.tableoperations import TableOperations
+from classes.dataframeoperations import DataFrameOperations
 from utils.utils import convert_list_to_string_df, prepare_schema_for_df, logger
 from utils.ingestion_utils import table_function_mapping
 
@@ -77,16 +78,21 @@ def bronze_transformation(raw_db_name, table_name):
     bt2 = logger(f"{bronze_transformation.__name__} function finished: result of insert_df_into_table function => {res}", f"{bronze_transformation.__name__}")
     bt2.new_or_existing_run()
 
-
     return res
-
 
 
 
 def bronze_to_silver_transformation(db_name, table_name):
     # row filters, generic transformations (upper, lower, anything general)
 
-    pass
+    # initialize dataframe
+    t = DataFrameOperations(db_name, table_name)
+    df = t.return_df()
+
+    # filters
+     
+
+    return df
 
 
 def silver_to_gold_transformation(db_name, table_name):
