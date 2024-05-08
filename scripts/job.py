@@ -87,10 +87,9 @@ def bronze_to_silver_transformation(db_name, table_name):
 
     # initialize dataframe
     t = DataFrameOperations(db_name, table_name)
-    df = t.return_df()
 
     # filters
-     
+    df = t.filter_rows()
 
     return df
 

@@ -24,7 +24,7 @@ rows_isin = {
     },
     'patch': {
         'id':{
-            'drop':(range(51,54))
+            'drop':(range(0,54))
         }
     },
     'lobby_type': {

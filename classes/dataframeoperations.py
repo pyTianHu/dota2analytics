@@ -25,15 +25,18 @@ class DataFrameOperations():
     def filter_rows(self):
         filter_criteria = rows_isin[self.table_name]
 
-        for field_name, criteria in filter_criteria.items():
-            for action, values in criteria.items():
-                if action == "drop":
-                    self.df = self.df[~self.df[field_name].isin(values)]
-                    return self.df
-                elif action == "select":
-                    self.df = self.df[self.df[field_name].isin(values)]
-                    return self.df
-                else:
-                    return(f"This action is not known {action}")
+        if self.table_name not in rows_isin:
+            pass
+        else:
+            for field_name, criteria in filter_criteria.items():
+                for action, values in criteria.items():
+                    if action == "drop":
+                        self.df = self.df[~self.df[field_name].isin(values)]
+                    elif action == "select":
+                        self.df = self.df[self.df[field_name].isin(values)]
+                    else:
+                        return(f"This action is not known {action}")
+        
+        return self.df
 
 

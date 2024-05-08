@@ -20,3 +20,13 @@
 2024-05-08 13:36:00.849931 : function drop_table, message: Table patch is hereby dropped, database:dot_dev.db 
 2024-05-08 13:36:00.852981 : function drop_table, message: drop_table method started, table to drop: lobby_type, database:dot_dev.db 
 2024-05-08 13:36:00.861966 : function drop_table, message: Table lobby_type is hereby dropped, database:dot_dev.db 
+2024-05-08 15:19:53.360394 : function <function TableOperations.select_all_to_df at 0x000001FF22252B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_bronze.db 
+2024-05-08 15:19:53.360394 : function select_all_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-08 15:20:12.874746 : function <function TableOperations.select_all_to_df at 0x0000020AA3EC2B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_bronze.db 
+2024-05-08 15:20:12.874746 : function select_all_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-08 15:20:34.858345 : function <function TableOperations.select_all_to_df at 0x0000021367FC2B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_bronze.db 
+2024-05-08 15:20:34.858345 : function select_all_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-08 15:23:10.021149 : function <function TableOperations.select_all_to_df at 0x000001FEB8D52B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev_bronze.db 
+2024-05-08 15:23:10.021149 : function select_all_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-08 15:23:43.213513 : function <function TableOperations.select_all_to_df at 0x0000018369492B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_bronze.db 
+2024-05-08 15:23:43.213513 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
