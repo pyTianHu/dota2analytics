@@ -2,6 +2,7 @@ from scripts.job import table_create_and_ingest, bronze_transformation, bronze_t
 from utils.ingestion_utils import table_function_mapping
 from utils.bronze_utils import bronze_selected_columns
 from utils.silver_utils import silver_selected_columns
+from utils.utils import logger
 
 
 def main():
@@ -34,8 +35,9 @@ def main():
     for table_name in silver_selected_columns:
         bronze_to_silver_transformation(BRONZE_DB_DEV, table_name, SILVER_DB_DEV)
 
-    # NEXT STEP => DELETE ALL TABLES FROM ALL DEV DATABASES AND RUN MAIN.PY TO SEE THE WHOLE PROCESS WITH A BRAND NEW LOG FILE. 
-    # THEN DO THE RENAME JOB OG LOGGER FUNCTION
+    # at the very end of the process call rename log function to the new execution will be added into a new log file.
+    l = logger("Process has been finished, renaming log file now", "rename_log_file")
+    l.rename_log_file()
 
 if __name__ == "__main__":
     main()
