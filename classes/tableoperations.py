@@ -155,8 +155,8 @@ class TableOperations:
     def select_cols_to_df(self):
         sctdf = logger(f"{TableOperations.select_cols_to_df.__name__} method started, table to select all from and insert into a pandas dataframe: {self.table_name}, database: {self.db_name}", f"{TableOperations.select_cols_to_df}")
         sctdf.new_or_existing_run()
+        
         cols = selected_columns.get(self.table_name)
-
         coluns = ', '.join(cols)
 
         query = f'''

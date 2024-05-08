@@ -7,15 +7,14 @@ def main():
     environment = "dot_dev.db"
     
     for table in table_function_mapping:
-        print(table)
         table_create_and_ingest(environment,table)
     
-    for table in selected_columns:
-        t = selected_columns.get(table)
-        if len(t) == 0:
+    for table_name in selected_columns:
+        cols = selected_columns.get(table)
+        if len(cols) == 0:
             pass
         else:
-            bronze_transformation('dot_dev.db', t)
+            bronze_transformation('dot_dev.db', table_name)
 
 
 if __name__ == "__main__":

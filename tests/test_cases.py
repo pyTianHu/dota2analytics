@@ -70,7 +70,19 @@ def test_case_dot5(db_name, table_name):
     else:
         print(f"The table '{table_name}' does not exist in the database.")
 
-#test_case_dot5('dot_dev_bronze.db','game_mode')
+listoftables = ['heroes',
+    'herostats',
+    'publicmatches',
+    'abilities',
+    'ability_ids',
+    'game_mode',
+    'hero_abilities',
+    'item_ids',
+    'items',
+    'patch',
+    'lobby_type'] 
+for table in listoftables:
+    test_case_dot5('dot_dev.db',table)
 
 #print(bronze_transformation('dot_dev.db','heroes'))
 
