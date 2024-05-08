@@ -38,5 +38,8 @@ class DataFrameOperations():
                         return(f"This action is not known {action}")
         
         return self.df
+    
+    def rename_column():
+        pass
 
 
