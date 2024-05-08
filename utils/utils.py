@@ -17,12 +17,14 @@ def convert_list_to_string_df(df):
     #call logger function, source: function name
     list_to_str = logger(f"{convert_list_to_string_df.__name__} function started", f"{convert_list_to_string_df.__name__}")
     list_to_str.new_or_existing_run()
+
     for col in df.columns:
         if df[col].apply(lambda x: isinstance(x, list)).any():
             df[col] = df[col].astype(str)
 
     list_to_str = logger(f"{convert_list_to_string_df.__name__} function finished", f"{convert_list_to_string_df.__name__}")
     list_to_str.new_or_existing_run()
+    
     return df
 
 

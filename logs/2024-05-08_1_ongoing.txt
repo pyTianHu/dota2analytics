@@ -30,3 +30,60 @@
 2024-05-08 15:23:10.021149 : function select_all_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
 2024-05-08 15:23:43.213513 : function <function TableOperations.select_all_to_df at 0x0000018369492B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_bronze.db 
 2024-05-08 15:23:43.213513 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-08 16:22:37.686502 : function <function TableOperations.select_all_to_df at 0x00000164B75B2B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_bronze.db 
+2024-05-08 16:22:37.686502 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-08 16:23:58.282827 : function <function TableOperations.select_all_to_df at 0x000002B77A1E2B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_bronze.db 
+2024-05-08 16:23:58.282827 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-08 16:25:16.602479 : function <function TableOperations.select_all_to_df at 0x00000162199F2B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_bronze.db 
+2024-05-08 16:25:16.602479 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-08 16:25:16.602479 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev_silver.db 
+2024-05-08 16:25:16.602479 : function check_if_table_exists, message: Table publicmatches does not exist in dot_dev_silver.db 
+2024-05-08 16:25:16.602479 : function create_table, message: create_table method started, table to create: publicmatches, database:dot_dev_silver.db 
+2024-05-08 16:25:16.618128 : function create_table, message: create_table method finished, publicmatches is hereby created in database:dot_dev_silver.db 
+2024-05-08 16:25:16.618128 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev_silver.db 
+2024-05-08 16:25:16.664992 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev_silver.db 
+2024-05-08 16:37:45.705128 : function <function TableOperations.select_cols_to_df at 0x0000012187A32C00>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev.db 
+2024-05-08 16:37:45.705128 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT match_id, start_time, radiant_win, lobby_type, game_mode, radiant_team, dire_team
+                FROM publicmatches
+                ': no such table: publicmatches 
+2024-05-08 16:37:45.705128 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 16:37:45.705128 : function check_if_table_exists, message: Table publicmatches exists in dot_dev_bronze.db 
+2024-05-08 16:37:45.705128 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 16:37:45.705128 : function insert_df_into_table, message: Rows could not be inserted into publicmatches due to exception: 'NoneType' object has no attribute 'to_sql', database:dot_dev_bronze.db 
+2024-05-08 16:49:04.962315 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 16:49:04.962315 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 16:49:04.962315 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 16:49:04.962315 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 16:49:04.977971 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev.db 
+2024-05-08 16:49:04.977971 : function check_if_table_exists, message: Table publicmatches does not exist in dot_dev.db 
+2024-05-08 16:49:04.977971 : function create_table, message: create_table method started, table to create: publicmatches, database:dot_dev.db 
+2024-05-08 16:49:04.990106 : function create_table, message: create_table method finished, publicmatches is hereby created in database:dot_dev.db 
+2024-05-08 16:49:04.990106 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev.db 
+2024-05-08 16:49:05.024872 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev.db 
+2024-05-08 16:50:03.439012 : function drop_table, message: drop_table method started, table to drop: publicmatches, database:dot_dev.db 
+2024-05-08 16:50:03.454444 : function drop_table, message: Table publicmatches is hereby dropped, database:dot_dev.db 
+2024-05-08 16:50:18.338715 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-08 16:50:18.338715 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-08 16:50:18.347834 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-08 16:50:18.347834 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-08 16:50:18.347834 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev.db 
+2024-05-08 16:50:18.347834 : function check_if_table_exists, message: Table publicmatches does not exist in dot_dev.db 
+2024-05-08 16:50:18.347834 : function create_table, message: create_table method started, table to create: publicmatches, database:dot_dev.db 
+2024-05-08 16:50:18.354840 : function create_table, message: create_table method finished, publicmatches is hereby created in database:dot_dev.db 
+2024-05-08 16:50:18.354840 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev.db 
+2024-05-08 16:50:18.403283 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev.db 
+2024-05-08 16:50:47.003506 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-08 16:50:47.003506 : function <function TableOperations.select_cols_to_df at 0x0000028628282C00>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev.db 
+2024-05-08 16:50:47.003506 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-08 16:50:47.003506 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 16:50:47.003506 : function check_if_table_exists, message: Table publicmatches exists in dot_dev_bronze.db 
+2024-05-08 16:50:47.003506 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev_bronze.db 
+2024-05-08 16:50:47.050288 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev_bronze.db 
+2024-05-08 16:50:47.050288 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-08 16:52:13.419541 : function <function TableOperations.select_all_to_df at 0x00000213912F2B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_bronze.db 
+2024-05-08 16:52:13.419541 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-08 16:52:13.419541 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev_silver.db 
+2024-05-08 16:52:13.419541 : function check_if_table_exists, message: Table publicmatches exists in dot_dev_silver.db 
+2024-05-08 16:52:13.419541 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev_silver.db 
+2024-05-08 16:52:13.466451 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev_silver.db 

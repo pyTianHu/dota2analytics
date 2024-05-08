@@ -1,7 +1,8 @@
 import sys
 sys.path.append('../dota2')
 
-selected_columns = {
+silver_selected_columns = {
+    #no change to bronze so far
     'heroes': ["id", "localized_name"],
     'herostats': [],
     'publicmatches': ["match_id", "start_time", "radiant_win", "lobby_type", "game_mode", "radiant_team", "dire_team"],

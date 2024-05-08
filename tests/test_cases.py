@@ -18,8 +18,8 @@ from scripts.job import bronze_transformation
 
 from utils.utils import open_schemas, logger
 from utils.ingestion_utils import table_function_mapping
-from utils.bronze_utils import selected_columns
-from utils.silver_utils import rows_isin
+from utils.bronze_utils import bronze_selected_columns
+from utils.silver_utils import rows_isin, silver_selected_columns
 
 
 def test_case_d10(db_name, table_name):
@@ -33,7 +33,7 @@ def test_case_d10(db_name, table_name):
 
     print(df)
 
-#test_case_d10('dot_dev_bronze.db', 'patch')
+test_case_d10('dot_dev_silver.db', 'publicmatches')
 
 #scols = TableOperations('dot_dev.db','publicmatches')
 #print(scols.select_cols_to_df())
@@ -74,6 +74,7 @@ def test_case_dot5(db_name, table_name):
     else:
         print(f"The table '{table_name}' does not exist in the database.")
 
+#test_case_dot5('dot_dev.db','publicmatches')
 #listoftables = ['heroes',
 #    'herostats',
 #    'publicmatches',
