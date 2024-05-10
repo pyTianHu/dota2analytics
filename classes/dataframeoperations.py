@@ -37,5 +37,22 @@ class DataFrameOperations():
                         return(f"This action is not known {action}")
         
         return self.df
+    
+    def transformations(self):
+
+        def dim_heroes(self):
+            return print('dim_heroes')
+
+        def f_pubs(self):
+            return print('f_pubs')
+
+        def f_game_modes(self):
+            return print('f_game_modes')
+
+        def f_patches(self):
+            return print('f_patches')
+
+        def f_lobby_types(self):
+            return print('f_lobby_types')
 
 

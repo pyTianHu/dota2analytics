@@ -15,6 +15,8 @@ selected_columns = {
     'lobby_type': ["id", "name"]
 }
 
+
+
 table_rename = {
     'heroes': 'dim_heroes',
     #'herostats': [],

@@ -29,9 +29,28 @@ DEV_SILVER_DB = "dot_dev_silver.db"
 DEV_GOLD_DB = "dot_dev_gold.db"
 
     # Silver to gold
-for silver_table_name, gold_table_name in table_rename.items():
+#for silver_table_name, gold_table_name in table_rename.items():
     #table_name will be the source table_name to use from silver => silver_table_name
     #gold_table_name will be 
     #silver_to_gold_transformation(silver_db_name, silver_table_name, gold_db_name, gold_table_name)
     
-    print(silver_to_gold_transformation(DEV_SILVER_DB, silver_table_name, DEV_GOLD_DB, gold_table_name))
+#    print(silver_to_gold_transformation(DEV_SILVER_DB, silver_table_name, DEV_GOLD_DB, gold_table_name))
+
+def transformations(table_name):
+
+        def dim_heroes(table_name):
+            return print('dim_heroes')
+
+        def f_pubs(table_name):
+            return print('f_pubs')
+
+        def f_game_modes(table_name):
+            return print('f_game_modes')
+
+        def f_patches(table_name):
+            return print('f_patches')
+
+        def f_lobby_types(table_name):
+            return print('f_lobby_types')
+
+     
