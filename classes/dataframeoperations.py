@@ -4,7 +4,7 @@ sys.path.append('../dota2')
 import pandas as pd
 from utils.utils import logger
 from classes.tableoperations import TableOperations
-from utils.silver_utils import silver_selected_columns, rows_isin
+from utils.silver_utils import selected_columns, rows_isin
 
 
 class DataFrameOperations():
@@ -16,17 +16,18 @@ class DataFrameOperations():
         self.db_name = db_name
         self.table_name = table_name
 
-        self.table_object = TableOperations(source_db_name= self.db_name, source_table_name= self.table_name)
+        self.table_object = TableOperations(self.db_name, self.table_name)
         self.df = self.table_object.select_all_to_df()
 
     def return_df(self):
         return self.df
     
     def filter_rows(self):
+        filter_criteria = rows_isin[self.table_name]
+
         if self.table_name not in rows_isin:
             pass
         else:
-            filter_criteria = rows_isin[self.table_name]
             for field_name, criteria in filter_criteria.items():
                 for action, values in criteria.items():
                     if action == "drop":
@@ -37,8 +38,5 @@ class DataFrameOperations():
                         return(f"This action is not known {action}")
         
         return self.df
-    
-    def rename_column():
-        pass
 
 

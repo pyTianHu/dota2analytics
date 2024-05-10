@@ -17,14 +17,12 @@ def convert_list_to_string_df(df):
     #call logger function, source: function name
     list_to_str = logger(f"{convert_list_to_string_df.__name__} function started", f"{convert_list_to_string_df.__name__}")
     list_to_str.new_or_existing_run()
-
     for col in df.columns:
         if df[col].apply(lambda x: isinstance(x, list)).any():
             df[col] = df[col].astype(str)
 
     list_to_str = logger(f"{convert_list_to_string_df.__name__} function finished", f"{convert_list_to_string_df.__name__}")
     list_to_str.new_or_existing_run()
-
     return df
 
 
@@ -62,9 +60,10 @@ class logger():
         self.timestamp = datetime.now()
         self.today = datetime.today().strftime("%Y-%m-%d")
         self.log_directory = "logs"
-        self.found_files = os.listdir("logs")
 
     def new_or_existing_run(self):
+        self.found_files = os.listdir("logs")
+
         if any("ongoing" in file for file in self.found_files):
             for f in self.found_files:
                 if "ongoing" in f:
@@ -119,14 +118,10 @@ class logger():
     def rename_log_file(self):
         #this function is only called at the very end of the pipeline once all functions and methods were run.
         #rename log_file from date_versionnumber_ongoing.json to date_versionnumber.json
-        
-        #self.new_version = self.get_new_version()
-        #self.ongoing_file = self.get_ongoing_file()
-        
-        try:
-            self.new_file_name = self.ongoing_file.replace("_ongoing","")
-            os.rename(f"logs/{self.ongoing_file}", f"logs/{self.new_file_name}")
-            return True
-        except Exception as e:
-            return False,e
+        self.new_file_name = self.ongoing_file.replace("_ongoing","")
+        os.rename(f"logs/{self.ongoing_file}", f"logs/{self.new_file_name}")
+
+
+        # delete any files with "ongoing" string in its name
+        return "rename_log_file methodrenaming log file in progress"
     

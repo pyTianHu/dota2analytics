@@ -18,44 +18,35 @@ from scripts.job import bronze_transformation
 
 from utils.utils import open_schemas, logger
 from utils.ingestion_utils import table_function_mapping
-from utils.bronze_utils import bronze_selected_columns
-from utils.silver_utils import rows_isin, silver_selected_columns
+from utils.bronze_utils import selected_columns
+from utils.silver_utils import rows_isin
 
 
-def test_case_d10(source_db_name, source_table_name):
-    conn = sqlite3.connect(source_db_name)
-    query = f"SELECT * FROM {source_table_name}"
+def test_case_d10(db_name, table_name):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+
+    query = f"SELECT * FROM {table_name}"
+
     df = pd.read_sql_query(query, conn)
+
     print(df)
 
-listoftables = ['heroes',
-    'herostats',
-    'publicmatches',
-    'abilities',
-    'ability_ids',
-    'game_mode',
-    'hero_abilities',
-    'item_ids',
-    'items',
-    'patch',
-    'lobby_type'] 
-for table in listoftables:
-    test_case_d10('dot_dev.db',table)
-
-#test_case_d10('dot_dev_bronze.db', 'publicmatches')
+#test_case_d10('dot_dev_bronze.db', 'patch')
 
 #scols = TableOperations('dot_dev.db','publicmatches')
 #print(scols.select_cols_to_df())
 
-def test_case_dot5(target_db_name, target_table_name):
-    conn = sqlite3.connect(target_db_name)
+def test_case_dot5(db_name, table_name):
+    conn = sqlite3.connect(db_name)
     cursor = conn.cursor()
     
-    table = TableOperations(target_db_name= target_db_name, target_table_name=target_table_name)
+    table = TableOperations(db_name, table_name)
     
 
     #check if table exists
-    check_table_query = f"SELECT name FROM sqlite_master WHERE type='table' AND name='{target_table_name}'"
+    check_table_query = f"SELECT name FROM sqlite_master WHERE type='table' AND name='{table_name}'"
     cursor.execute(check_table_query)
 
     # Fetch the result
@@ -63,15 +54,15 @@ def test_case_dot5(target_db_name, target_table_name):
 
     # Check if the table exists
     if result:
-        print(f"The table '{target_table_name}' exists in the database.")
+        print(f"The table '{table_name}' exists in the database.")
     else:
-        print(f"The table '{target_table_name}' does not exist in the database.")
+        print(f"The table '{table_name}' does not exist in the database.")
 
     #drop table
     table.drop_table()
 
     #check if table exists
-    check_table_query = f"SELECT name FROM sqlite_master WHERE type='table' AND name='{target_table_name}'"
+    check_table_query = f"SELECT name FROM sqlite_master WHERE type='table' AND name='{table_name}'"
     cursor.execute(check_table_query)
 
     # Fetch the result
@@ -79,24 +70,23 @@ def test_case_dot5(target_db_name, target_table_name):
 
     # Check if the table exists
     if result:
-        print(f"The table '{target_table_name}' exists in the database.")
+        print(f"The table '{table_name}' exists in the database.")
     else:
-        print(f"The table '{target_table_name}' does not exist in the database.")
+        print(f"The table '{table_name}' does not exist in the database.")
 
-#test_case_dot5('dot_dev.db','publicmatches')
-listoftables = ['heroes',
-    'herostats',
-    'publicmatches',
-    'abilities',
-    'ability_ids',
-    'game_mode',
-    'hero_abilities',
-    'item_ids',
-    'items',
-    'patch',
-    'lobby_type'] 
-for table in listoftables:
-    test_case_dot5('dot_dev.db',table)
+#listoftables = ['heroes',
+#    'herostats',
+#    'publicmatches',
+#    'abilities',
+#    'ability_ids',
+#    'game_mode',
+#    'hero_abilities',
+#    'item_ids',
+#    'items',
+#    'patch',
+#    'lobby_type'] 
+#for table in listoftables:
+#    test_case_dot5('dot_dev.db',table)
 
 #print(bronze_transformation('dot_dev.db','heroes'))
 

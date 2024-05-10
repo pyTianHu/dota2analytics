@@ -1,0 +1,32 @@
+2024-05-08 13:36:00.712811 : function drop_table, message: drop_table method started, table to drop: heroes, database:dot_dev.db 
+2024-05-08 13:36:00.724889 : function drop_table, message: Table heroes is hereby dropped, database:dot_dev.db 
+2024-05-08 13:36:00.728925 : function drop_table, message: drop_table method started, table to drop: herostats, database:dot_dev.db 
+2024-05-08 13:36:00.740942 : function drop_table, message: Table herostats is hereby dropped, database:dot_dev.db 
+2024-05-08 13:36:00.744952 : function drop_table, message: drop_table method started, table to drop: publicmatches, database:dot_dev.db 
+2024-05-08 13:36:00.756014 : function drop_table, message: Table publicmatches is hereby dropped, database:dot_dev.db 
+2024-05-08 13:36:00.760008 : function drop_table, message: drop_table method started, table to drop: abilities, database:dot_dev.db 
+2024-05-08 13:36:00.773970 : function drop_table, message: Table abilities is hereby dropped, database:dot_dev.db 
+2024-05-08 13:36:00.776967 : function drop_table, message: drop_table method started, table to drop: ability_ids, database:dot_dev.db 
+2024-05-08 13:36:00.790066 : function drop_table, message: Table ability_ids is hereby dropped, database:dot_dev.db 
+2024-05-08 13:36:00.793577 : function drop_table, message: drop_table method started, table to drop: game_mode, database:dot_dev.db 
+2024-05-08 13:36:00.805422 : function drop_table, message: Table game_mode is hereby dropped, database:dot_dev.db 
+2024-05-08 13:36:00.808508 : function drop_table, message: drop_table method started, table to drop: hero_abilities, database:dot_dev.db 
+2024-05-08 13:36:00.819300 : function drop_table, message: Table hero_abilities is hereby dropped, database:dot_dev.db 
+2024-05-08 13:36:00.822811 : function drop_table, message: drop_table method started, table to drop: item_ids, database:dot_dev.db 
+2024-05-08 13:36:00.823810 : function drop_table, message: Table item_ids has not been dropped due to exception: no such table: item_ids, database:dot_dev.db 
+2024-05-08 13:36:00.825814 : function drop_table, message: drop_table method started, table to drop: items, database:dot_dev.db 
+2024-05-08 13:36:00.837319 : function drop_table, message: Table items is hereby dropped, database:dot_dev.db 
+2024-05-08 13:36:00.839405 : function drop_table, message: drop_table method started, table to drop: patch, database:dot_dev.db 
+2024-05-08 13:36:00.849931 : function drop_table, message: Table patch is hereby dropped, database:dot_dev.db 
+2024-05-08 13:36:00.852981 : function drop_table, message: drop_table method started, table to drop: lobby_type, database:dot_dev.db 
+2024-05-08 13:36:00.861966 : function drop_table, message: Table lobby_type is hereby dropped, database:dot_dev.db 
+2024-05-08 15:19:53.360394 : function <function TableOperations.select_all_to_df at 0x000001FF22252B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_bronze.db 
+2024-05-08 15:19:53.360394 : function select_all_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-08 15:20:12.874746 : function <function TableOperations.select_all_to_df at 0x0000020AA3EC2B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_bronze.db 
+2024-05-08 15:20:12.874746 : function select_all_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-08 15:20:34.858345 : function <function TableOperations.select_all_to_df at 0x0000021367FC2B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_bronze.db 
+2024-05-08 15:20:34.858345 : function select_all_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-08 15:23:10.021149 : function <function TableOperations.select_all_to_df at 0x000001FEB8D52B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev_bronze.db 
+2024-05-08 15:23:10.021149 : function select_all_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-08 15:23:43.213513 : function <function TableOperations.select_all_to_df at 0x0000018369492B60>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_bronze.db 
+2024-05-08 15:23:43.213513 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 

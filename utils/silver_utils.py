@@ -1,17 +1,16 @@
 import sys
 sys.path.append('../dota2')
 
-silver_selected_columns = {
-    #no change to bronze so far
+selected_columns = {
     'heroes': ["id", "localized_name"],
-    #'herostats': [],
+    'herostats': [],
     'publicmatches': ["match_id", "start_time", "radiant_win", "lobby_type", "game_mode", "radiant_team", "dire_team"],
-    #'abilities': [],
-    #'ability_ids': [],
+    'abilities': [],
+    'ability_ids': [],
     'game_mode': ["id", "name"],
-    #'hero_abilities': [],
-    #'item_ids': [],
-    #'items': [],
+    'hero_abilities': [],
+    'item_ids': [],
+    'items': [],
     'patch': ["name", "date", "id"],
     'lobby_type': ["id", "name"]
 }
