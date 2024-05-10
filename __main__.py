@@ -2,7 +2,7 @@ from scripts.job import table_create_and_ingest, bronze_transformation, bronze_t
 from utils.ingestion_utils import table_function_mapping
 from utils.bronze_utils import selected_columns as bronze_selected_columns
 from utils.silver_utils import selected_columns as silver_selected_columns
-from utils.gold_utils import table_rename
+from utils.gold_utils import selected_columns as bronze_selected_columns, table_rename
 
 
 def main():

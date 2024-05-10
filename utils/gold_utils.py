@@ -29,6 +29,35 @@ table_rename = {
     'lobby_type': 'f_lobby_types'
 }
 
+column_rename = {
+    'dim_heroes':{
+        'id': 'heroes_id',
+        'localized_name': 'hero_name'
+    },
+    'f_pubs':{
+        'match_id': 'match_id',
+        'start_time': 'game_start_timestamp',
+        'radiant_win': 'winning_team', #transformation should include => if radiant_win = 1 then "Radiant" else "Dire"
+        'lobby_type': 'lobby_type_id',
+        'game_mode': 'game_mode_id',
+        'radiant_team': 'radiant_team_heroes',
+        'dire_team': 'dire_team_heroes'
+    },
+    'f_game_modes': {
+        'id': 'game_modes_id',
+        'name': 'game_mode_name'
+    },
+    'f_patches': {
+        'name': 'patch_name',
+        'date': 'patch_release_date',
+        'id': 'patch_id'
+    },
+    'f_lobby_types': {
+        'id': 'lobby_type_id',
+        'name': 'lobby_type_name'
+    }
+}
+
 
 table_constraints = {
     'dim_heroes': {

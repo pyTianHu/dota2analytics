@@ -8,7 +8,7 @@ from classes.tableoperations import TableOperations
 from classes.dataframeoperations import DataFrameOperations
 from utils.utils import convert_list_to_string_df, prepare_schema_for_df, logger
 from utils.ingestion_utils import table_function_mapping
-
+from utils.gold_utils import table_constraints, table_rename
    
 def table_create_and_ingest(db_name, table_name):
     #call logger method with function name and df => source db, table => nothing, as no source yet, just call function to record start time
@@ -96,5 +96,17 @@ def bronze_to_silver_transformation(bronze_db_name, table_name, silver_db_name):
 
 def silver_to_gold_transformation(silver_db_name, silver_table_name, gold_db_name, gold_table_name):
 
+    # get source data from silver layer
+    table = TableOperations(silver_db_name,silver_table_name)
+    df = table.select_cols_to_df()
 
-    pass
+    # commit data transformation while data is in dataframe
+
+
+    # check if table exists in gold layer => use renamed table name
+
+
+    #create if not exists => use schemas and constraints from gold.utils
+
+
+    return df.head()

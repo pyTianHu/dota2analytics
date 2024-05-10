@@ -2,6 +2,7 @@ import sqlite3
 import pandas as pd
 from utils.utils import logger
 from utils.bronze_utils import selected_columns
+from utils.gold_utils import table_constraints, table_rename, selected_columns
 
 class TableOperations:
     def __init__(self, db_name, table_name, schema = None, data = None) -> None:
