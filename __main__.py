@@ -1,7 +1,8 @@
-from scripts.job import table_create_and_ingest, bronze_transformation, bronze_to_silver_transformation
+from scripts.job import table_create_and_ingest, bronze_transformation, bronze_to_silver_transformation, silver_to_gold_transformation
 from utils.ingestion_utils import table_function_mapping
 from utils.bronze_utils import selected_columns as bronze_selected_columns
 from utils.silver_utils import selected_columns as silver_selected_columns
+from utils.gold_utils import table_rename
 
 
 def main():
@@ -30,6 +31,13 @@ def main():
     for table_name in silver_selected_columns:
         bronze_to_silver_transformation(DEV_BRONZE_DB, table_name, DEV_SILVER_DB)
 
+
+    # Silver to gold
+    for table_name in table_rename:
+        #table_name will be the source table_name to use from silver => silver_table_name
+        #gold_table_name will be 
+        #silver_to_gold_transformation(silver_db_name, silver_table_name, gold_db_name, gold_table_name)
+        pass
 
 if __name__ == "__main__":
     main()

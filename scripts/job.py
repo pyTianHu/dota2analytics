@@ -94,7 +94,7 @@ def bronze_to_silver_transformation(bronze_db_name, table_name, silver_db_name):
     return res
 
 
-def silver_to_gold_transformation(db_name, table_name):
+def silver_to_gold_transformation(silver_db_name, silver_table_name, gold_db_name, gold_table_name):
 
 
     pass
