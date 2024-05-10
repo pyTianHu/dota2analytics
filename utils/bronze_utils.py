@@ -9,7 +9,7 @@ selected_columns = {
     'ability_ids': [],
     'game_mode': ["id", "name"],
     'hero_abilities': [],
-    'item_ids': [],
+    'items_ids': [],
     'items': [],
     'patch': ["name", "date", "id"],
     'lobby_type': ["id", "name"]

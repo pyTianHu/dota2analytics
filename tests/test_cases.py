@@ -21,6 +21,18 @@ from utils.ingestion_utils import table_function_mapping
 from utils.bronze_utils import selected_columns
 from utils.silver_utils import rows_isin
 
+listoftables = [
+    'heroes',
+    #'herostats',
+    'publicmatches',
+    #'abilities',
+    #'ability_ids',
+    'game_mode',
+    #'hero_abilities',
+    #'items_ids',
+    #'items',
+    'patch',
+    'lobby_type'] 
 
 def test_case_d10(db_name, table_name):
     conn = sqlite3.connect(db_name)
@@ -31,9 +43,10 @@ def test_case_d10(db_name, table_name):
 
     df = pd.read_sql_query(query, conn)
 
-    print(df)
+    print(f"{table_name}, \n, {df.head()}")
 
-#test_case_d10('dot_dev_bronze.db', 'patch')
+for table in listoftables:
+    test_case_d10('dot_dev_silver.db',table)
 
 #scols = TableOperations('dot_dev.db','publicmatches')
 #print(scols.select_cols_to_df())
@@ -74,19 +87,9 @@ def test_case_dot5(db_name, table_name):
     else:
         print(f"The table '{table_name}' does not exist in the database.")
 
-#listoftables = ['heroes',
-#    'herostats',
-#    'publicmatches',
-#    'abilities',
-#    'ability_ids',
-#    'game_mode',
-#    'hero_abilities',
-#    'item_ids',
-#    'items',
-#    'patch',
-#    'lobby_type'] 
+
 #for table in listoftables:
-#    test_case_dot5('dot_dev.db',table)
+#    test_case_dot5('dot_dev_silver.db',table)
 
 #print(bronze_transformation('dot_dev.db','heroes'))
 

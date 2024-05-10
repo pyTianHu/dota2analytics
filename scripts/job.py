@@ -47,15 +47,11 @@ def table_create_and_ingest(db_name, table_name):
     tci2.new_or_existing_run
 
 
-def bronze_transformation(raw_db_name, table_name):
+def bronze_transformation(raw_db_name, table_name, bronze_db_name):
     # data source: raw layer; output: bronze layer => dot_dev_bronze.db for dev env, dot_bronze.db for prod
     # dropping unnecessary columns & selecting only necessary ones
     bt = logger(f"{bronze_transformation.__name__} function started", f"{bronze_transformation.__name__}")
     bt.new_or_existing_run()
-
-
-    bronze_db_dev = "dot_dev_bronze.db"
-    bronze_db_prod = "dot_bronze_prod.db"
 
     #get selected cols from utils
     # if selected cols is empty, pass
@@ -64,7 +60,7 @@ def bronze_transformation(raw_db_name, table_name):
     df = table.select_cols_to_df()
 
     #check if table exists in bronze, if not, create it
-    bronze_table = TableOperations(bronze_db_dev, table_name)
+    bronze_table = TableOperations(bronze_db_name, table_name)
     
     if bronze_table.check_if_table_exists() == False:
         bronze_table.create_table()
@@ -72,7 +68,7 @@ def bronze_transformation(raw_db_name, table_name):
         pass
 
     #insert into bronze table
-    df_to_table = TableOperations(bronze_db_dev, table_name, data = df)
+    df_to_table = TableOperations(bronze_db_name, table_name, data = df)
     res = df_to_table.insert_df_into_table()
 
     bt2 = logger(f"{bronze_transformation.__name__} function finished: result of insert_df_into_table function => {res}", f"{bronze_transformation.__name__}")
@@ -82,16 +78,20 @@ def bronze_transformation(raw_db_name, table_name):
 
 
 
-def bronze_to_silver_transformation(db_name, table_name):
+def bronze_to_silver_transformation(bronze_db_name, table_name, silver_db_name):
     # row filters, generic transformations (upper, lower, anything general)
 
     # initialize dataframe
-    t = DataFrameOperations(db_name, table_name)
+    t = DataFrameOperations(bronze_db_name, table_name)
 
     # filters
     df = t.filter_rows()
 
-    return df
+    # create new tableoperations class with silver schema to create new table there and insert the data.
+    silver_table = TableOperations(silver_db_name,table_name, data=df)
+    res = silver_table.insert_df_into_table()
+
+    return res
 
 
 def silver_to_gold_transformation(db_name, table_name):
