@@ -16,7 +16,7 @@ class DataFrameOperations():
         self.db_name = db_name
         self.table_name = table_name
 
-        self.table_object = TableOperations(self.db_name, self.table_name)
+        self.table_object = TableOperations(source_db_name= self.db_name, source_table_name= self.table_name)
         self.df = self.table_object.select_all_to_df()
 
     def return_df(self):

@@ -1075,3 +1075,25 @@
 2024-05-09 00:18:58.469222 : function insert_df_into_table, message: Data was inserted into lobby_type, database:dot_dev_silver.db 
 2024-05-09 00:18:58.469222 : function generic_table_creation_mechanism, message: generic_table_creation_mechanism function finished with result:True 
 2024-05-09 00:18:58.469222 : function bronze_to_silver_transformation, message: bronze_to_silver_transformation function finished 
+2024-05-10 15:27:17.784397 : function drop_table, message: drop_table method started, table to drop: heroes, database:dot_dev_silver.db 
+2024-05-10 15:27:17.798943 : function drop_table, message: Table heroes is hereby dropped, database:dot_dev_silver.db 
+2024-05-10 15:27:17.801938 : function drop_table, message: drop_table method started, table to drop: herostats, database:dot_dev_silver.db 
+2024-05-10 15:27:17.806781 : function drop_table, message: Table herostats is hereby dropped, database:dot_dev_silver.db 
+2024-05-10 15:27:17.816473 : function drop_table, message: drop_table method started, table to drop: publicmatches, database:dot_dev_silver.db 
+2024-05-10 15:27:17.824592 : function drop_table, message: Table publicmatches is hereby dropped, database:dot_dev_silver.db 
+2024-05-10 15:27:17.831078 : function drop_table, message: drop_table method started, table to drop: abilities, database:dot_dev_silver.db 
+2024-05-10 15:27:17.847914 : function drop_table, message: Table abilities is hereby dropped, database:dot_dev_silver.db 
+2024-05-10 15:27:17.852194 : function drop_table, message: drop_table method started, table to drop: ability_ids, database:dot_dev_silver.db 
+2024-05-10 15:27:17.864505 : function drop_table, message: Table ability_ids is hereby dropped, database:dot_dev_silver.db 
+2024-05-10 15:27:17.867118 : function drop_table, message: drop_table method started, table to drop: game_mode, database:dot_dev_silver.db 
+2024-05-10 15:27:17.877459 : function drop_table, message: Table game_mode is hereby dropped, database:dot_dev_silver.db 
+2024-05-10 15:27:17.884938 : function drop_table, message: drop_table method started, table to drop: hero_abilities, database:dot_dev_silver.db 
+2024-05-10 15:27:17.894369 : function drop_table, message: Table hero_abilities is hereby dropped, database:dot_dev_silver.db 
+2024-05-10 15:27:17.901042 : function drop_table, message: drop_table method started, table to drop: item_ids, database:dot_dev_silver.db 
+2024-05-10 15:27:17.906285 : function drop_table, message: Table item_ids is hereby dropped, database:dot_dev_silver.db 
+2024-05-10 15:27:17.915427 : function drop_table, message: drop_table method started, table to drop: items, database:dot_dev_silver.db 
+2024-05-10 15:27:17.924267 : function drop_table, message: Table items is hereby dropped, database:dot_dev_silver.db 
+2024-05-10 15:27:17.933563 : function drop_table, message: drop_table method started, table to drop: patch, database:dot_dev_silver.db 
+2024-05-10 15:27:17.944115 : function drop_table, message: Table patch is hereby dropped, database:dot_dev_silver.db 
+2024-05-10 15:27:17.948608 : function drop_table, message: drop_table method started, table to drop: lobby_type, database:dot_dev_silver.db 
+2024-05-10 15:27:17.954109 : function drop_table, message: Table lobby_type is hereby dropped, database:dot_dev_silver.db 

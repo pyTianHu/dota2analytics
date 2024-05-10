@@ -10,20 +10,26 @@ from utils.utils import convert_list_to_string_df, prepare_schema_for_df, logger
 from utils.ingestion_utils import table_function_mapping
 
 
-def generic_table_creation_mechanism(db_name, table_name, data, schema = None):
+def generic_table_creation_mechanism(source_db_name = None, target_db_name = None, source_table_name = None, target_table_name = None, schema = None, data = None):
+    
+    #db_name = source database
+    #table_name = table_name (both in source and in target)
+    #data = data to insert to target
+    #target_table_name
+    
     gtcm = logger(f"{generic_table_creation_mechanism.__name__} function started", f"{generic_table_creation_mechanism.__name__}")
     gtcm.new_or_existing_run()
 
     try:
-        table = TableOperations(db_name, table_name, data=data)
+        table = TableOperations(source_db_name, target_db_name, source_table_name, target_table_name, schema, data)
         
-        #check if target table exists in db_name, if not, create:
+        #check if target table exists in target_db_name, if not, create target_table_name in target_db_name:
         if table.check_if_table_exists() == True:
             pass
         else:
             table.create_table()
 
-        # once the table exists, insert data:
+        # once target_table_name exists, insert data:
         table.insert_df_into_table()
         
         gtcm = logger(f"{generic_table_creation_mechanism.__name__} function finished with result:{True}", f"{generic_table_creation_mechanism.__name__}")
@@ -42,16 +48,20 @@ def table_create_and_ingest(raw_db_name, table_name):
     tci = logger(f"{table_create_and_ingest.__name__} function started", f"{table_create_and_ingest.__name__}")
     tci.new_or_existing_run()
 
-    #calling and executing ingestion function, storing it in df variable
+    # get source data from API
     df = table_function_mapping.get(table_name)
 
-    # Data transformation
-    data = convert_list_to_string_df(df)
+    # Data transformation on source data
+    source_data = convert_list_to_string_df(df)
 
     #compile schema string 
     schema_str = prepare_schema_for_df(table_name)
+    
+    #params to pass to generic_table_creation_mechanism: target_db_name = raw_db_name, target_table_name = None, schema = None, 
+    res = generic_table_creation_mechanism(target_db_name = raw_db_name, target_table_name = table_name, schema=schema_str, data = source_data)
 
-    res = generic_table_creation_mechanism(raw_db_name,table_name,data, schema=schema_str)
+
+    #next step is to set the tableoperations call in each generic_table... function, make sure all parameters are passed properly and all source and target databases and tables are passed properly
 
     return res
 
@@ -67,7 +77,8 @@ def bronze_transformation(raw_db_name, table_name, bronze_db_name):
     table = TableOperations(raw_db_name,table_name)
     data = table.select_cols_to_df('bronze')
 
-    res = generic_table_creation_mechanism(bronze_db_name,table_name,data)
+    #params to pass to generic_table_creation_mechanism: target_db_name = raw_db_name, target_table_name = None, schema = None, 
+    res = generic_table_creation_mechanism(source_db_name = raw_db_name, target_db_name = bronze_db_name, source_table_name= table_name, target_table_name = table_name, schema=None, data = data)
 
     bt2 = logger(f"{bronze_transformation.__name__} function finished: result of insert_df_into_table function => {res}", f"{bronze_transformation.__name__}")
     bt2.new_or_existing_run()
@@ -88,7 +99,7 @@ def bronze_to_silver_transformation(bronze_db_name, table_name, silver_db_name):
     data = source_table.filter_rows()
 
     # save to silver layer
-    res = generic_table_creation_mechanism(silver_db_name,table_name,data)
+    res = generic_table_creation_mechanism(source_db_name = bronze_db_name, target_db_name = silver_db_name, source_table_name = table_name, target_table_name = table_name, schema=None, data = data)
 
     bts = logger(f"{bronze_to_silver_transformation.__name__} function finished", f"{bronze_to_silver_transformation.__name__}")
     bts.new_or_existing_run()
