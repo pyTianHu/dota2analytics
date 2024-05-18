@@ -63,29 +63,29 @@ column_rename = {
 
 table_constraints = {
     'dim_heroes': {
-        "id": ("INTEGER, PRIMARY KEY"),
-        "localized_name": ("STRING, NOT NULL")
+        "heroes_id": ("INTEGER", "PRIMARY KEY"),
+        "hero_name": ("STRING", "NOT NULL")
     },
     'f_pubs' : {
-        "match_id": ("INTEGER, PRIMARY KEY"), 
-        "start_time": ("TIMESTAMP NOT NULL"), 
-        "radiant_win": ("INTEGER NOT NULL"), 
-        "lobby_type": ("INTEGER NOT NULL"), 
-        "game_mode": ("INTEGER NOT NULL"), 
-        "radiant_team": ("STRING NOT NULL"), 
-        "dire_team": ("STRING NOT NULL")
+        "match_id": ("INTEGER", "PRIMARY KEY"), 
+        "game_start_timestamp": ("TIMESTAMP", "NOT NULL"), 
+        "winning_team": ("INTEGER", "NOT NULL"), 
+        "lobby_type_id": ("INTEGER", "NOT NULL"), 
+        "game_mode_id": ("INTEGER", "NOT NULL"), 
+        "radiant_team_heroes": ("STRING", "NOT NULL"), 
+        "dire_team_heroes": ("STRING", "NOT NULL")
     },
     'f_game_modes' :{
-        "id": ("INTEGER PRIMARY KEY"),
-        "name": ("STRING NOT NULL")
+        "game_modes_id": ("INTEGER", "PRIMARY KEY"),
+        "game_modes_name": ("STRING", "NOT NULL")
     },
     'f_patches': {
-        "name": ("STRING NOT NULL"),
-        "date": ("DATETIME NOT NULL"),
-        "id": ("INTEGER PRIMARY KEY")
+        "patch_name": ("STRING", "NOT NULL"),
+        "patch_release_date": ("DATETIME", "NOT NULL"),
+        "patch_id": ("INTEGER", "PRIMARY KEY")
     },
     'f_lobby_types': {
-        "id": ("INTEGER PRIMARY KEY"),
-        "name": ("STRING NOT NULL")
+        "lobby_type_id": ("INTEGER", "PRIMARY KEY"),
+        "lobby_type_name": ("STRING", "NOT NULL")
     }
 }

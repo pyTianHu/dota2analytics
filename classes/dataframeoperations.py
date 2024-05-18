@@ -5,6 +5,7 @@ import pandas as pd
 from utils.utils import logger
 from classes.tableoperations import TableOperations
 from utils.silver_utils import rows_isin
+from utils.gold_utils import column_rename, selected_columns as gold_selected_columns, table_constraints as gold_table_constraints, table_rename as gold_table_rename
 
 
 class DataFrameOperations():
@@ -12,13 +13,14 @@ class DataFrameOperations():
     # do something with it according to silver_utils and gold_utils
     # insert into table via tableoperations
 
-    def __init__(self, db_name, table_name) -> None:
-        self.db_name = db_name
+    def __init__(self, source_db_name, table_name, target_db_name = None) -> None:
+        self.source_db_name = source_db_name
         self.table_name = table_name
 
-        self.table_object = TableOperations(self.db_name, self.table_name)
+        self.table_object = TableOperations(self.source_db_name, self.table_name)
         self.df = self.table_object.select_all_to_df()
 
+        
     def return_df(self):
         return self.df
     
@@ -38,21 +40,33 @@ class DataFrameOperations():
         
         return self.df
     
-    def transformations(self):
+    def silver_to_gold_df(self):
+        df = self.df
+        table_name = self.table_name
+        source_db_name = self.source_db_name
+        table_rename = gold_table_rename.get(table_name)
 
-        def dim_heroes(self):
-            return print('dim_heroes')
+        # select columns
+        table_object = TableOperations(source_db_name,table_name)
+        df = table_object.select_cols_to_df('gold')
 
-        def f_pubs(self):
-            return print('f_pubs')
+        # rename columns
+        for column in column_rename[table_rename].items():
+            df.rename(columns = {column[0]: column[1]}, inplace=True)
 
-        def f_game_modes(self):
-            return print('f_game_modes')
 
-        def f_patches(self):
-            return print('f_patches')
+        for column,constraints in gold_table_constraints[table_rename].items():
+            constraint = constraints[0]
+            if constraint == "TIMESTAMP" or constraint == "DATETIME":
+                try:
+                    df[column] = pd.to_datetime(df[column], unit = 's')
+                except:
+                    df[column] = pd.to_datetime(df[column])
+            #if constraint == "STRING":
+            #    df[column] = df[column].astype(str)
+            if constraint == "INTEGER":
+                df[column] = df[column].astype("Int64")
 
-        def f_lobby_types(self):
-            return print('f_lobby_types')
+        return df, table_rename
 
 

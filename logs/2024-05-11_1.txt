@@ -1,0 +1,246 @@
+2024-05-11 00:49:39.278575 : function <function TableOperations.select_cols_to_df at 0x000001E2BB2F2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-11 00:49:39.283582 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-11 00:49:39.287114 : function <function TableOperations.select_cols_to_df at 0x000001E2BB2F2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-11 00:49:39.287114 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-11 00:49:39.287114 : function <function TableOperations.select_cols_to_df at 0x000001E2BB2F2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-11 00:49:39.287114 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-11 00:49:39.293627 : function <function TableOperations.select_cols_to_df at 0x000001E2BB2F2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_silver.db 
+2024-05-11 00:49:39.293627 : function select_cols_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-11 00:49:39.293627 : function <function TableOperations.select_cols_to_df at 0x000001E2BB2F2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev_silver.db 
+2024-05-11 00:49:39.293627 : function select_cols_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-11 00:50:02.053693 : function <function TableOperations.select_cols_to_df at 0x00000273DA362F20>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-11 00:50:02.058757 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-11 00:50:02.068839 : function <function TableOperations.select_cols_to_df at 0x00000273DA362F20>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-11 00:50:02.077061 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-11 00:50:02.089288 : function <function TableOperations.select_cols_to_df at 0x00000273DA362F20>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-11 00:50:02.092262 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-11 00:50:02.100380 : function <function TableOperations.select_cols_to_df at 0x00000273DA362F20>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_silver.db 
+2024-05-11 00:50:02.103953 : function select_cols_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-11 00:50:02.111019 : function <function TableOperations.select_cols_to_df at 0x00000273DA362F20>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev_silver.db 
+2024-05-11 00:50:02.114631 : function select_cols_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-18 23:12:01.981775 : function <function TableOperations.select_all_to_df at 0x000001A6B3E72D40>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:12:01.998858 : function select_all_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:12:01.998858 : function <function TableOperations.select_cols_to_df at 0x000001A6B3E72DE0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:12:01.998858 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:13:35.499067 : function <function TableOperations.select_all_to_df at 0x000001F459B82DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:13:35.513522 : function select_all_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:13:35.513522 : function <function TableOperations.select_cols_to_df at 0x000001F459B82E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:13:35.513522 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:14:02.269359 : function <function TableOperations.select_all_to_df at 0x0000028E21BB2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:14:02.291442 : function select_all_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:14:02.291442 : function <function TableOperations.select_cols_to_df at 0x0000028E21BB2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:14:02.291442 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:16:13.113805 : function <function TableOperations.select_all_to_df at 0x000001AD88862DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:16:13.113805 : function select_all_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:16:13.113805 : function <function TableOperations.select_cols_to_df at 0x000001AD88862E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:16:13.113805 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:17:03.263540 : function <function TableOperations.select_all_to_df at 0x0000015359C6E480>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:17:03.263540 : function select_all_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:17:03.263540 : function <function TableOperations.select_cols_to_df at 0x0000015359C6E520>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:17:03.263540 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:18:28.369130 : function <function TableOperations.select_all_to_df at 0x0000022F29F32DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:18:28.369130 : function select_all_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:18:28.369130 : function <function TableOperations.select_cols_to_df at 0x0000022F29F32E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:18:28.369130 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:18:59.041515 : function <function TableOperations.select_all_to_df at 0x000001EF7DC02DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:18:59.041515 : function select_all_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:18:59.057137 : function <function TableOperations.select_cols_to_df at 0x000001EF7DC02E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:18:59.057137 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:20:28.931348 : function <function TableOperations.select_all_to_df at 0x0000028093A72DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:20:28.942873 : function select_all_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:20:28.942873 : function <function TableOperations.select_cols_to_df at 0x0000028093A72E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-18 23:20:28.942873 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-18 23:21:32.451679 : function <function TableOperations.select_all_to_df at 0x000001DB55D12DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: f_pubs, database: dot_dev_silver.db 
+2024-05-18 23:21:32.451679 : function select_all_to_df, message: select_all_to_df method finished, f_pubs has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT *
+                FROM f_pubs
+                ': no such table: f_pubs 
+2024-05-18 23:21:32.459689 : function <function TableOperations.select_cols_to_df at 0x000001DB55D12E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: f_pubs, database: dot_dev_silver.db 
+2024-05-18 23:22:12.697070 : function <function TableOperations.select_all_to_df at 0x000001F2EAA52DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:22:12.697070 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:22:12.697070 : function <function TableOperations.select_cols_to_df at 0x000001F2EAA52E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:22:12.697070 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:30:39.857521 : function <function TableOperations.select_all_to_df at 0x0000024C85632DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:30:39.860756 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:30:39.860756 : function <function TableOperations.select_cols_to_df at 0x0000024C85632E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:30:39.860756 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:34:08.426707 : function <function TableOperations.select_all_to_df at 0x000002737E322DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:34:08.426707 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:34:08.426707 : function <function TableOperations.select_cols_to_df at 0x000002737E322E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:34:08.426707 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:36:22.364026 : function <function TableOperations.select_all_to_df at 0x00000129BAEA2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:36:22.364026 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:36:22.364026 : function <function TableOperations.select_cols_to_df at 0x00000129BAEA2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:36:22.364026 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:37:01.152116 : function <function TableOperations.select_all_to_df at 0x0000025403C62DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:37:01.154391 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:37:01.155507 : function <function TableOperations.select_cols_to_df at 0x0000025403C62E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:37:01.157754 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:42:48.688901 : function <function TableOperations.select_all_to_df at 0x0000021A09932DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:42:48.697051 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:42:48.697051 : function <function TableOperations.select_cols_to_df at 0x0000021A09932E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:42:48.700503 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:43:38.019479 : function <function TableOperations.select_all_to_df at 0x000002727A902DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:43:38.038103 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:43:38.038103 : function <function TableOperations.select_cols_to_df at 0x000002727A902E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:43:38.038103 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:44:06.785249 : function <function TableOperations.select_all_to_df at 0x000001896D752DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:44:06.800686 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:44:06.803695 : function <function TableOperations.select_cols_to_df at 0x000001896D752E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:44:06.803695 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:46:15.761593 : function <function TableOperations.select_all_to_df at 0x000001E45F572D40>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:46:15.761593 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:46:15.761593 : function <function TableOperations.select_cols_to_df at 0x000001E45F572DE0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:46:15.761593 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:46:34.086638 : function <function TableOperations.select_all_to_df at 0x0000026351A32DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:46:34.086638 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:46:34.086638 : function <function TableOperations.select_cols_to_df at 0x0000026351A32E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:46:34.086638 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:47:18.916669 : function <function TableOperations.select_all_to_df at 0x000001ECA0DB2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:47:18.916669 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:47:18.916669 : function <function TableOperations.select_cols_to_df at 0x000001ECA0DB2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:47:18.924750 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:48:18.479772 : function <function TableOperations.select_all_to_df at 0x000001D2C9742DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:48:18.479772 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:48:18.479772 : function <function TableOperations.select_cols_to_df at 0x000001D2C9742E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:48:18.479772 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:49:00.846886 : function <function TableOperations.select_all_to_df at 0x00000210BD252DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:49:00.846886 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:49:00.846886 : function <function TableOperations.select_cols_to_df at 0x00000210BD252E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:49:00.846886 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:49:26.524506 : function <function TableOperations.select_all_to_df at 0x000001D3FE0F2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:49:26.524506 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:49:26.524506 : function <function TableOperations.select_cols_to_df at 0x000001D3FE0F2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:49:26.524506 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:49:57.413212 : function <function TableOperations.select_all_to_df at 0x00000212D4742DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:49:57.413212 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:49:57.413212 : function <function TableOperations.select_cols_to_df at 0x00000212D4742E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:49:57.413212 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:52:24.733294 : function <function TableOperations.select_all_to_df at 0x00000232987A2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:52:24.733294 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:52:24.733294 : function <function TableOperations.select_cols_to_df at 0x00000232987A2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:52:24.748918 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:52:47.699711 : function <function TableOperations.select_all_to_df at 0x0000012CF1AA2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:52:47.699711 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:52:47.699711 : function <function TableOperations.select_cols_to_df at 0x0000012CF1AA2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:52:47.699711 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:53:23.189943 : function <function TableOperations.select_all_to_df at 0x0000017CB73F2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:53:23.192302 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:53:23.193403 : function <function TableOperations.select_cols_to_df at 0x0000017CB73F2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:53:23.195098 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:54:09.394594 : function <function TableOperations.select_all_to_df at 0x0000022DF1132DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:54:09.396759 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:54:09.397862 : function <function TableOperations.select_cols_to_df at 0x0000022DF1132E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:54:09.400185 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:58:33.689963 : function <function TableOperations.select_all_to_df at 0x000001BB419B2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:58:33.705479 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:58:33.705479 : function <function TableOperations.select_cols_to_df at 0x000001BB419B2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:58:33.705479 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:59:28.979045 : function <function TableOperations.select_all_to_df at 0x000001ACAD0C2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:59:28.979045 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-18 23:59:28.979045 : function <function TableOperations.select_cols_to_df at 0x000001ACAD0C2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-18 23:59:28.994671 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:00:10.695026 : function <function TableOperations.select_all_to_df at 0x000001D876B92DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:00:10.695026 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:00:10.695026 : function <function TableOperations.select_cols_to_df at 0x000001D876B92E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:00:10.695026 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:01:25.657275 : function <function TableOperations.select_all_to_df at 0x000001C514A02DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:01:25.657275 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:01:25.672933 : function <function TableOperations.select_cols_to_df at 0x000001C514A02E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:01:25.672933 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:01:54.517733 : function <function TableOperations.select_all_to_df at 0x000002693B482DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:01:54.520820 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:01:54.521836 : function <function TableOperations.select_cols_to_df at 0x000002693B482E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:01:54.522840 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:02:26.336536 : function <function TableOperations.select_all_to_df at 0x000001C1D62B2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:02:26.352046 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:02:26.352046 : function <function TableOperations.select_cols_to_df at 0x000001C1D62B2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:02:26.352046 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:02:57.894091 : function <function TableOperations.select_all_to_df at 0x000001659AAA2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:02:57.894091 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:02:57.894091 : function <function TableOperations.select_cols_to_df at 0x000001659AAA2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:02:57.908165 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:03:33.791913 : function <function TableOperations.select_all_to_df at 0x000001E5EAEA2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:03:33.791913 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:03:33.791913 : function <function TableOperations.select_cols_to_df at 0x000001E5EAEA2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:03:33.791913 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:06:21.224552 : function <function TableOperations.select_all_to_df at 0x00000163DD102DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:06:21.224552 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:06:21.224552 : function <function TableOperations.select_cols_to_df at 0x00000163DD102E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:06:21.224552 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:08:11.285277 : function <function TableOperations.select_all_to_df at 0x000002DB77AC2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:08:11.285277 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:08:11.300797 : function <function TableOperations.select_cols_to_df at 0x000002DB77AC2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:08:11.300797 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:09:57.411483 : function <function TableOperations.select_all_to_df at 0x000002AE86432DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:09:57.412617 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:09:57.412617 : function <function TableOperations.select_cols_to_df at 0x000002AE86432E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:09:57.412617 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:12:03.562471 : function <function TableOperations.select_all_to_df at 0x0000027C6ABB2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:12:03.562471 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:12:03.577883 : function <function TableOperations.select_cols_to_df at 0x0000027C6ABB2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:12:03.577883 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:12:31.307330 : function <function TableOperations.select_all_to_df at 0x000002C9E8D22DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:12:31.322957 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:12:31.322957 : function <function TableOperations.select_cols_to_df at 0x000002C9E8D22E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:12:31.322957 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:13:42.619689 : function <function TableOperations.select_all_to_df at 0x000002430F232DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:13:42.622836 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:13:42.623818 : function <function TableOperations.select_cols_to_df at 0x000002430F232E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:13:42.625818 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:16:38.672763 : function <function TableOperations.select_all_to_df at 0x000001E513AD2D40>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:16:38.675764 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:16:38.676763 : function <function TableOperations.select_cols_to_df at 0x000001E513AD2DE0>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:16:38.678763 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:28:49.381464 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:28:49.381464 : function check_if_table_exists, message: Table f_pubs does not exist in dot_dev_gold.db 
+2024-05-19 00:29:19.059561 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:29:19.059561 : function check_if_table_exists, message: Table f_pubs does not exist in dot_dev_gold.db 
+2024-05-19 00:32:52.132414 : function <function TableOperations.select_all_to_df at 0x000002846FCF2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:32:52.132414 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:32:52.132414 : function <function TableOperations.select_cols_to_df at 0x000002846FCF2E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:32:52.132414 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:32:52.148099 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:32:52.148099 : function check_if_table_exists, message: Table f_pubs does not exist in dot_dev_gold.db 
+2024-05-19 00:32:52.148099 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:32:52.163793 : function insert_df_into_table, message: Data was inserted into f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:32:52.179317 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:32:52.179317 : function check_if_table_exists, message: Table f_pubs exists in dot_dev_gold.db 
+2024-05-19 00:32:52.179317 : function <function TableOperations.select_all_to_df at 0x000002846FCF2DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: f_pubs, database: dot_dev_gold.db 
+2024-05-19 00:32:52.179317 : function select_all_to_df, message: select_all_to_df method finished, f_pubs is hereby created as a dataframe 
+2024-05-19 00:33:33.030460 : function <function TableOperations.select_all_to_df at 0x0000025644B82DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:33:33.045897 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:33:33.045897 : function <function TableOperations.select_cols_to_df at 0x0000025644B82E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:33:33.045897 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:33:33.045897 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:33:33.045897 : function check_if_table_exists, message: Table f_pubs exists in dot_dev_gold.db 
+2024-05-19 00:33:33.045897 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:33:33.092809 : function insert_df_into_table, message: Data was inserted into f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:33:33.092809 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:33:33.092809 : function check_if_table_exists, message: Table f_pubs exists in dot_dev_gold.db 
+2024-05-19 00:33:33.092809 : function <function TableOperations.select_all_to_df at 0x0000025644B82DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: f_pubs, database: dot_dev_gold.db 
+2024-05-19 00:33:33.092809 : function select_all_to_df, message: select_all_to_df method finished, f_pubs is hereby created as a dataframe 
+2024-05-19 00:35:20.323017 : function <function TableOperations.select_all_to_df at 0x000001D107632DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:35:20.338537 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:35:20.338537 : function <function TableOperations.select_cols_to_df at 0x000001D107632E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:35:20.338537 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:35:20.338537 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:35:20.338537 : function check_if_table_exists, message: Table f_pubs exists in dot_dev_gold.db 
+2024-05-19 00:35:20.338537 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:35:20.385913 : function insert_df_into_table, message: Data was inserted into f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:35:20.385913 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:35:20.385913 : function check_if_table_exists, message: Table f_pubs exists in dot_dev_gold.db 
+2024-05-19 00:35:20.385913 : function <function TableOperations.select_all_to_df at 0x000001D107632DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: f_pubs, database: dot_dev_gold.db 
+2024-05-19 00:35:20.385913 : function select_all_to_df, message: select_all_to_df method finished, f_pubs is hereby created as a dataframe 
+2024-05-19 00:36:07.234543 : function <function TableOperations.select_all_to_df at 0x000001BEBF212DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:36:07.234543 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:36:07.234543 : function <function TableOperations.select_cols_to_df at 0x000001BEBF212E80>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 00:36:07.234543 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 00:36:07.234543 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:36:07.234543 : function check_if_table_exists, message: Table f_pubs exists in dot_dev_gold.db 
+2024-05-19 00:36:07.234543 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:36:07.281852 : function insert_df_into_table, message: Data was inserted into f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:36:07.281852 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_pubs, database:dot_dev_gold.db 
+2024-05-19 00:36:07.281852 : function check_if_table_exists, message: Table f_pubs exists in dot_dev_gold.db 
+2024-05-19 00:36:07.281852 : function <function TableOperations.select_all_to_df at 0x000001BEBF212DE0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: f_pubs, database: dot_dev_gold.db 
+2024-05-19 00:36:07.281852 : function select_all_to_df, message: select_all_to_df method finished, f_pubs is hereby created as a dataframe 

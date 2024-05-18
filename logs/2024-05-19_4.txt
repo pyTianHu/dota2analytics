@@ -1,0 +1,10 @@
+2024-05-19 01:14:30.648544 : function <function TableOperations.select_all_to_df at 0x0000016E2B1A32E0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:14:30.648544 : function select_all_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:14:30.648544 : function <function TableOperations.select_cols_to_df at 0x0000016E2B1A3380>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:14:30.648544 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:15:15.752906 : function <function TableOperations.select_all_to_df at 0x0000027CC31432E0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:15:15.752906 : function select_all_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:15:15.752906 : function <function TableOperations.select_cols_to_df at 0x0000027CC3143380>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:15:15.752906 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:15:15.752906 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_game_modes, database:dot_dev_gold.db 
+2024-05-19 01:15:15.752906 : function check_if_table_exists, message: Table f_game_modes does not exist in dot_dev_gold.db 

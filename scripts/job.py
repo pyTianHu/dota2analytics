@@ -57,7 +57,7 @@ def bronze_transformation(raw_db_name, table_name, bronze_db_name):
     # if selected cols is empty, pass
     # else proceed with selecting the data with provided cols, establish the new dataframe and save it into the bronze layer
     table = TableOperations(raw_db_name,table_name)
-    df = table.select_cols_to_df()
+    df = table.select_cols_to_df("bronze")
 
     #check if table exists in bronze, if not, create it
     bronze_table = TableOperations(bronze_db_name, table_name)
@@ -97,16 +97,18 @@ def bronze_to_silver_transformation(bronze_db_name, table_name, silver_db_name):
 def silver_to_gold_transformation(silver_db_name, silver_table_name, gold_db_name, gold_table_name):
 
     # get source data from silver layer
-    table = TableOperations(silver_db_name,silver_table_name)
-    df = table.select_cols_to_df()
+    try:
+        table = TableOperations(silver_db_name,silver_table_name)
+        df = table.select_cols_to_df("gold")
 
-    # commit data transformation while data is in dataframe
+        # commit transformation while data is in dataframe
+        heroes = DataFrameOperations(silver_db_name, silver_table_name)
+        df, table_renamed = heroes.silver_to_gold_df()
 
-
-    # check if table exists in gold layer => use renamed table name
-
-
-    #create if not exists => use schemas and constraints from gold.utils
-
-
-    return df.head()
+        # create table from dataframe on gold layer
+        gold_table_object = TableOperations(db_name=gold_db_name, table_name=table_renamed, data=df)
+        gold_table_object.insert_df_into_table()
+        return True
+    
+    except Exception as e:
+        return e

@@ -1,0 +1,436 @@
+2024-05-19 01:00:59.623529 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:00:59.623529 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:00:59.623529 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:00:59.623529 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:00:59.623529 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:00:59.623529 : function check_if_table_exists, message: check_if_table_exists method started, table to check: heroes, database:dot_dev.db 
+2024-05-19 01:00:59.623529 : function check_if_table_exists, message: Table heroes exists in dot_dev.db 
+2024-05-19 01:00:59.623529 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: heroes, database:dot_dev.db 
+2024-05-19 01:00:59.672856 : function insert_df_into_table, message: Data was inserted into heroes, database:dot_dev.db 
+2024-05-19 01:00:59.673903 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:00:59.674860 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:00:59.688859 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:00:59.689990 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:00:59.689990 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:00:59.689990 : function check_if_table_exists, message: check_if_table_exists method started, table to check: herostats, database:dot_dev.db 
+2024-05-19 01:00:59.689990 : function check_if_table_exists, message: Table herostats exists in dot_dev.db 
+2024-05-19 01:00:59.689990 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: herostats, database:dot_dev.db 
+2024-05-19 01:00:59.736862 : function insert_df_into_table, message: Data was inserted into herostats, database:dot_dev.db 
+2024-05-19 01:00:59.736862 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:00:59.736862 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:00:59.745375 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:00:59.745375 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:00:59.745375 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:00:59.745375 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev.db 
+2024-05-19 01:00:59.745375 : function check_if_table_exists, message: Table publicmatches exists in dot_dev.db 
+2024-05-19 01:00:59.745375 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev.db 
+2024-05-19 01:00:59.784145 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev.db 
+2024-05-19 01:00:59.784145 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:00:59.784145 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:00:59.815393 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:00:59.815393 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:00:59.815393 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:00:59.815393 : function check_if_table_exists, message: check_if_table_exists method started, table to check: abilities, database:dot_dev.db 
+2024-05-19 01:00:59.815393 : function check_if_table_exists, message: Table abilities exists in dot_dev.db 
+2024-05-19 01:00:59.815393 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: abilities, database:dot_dev.db 
+2024-05-19 01:00:59.862734 : function insert_df_into_table, message: Data was inserted into abilities, database:dot_dev.db 
+2024-05-19 01:00:59.862734 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:00:59.862734 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:00:59.878324 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:00:59.878324 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:00:59.878324 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:00:59.878324 : function check_if_table_exists, message: check_if_table_exists method started, table to check: ability_ids, database:dot_dev.db 
+2024-05-19 01:00:59.878324 : function check_if_table_exists, message: Table ability_ids exists in dot_dev.db 
+2024-05-19 01:00:59.878324 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: ability_ids, database:dot_dev.db 
+2024-05-19 01:00:59.945701 : function insert_df_into_table, message: Data was inserted into ability_ids, database:dot_dev.db 
+2024-05-19 01:00:59.945701 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:00:59.945701 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:00:59.945701 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:00:59.945701 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:00:59.956733 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:00:59.956733 : function check_if_table_exists, message: check_if_table_exists method started, table to check: game_mode, database:dot_dev.db 
+2024-05-19 01:00:59.956733 : function check_if_table_exists, message: Table game_mode exists in dot_dev.db 
+2024-05-19 01:00:59.956733 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: game_mode, database:dot_dev.db 
+2024-05-19 01:01:00.019240 : function insert_df_into_table, message: Data was inserted into game_mode, database:dot_dev.db 
+2024-05-19 01:01:00.019240 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:01:00.019240 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:01:00.019240 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:01:00.019240 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:01:00.019240 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:01:00.019240 : function check_if_table_exists, message: check_if_table_exists method started, table to check: hero_abilities, database:dot_dev.db 
+2024-05-19 01:01:00.019240 : function check_if_table_exists, message: Table hero_abilities exists in dot_dev.db 
+2024-05-19 01:01:00.019240 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: hero_abilities, database:dot_dev.db 
+2024-05-19 01:01:00.133181 : function insert_df_into_table, message: Data was inserted into hero_abilities, database:dot_dev.db 
+2024-05-19 01:01:00.133181 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:01:00.134173 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:01:00.134865 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:01:00.135973 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:01:00.136870 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:01:00.137871 : function check_if_table_exists, message: check_if_table_exists method started, table to check: items_ids, database:dot_dev.db 
+2024-05-19 01:01:00.137871 : function check_if_table_exists, message: Table items_ids exists in dot_dev.db 
+2024-05-19 01:01:00.139141 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: items_ids, database:dot_dev.db 
+2024-05-19 01:01:00.217704 : function insert_df_into_table, message: Data was inserted into items_ids, database:dot_dev.db 
+2024-05-19 01:01:00.217704 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:01:00.217704 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:01:00.217704 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:01:00.217704 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:01:00.217704 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:01:00.217704 : function check_if_table_exists, message: check_if_table_exists method started, table to check: items, database:dot_dev.db 
+2024-05-19 01:01:00.217704 : function check_if_table_exists, message: Table items exists in dot_dev.db 
+2024-05-19 01:01:00.217704 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: items, database:dot_dev.db 
+2024-05-19 01:01:00.275597 : function insert_df_into_table, message: Data was inserted into items, database:dot_dev.db 
+2024-05-19 01:01:00.276621 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:01:00.276621 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:01:00.278618 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:01:00.278618 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:01:00.279596 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:01:00.280602 : function check_if_table_exists, message: check_if_table_exists method started, table to check: patch, database:dot_dev.db 
+2024-05-19 01:01:00.281600 : function check_if_table_exists, message: Table patch exists in dot_dev.db 
+2024-05-19 01:01:00.281600 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: patch, database:dot_dev.db 
+2024-05-19 01:01:00.300260 : function insert_df_into_table, message: Data was inserted into patch, database:dot_dev.db 
+2024-05-19 01:01:00.300260 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:01:00.300260 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:01:00.315907 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:01:00.315907 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:01:00.315907 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:01:00.315907 : function check_if_table_exists, message: check_if_table_exists method started, table to check: lobby_type, database:dot_dev.db 
+2024-05-19 01:01:00.315907 : function check_if_table_exists, message: Table lobby_type exists in dot_dev.db 
+2024-05-19 01:01:00.315907 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: lobby_type, database:dot_dev.db 
+2024-05-19 01:01:00.347625 : function insert_df_into_table, message: Data was inserted into lobby_type, database:dot_dev.db 
+2024-05-19 01:01:00.347625 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-19 01:01:00.347625 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev.db 
+2024-05-19 01:01:00.347625 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-19 01:01:00.347625 : function check_if_table_exists, message: check_if_table_exists method started, table to check: heroes, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.347625 : function check_if_table_exists, message: Table heroes exists in dot_dev_bronze.db 
+2024-05-19 01:01:00.347625 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: heroes, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.378880 : function insert_df_into_table, message: Data was inserted into heroes, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.378880 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-19 01:01:00.378880 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-19 01:01:00.378880 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev.db 
+2024-05-19 01:01:00.378880 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 01:01:00.394504 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.394504 : function check_if_table_exists, message: Table publicmatches exists in dot_dev_bronze.db 
+2024-05-19 01:01:00.394504 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.441565 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.446081 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-19 01:01:00.446081 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-19 01:01:00.446081 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev.db 
+2024-05-19 01:01:00.446081 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:01:00.446081 : function check_if_table_exists, message: check_if_table_exists method started, table to check: game_mode, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.446081 : function check_if_table_exists, message: Table game_mode exists in dot_dev_bronze.db 
+2024-05-19 01:01:00.446081 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: game_mode, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.488955 : function insert_df_into_table, message: Data was inserted into game_mode, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.488955 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-19 01:01:00.488955 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-19 01:01:00.488955 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev.db 
+2024-05-19 01:01:00.488955 : function select_cols_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-19 01:01:00.488955 : function check_if_table_exists, message: check_if_table_exists method started, table to check: patch, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.488955 : function check_if_table_exists, message: Table patch exists in dot_dev_bronze.db 
+2024-05-19 01:01:00.488955 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: patch, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.599008 : function insert_df_into_table, message: Data was inserted into patch, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.599008 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-19 01:01:00.599008 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-19 01:01:00.599008 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev.db 
+2024-05-19 01:01:00.599008 : function select_cols_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-19 01:01:00.599008 : function check_if_table_exists, message: check_if_table_exists method started, table to check: lobby_type, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.599008 : function check_if_table_exists, message: Table lobby_type exists in dot_dev_bronze.db 
+2024-05-19 01:01:00.599008 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: lobby_type, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.671740 : function insert_df_into_table, message: Data was inserted into lobby_type, database:dot_dev_bronze.db 
+2024-05-19 01:01:00.672752 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-19 01:01:00.673742 : function <function TableOperations.select_all_to_df at 0x0000012D8FC32FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_bronze.db 
+2024-05-19 01:01:00.675740 : function select_all_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-19 01:01:00.676747 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: heroes, database:dot_dev_silver.db 
+2024-05-19 01:01:00.733906 : function insert_df_into_table, message: Data was inserted into heroes, database:dot_dev_silver.db 
+2024-05-19 01:01:00.733906 : function <function TableOperations.select_all_to_df at 0x0000012D8FC32FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_bronze.db 
+2024-05-19 01:01:00.746494 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 01:01:00.750113 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev_silver.db 
+2024-05-19 01:01:00.781379 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev_silver.db 
+2024-05-19 01:01:00.781379 : function <function TableOperations.select_all_to_df at 0x0000012D8FC32FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_bronze.db 
+2024-05-19 01:01:00.781379 : function select_all_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:01:00.781379 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: game_mode, database:dot_dev_silver.db 
+2024-05-19 01:01:00.846441 : function insert_df_into_table, message: Data was inserted into game_mode, database:dot_dev_silver.db 
+2024-05-19 01:01:00.846441 : function <function TableOperations.select_all_to_df at 0x0000012D8FC32FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_bronze.db 
+2024-05-19 01:01:00.846441 : function select_all_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-19 01:01:00.846441 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: patch, database:dot_dev_silver.db 
+2024-05-19 01:01:00.922557 : function insert_df_into_table, message: Data was inserted into patch, database:dot_dev_silver.db 
+2024-05-19 01:01:00.922557 : function <function TableOperations.select_all_to_df at 0x0000012D8FC32FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev_bronze.db 
+2024-05-19 01:01:00.922557 : function select_all_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-19 01:01:00.922557 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: lobby_type, database:dot_dev_silver.db 
+2024-05-19 01:01:00.999899 : function insert_df_into_table, message: Data was inserted into lobby_type, database:dot_dev_silver.db 
+2024-05-19 01:01:01.000899 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-19 01:01:01.002900 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-19 01:01:01.003977 : function <function TableOperations.select_all_to_df at 0x0000012D8FC32FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-19 01:01:01.005981 : function select_all_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-19 01:01:01.006982 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-19 01:01:01.008072 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-19 01:01:01.010565 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: dim_heroes, database:dot_dev_gold.db 
+2024-05-19 01:01:01.045176 : function insert_df_into_table, message: Data was inserted into dim_heroes, database:dot_dev_gold.db 
+2024-05-19 01:01:01.046691 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 01:01:01.049701 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 01:01:01.049927 : function <function TableOperations.select_all_to_df at 0x0000012D8FC32FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 01:01:01.049927 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 01:01:01.049927 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 01:01:01.049927 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 01:01:01.065416 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: f_pubs, database:dot_dev_gold.db 
+2024-05-19 01:01:01.131720 : function insert_df_into_table, message: Data was inserted into f_pubs, database:dot_dev_gold.db 
+2024-05-19 01:01:01.131720 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:01:01.131720 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:01:01.131720 : function <function TableOperations.select_all_to_df at 0x0000012D8FC32FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:01:01.131720 : function select_all_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:01:01.131720 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:01:01.131720 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:01:01.146606 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_silver.db 
+2024-05-19 01:01:01.148612 : function select_cols_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-19 01:01:01.149427 : function <function TableOperations.select_all_to_df at 0x0000012D8FC32FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_silver.db 
+2024-05-19 01:01:01.149427 : function select_all_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-19 01:01:01.149427 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_silver.db 
+2024-05-19 01:01:01.149427 : function select_cols_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-19 01:01:01.149427 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev_silver.db 
+2024-05-19 01:01:01.149427 : function select_cols_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-19 01:01:01.149427 : function <function TableOperations.select_all_to_df at 0x0000012D8FC32FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev_silver.db 
+2024-05-19 01:01:01.149427 : function select_all_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-19 01:01:01.149427 : function <function TableOperations.select_cols_to_df at 0x0000012D8FC33060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev_silver.db 
+2024-05-19 01:01:01.162096 : function select_cols_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-19 01:01:01.164612 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: f_lobby_types, database:dot_dev_gold.db 
+2024-05-19 01:01:01.267124 : function insert_df_into_table, message: Data was inserted into f_lobby_types, database:dot_dev_gold.db 
+2024-05-19 01:03:57.818355 : function <function TableOperations.select_all_to_df at 0x00000125ABDA32E0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:03:57.818355 : function select_all_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:03:57.818355 : function <function TableOperations.select_cols_to_df at 0x00000125ABDA3380>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:03:57.818355 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:05:22.780290 : function <function TableOperations.select_all_to_df at 0x0000018733E532E0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:05:22.780290 : function select_all_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:05:22.780290 : function <function TableOperations.select_cols_to_df at 0x0000018733E53380>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:05:22.795983 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:05:22.795983 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_pubs, database:dot_dev_gold.db 
+2024-05-19 01:05:22.795983 : function check_if_table_exists, message: Table f_pubs exists in dot_dev_gold.db 
+2024-05-19 01:05:22.795983 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: f_pubs, database:dot_dev_gold.db 
+2024-05-19 01:05:22.795983 : function insert_df_into_table, message: Rows could not be inserted into f_pubs due to exception: 'tuple' object has no attribute 'to_sql', database:dot_dev_gold.db 
+2024-05-19 01:05:22.805989 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_pubs, database:dot_dev_gold.db 
+2024-05-19 01:05:22.805989 : function check_if_table_exists, message: Table f_pubs exists in dot_dev_gold.db 
+2024-05-19 01:05:22.805989 : function <function TableOperations.select_all_to_df at 0x0000018733E532E0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: f_pubs, database: dot_dev_gold.db 
+2024-05-19 01:05:22.805989 : function select_all_to_df, message: select_all_to_df method finished, f_pubs is hereby created as a dataframe 
+2024-05-19 01:05:47.626630 : function <function TableOperations.select_all_to_df at 0x00000132ECA132E0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:05:47.626630 : function select_all_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:05:47.626630 : function <function TableOperations.select_cols_to_df at 0x00000132ECA13380>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:05:47.626630 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:05:47.626630 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_game_modes, database:dot_dev_gold.db 
+2024-05-19 01:05:47.626630 : function check_if_table_exists, message: Table f_game_modes does not exist in dot_dev_gold.db 
+2024-05-19 01:05:47.626630 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: f_game_modes, database:dot_dev_gold.db 
+2024-05-19 01:05:47.626630 : function insert_df_into_table, message: Rows could not be inserted into f_game_modes due to exception: 'tuple' object has no attribute 'to_sql', database:dot_dev_gold.db 
+2024-05-19 01:05:47.626630 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_game_modes, database:dot_dev_gold.db 
+2024-05-19 01:05:47.642197 : function check_if_table_exists, message: Table f_game_modes does not exist in dot_dev_gold.db 
+2024-05-19 01:05:47.642197 : function <function TableOperations.select_all_to_df at 0x00000132ECA132E0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: f_game_modes, database: dot_dev_gold.db 
+2024-05-19 01:05:47.642197 : function select_all_to_df, message: select_all_to_df method finished, f_game_modes has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT *
+                FROM f_game_modes
+                ': no such table: f_game_modes 
+2024-05-19 01:06:04.412519 : function <function TableOperations.select_all_to_df at 0x00000266F88232E0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:06:04.412519 : function select_all_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:06:04.412519 : function <function TableOperations.select_cols_to_df at 0x00000266F8823380>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:06:04.412519 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:06:04.431793 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_game_modes, database:dot_dev_gold.db 
+2024-05-19 01:06:04.432844 : function check_if_table_exists, message: Table f_game_modes does not exist in dot_dev_gold.db 
+2024-05-19 01:06:04.433827 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: f_game_modes, database:dot_dev_gold.db 
+2024-05-19 01:06:04.433827 : function insert_df_into_table, message: Rows could not be inserted into f_game_modes due to exception: 'tuple' object has no attribute 'to_sql', database:dot_dev_gold.db 
+2024-05-19 01:06:04.434825 : function check_if_table_exists, message: check_if_table_exists method started, table to check: f_game_modes, database:dot_dev_gold.db 
+2024-05-19 01:06:04.435832 : function check_if_table_exists, message: Table f_game_modes does not exist in dot_dev_gold.db 
+2024-05-19 01:06:04.435832 : function <function TableOperations.select_all_to_df at 0x00000266F88232E0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: f_game_modes, database: dot_dev_gold.db 
+2024-05-19 01:06:04.436825 : function select_all_to_df, message: select_all_to_df method finished, f_game_modes has not been created as a dataframe due to exception: Execution failed on sql '
+                SELECT *
+                FROM f_game_modes
+                ': no such table: f_game_modes 
+2024-05-19 01:07:12.283581 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:07:12.283581 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:07:12.283581 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:07:12.283581 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:07:12.283581 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:07:12.283581 : function check_if_table_exists, message: check_if_table_exists method started, table to check: heroes, database:dot_dev.db 
+2024-05-19 01:07:12.283581 : function check_if_table_exists, message: Table heroes exists in dot_dev.db 
+2024-05-19 01:07:12.283581 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: heroes, database:dot_dev.db 
+2024-05-19 01:07:12.330293 : function insert_df_into_table, message: Data was inserted into heroes, database:dot_dev.db 
+2024-05-19 01:07:12.330293 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:07:12.330293 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:07:12.347905 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:07:12.347905 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:07:12.347905 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:07:12.347905 : function check_if_table_exists, message: check_if_table_exists method started, table to check: herostats, database:dot_dev.db 
+2024-05-19 01:07:12.347905 : function check_if_table_exists, message: Table herostats exists in dot_dev.db 
+2024-05-19 01:07:12.347905 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: herostats, database:dot_dev.db 
+2024-05-19 01:07:12.393228 : function insert_df_into_table, message: Data was inserted into herostats, database:dot_dev.db 
+2024-05-19 01:07:12.393228 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:07:12.393228 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:07:12.393228 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:07:12.393228 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:07:12.393228 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:07:12.393228 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev.db 
+2024-05-19 01:07:12.393228 : function check_if_table_exists, message: Table publicmatches exists in dot_dev.db 
+2024-05-19 01:07:12.393228 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev.db 
+2024-05-19 01:07:12.440100 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev.db 
+2024-05-19 01:07:12.440100 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:07:12.440100 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:07:12.472033 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:07:12.472033 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:07:12.472033 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:07:12.472033 : function check_if_table_exists, message: check_if_table_exists method started, table to check: abilities, database:dot_dev.db 
+2024-05-19 01:07:12.472033 : function check_if_table_exists, message: Table abilities exists in dot_dev.db 
+2024-05-19 01:07:12.472033 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: abilities, database:dot_dev.db 
+2024-05-19 01:07:12.518967 : function insert_df_into_table, message: Data was inserted into abilities, database:dot_dev.db 
+2024-05-19 01:07:12.518967 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:07:12.518967 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:07:12.534474 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:07:12.534474 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:07:12.534474 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:07:12.534474 : function check_if_table_exists, message: check_if_table_exists method started, table to check: ability_ids, database:dot_dev.db 
+2024-05-19 01:07:12.534474 : function check_if_table_exists, message: Table ability_ids exists in dot_dev.db 
+2024-05-19 01:07:12.534474 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: ability_ids, database:dot_dev.db 
+2024-05-19 01:07:12.566116 : function insert_df_into_table, message: Data was inserted into ability_ids, database:dot_dev.db 
+2024-05-19 01:07:12.566116 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:07:12.566116 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:07:12.566116 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:07:12.566116 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:07:12.581747 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:07:12.581747 : function check_if_table_exists, message: check_if_table_exists method started, table to check: game_mode, database:dot_dev.db 
+2024-05-19 01:07:12.581747 : function check_if_table_exists, message: Table game_mode exists in dot_dev.db 
+2024-05-19 01:07:12.581747 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: game_mode, database:dot_dev.db 
+2024-05-19 01:07:12.612991 : function insert_df_into_table, message: Data was inserted into game_mode, database:dot_dev.db 
+2024-05-19 01:07:12.612991 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:07:12.612991 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:07:12.612991 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:07:12.612991 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:07:12.612991 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:07:12.612991 : function check_if_table_exists, message: check_if_table_exists method started, table to check: hero_abilities, database:dot_dev.db 
+2024-05-19 01:07:12.612991 : function check_if_table_exists, message: Table hero_abilities exists in dot_dev.db 
+2024-05-19 01:07:12.612991 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: hero_abilities, database:dot_dev.db 
+2024-05-19 01:07:12.661557 : function insert_df_into_table, message: Data was inserted into hero_abilities, database:dot_dev.db 
+2024-05-19 01:07:12.661557 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:07:12.662559 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:07:12.663558 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:07:12.664585 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:07:12.665142 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:07:12.666183 : function check_if_table_exists, message: check_if_table_exists method started, table to check: items_ids, database:dot_dev.db 
+2024-05-19 01:07:12.667209 : function check_if_table_exists, message: Table items_ids exists in dot_dev.db 
+2024-05-19 01:07:12.668181 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: items_ids, database:dot_dev.db 
+2024-05-19 01:07:12.701280 : function insert_df_into_table, message: Data was inserted into items_ids, database:dot_dev.db 
+2024-05-19 01:07:12.702305 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:07:12.703305 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:07:12.704197 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:07:12.704197 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:07:12.714948 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:07:12.716001 : function check_if_table_exists, message: check_if_table_exists method started, table to check: items, database:dot_dev.db 
+2024-05-19 01:07:12.717015 : function check_if_table_exists, message: Table items exists in dot_dev.db 
+2024-05-19 01:07:12.717015 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: items, database:dot_dev.db 
+2024-05-19 01:07:12.749812 : function insert_df_into_table, message: Data was inserted into items, database:dot_dev.db 
+2024-05-19 01:07:12.749812 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:07:12.749812 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:07:12.749812 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:07:12.749812 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:07:12.765438 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:07:12.765438 : function check_if_table_exists, message: check_if_table_exists method started, table to check: patch, database:dot_dev.db 
+2024-05-19 01:07:12.765438 : function check_if_table_exists, message: Table patch exists in dot_dev.db 
+2024-05-19 01:07:12.765438 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: patch, database:dot_dev.db 
+2024-05-19 01:07:12.796720 : function insert_df_into_table, message: Data was inserted into patch, database:dot_dev.db 
+2024-05-19 01:07:12.796720 : function table_create_and_ingest, message: table_create_and_ingest function started 
+2024-05-19 01:07:12.796720 : function convert_list_to_string_df, message: convert_list_to_string_df function started 
+2024-05-19 01:07:12.796720 : function convert_list_to_string_df, message: convert_list_to_string_df function finished 
+2024-05-19 01:07:12.796720 : function prepare_schema_for_df, message: prepare_schema_for_df function started 
+2024-05-19 01:07:12.796720 : function prepare_schema_for_df, message: prepare_schema_for_df function finished 
+2024-05-19 01:07:12.796720 : function check_if_table_exists, message: check_if_table_exists method started, table to check: lobby_type, database:dot_dev.db 
+2024-05-19 01:07:12.796720 : function check_if_table_exists, message: Table lobby_type exists in dot_dev.db 
+2024-05-19 01:07:12.796720 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: lobby_type, database:dot_dev.db 
+2024-05-19 01:07:12.827936 : function insert_df_into_table, message: Data was inserted into lobby_type, database:dot_dev.db 
+2024-05-19 01:07:12.827936 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-19 01:07:12.827936 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev.db 
+2024-05-19 01:07:12.843565 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-19 01:07:12.843565 : function check_if_table_exists, message: check_if_table_exists method started, table to check: heroes, database:dot_dev_bronze.db 
+2024-05-19 01:07:12.843565 : function check_if_table_exists, message: Table heroes exists in dot_dev_bronze.db 
+2024-05-19 01:07:12.843565 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: heroes, database:dot_dev_bronze.db 
+2024-05-19 01:07:12.875234 : function insert_df_into_table, message: Data was inserted into heroes, database:dot_dev_bronze.db 
+2024-05-19 01:07:12.875234 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-19 01:07:12.875234 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-19 01:07:12.875234 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev.db 
+2024-05-19 01:07:12.875234 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 01:07:12.875234 : function check_if_table_exists, message: check_if_table_exists method started, table to check: publicmatches, database:dot_dev_bronze.db 
+2024-05-19 01:07:12.875234 : function check_if_table_exists, message: Table publicmatches exists in dot_dev_bronze.db 
+2024-05-19 01:07:12.875234 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev_bronze.db 
+2024-05-19 01:07:12.906511 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev_bronze.db 
+2024-05-19 01:07:12.906511 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-19 01:07:12.922115 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-19 01:07:12.922115 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev.db 
+2024-05-19 01:07:12.922115 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:07:12.922115 : function check_if_table_exists, message: check_if_table_exists method started, table to check: game_mode, database:dot_dev_bronze.db 
+2024-05-19 01:07:12.922115 : function check_if_table_exists, message: Table game_mode exists in dot_dev_bronze.db 
+2024-05-19 01:07:12.922115 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: game_mode, database:dot_dev_bronze.db 
+2024-05-19 01:07:12.953787 : function insert_df_into_table, message: Data was inserted into game_mode, database:dot_dev_bronze.db 
+2024-05-19 01:07:12.953787 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-19 01:07:12.953787 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-19 01:07:12.953787 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev.db 
+2024-05-19 01:07:12.953787 : function select_cols_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-19 01:07:12.953787 : function check_if_table_exists, message: check_if_table_exists method started, table to check: patch, database:dot_dev_bronze.db 
+2024-05-19 01:07:12.953787 : function check_if_table_exists, message: Table patch exists in dot_dev_bronze.db 
+2024-05-19 01:07:12.953787 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: patch, database:dot_dev_bronze.db 
+2024-05-19 01:07:13.000669 : function insert_df_into_table, message: Data was inserted into patch, database:dot_dev_bronze.db 
+2024-05-19 01:07:13.000669 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-19 01:07:13.000669 : function bronze_transformation, message: bronze_transformation function started 
+2024-05-19 01:07:13.000669 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev.db 
+2024-05-19 01:07:13.000669 : function select_cols_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-19 01:07:13.000669 : function check_if_table_exists, message: check_if_table_exists method started, table to check: lobby_type, database:dot_dev_bronze.db 
+2024-05-19 01:07:13.000669 : function check_if_table_exists, message: Table lobby_type exists in dot_dev_bronze.db 
+2024-05-19 01:07:13.000669 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: lobby_type, database:dot_dev_bronze.db 
+2024-05-19 01:07:13.048687 : function insert_df_into_table, message: Data was inserted into lobby_type, database:dot_dev_bronze.db 
+2024-05-19 01:07:13.048687 : function bronze_transformation, message: bronze_transformation function finished: result of insert_df_into_table function => True 
+2024-05-19 01:07:13.048687 : function <function TableOperations.select_all_to_df at 0x0000019EB7672FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_bronze.db 
+2024-05-19 01:07:13.048687 : function select_all_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-19 01:07:13.048687 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: heroes, database:dot_dev_silver.db 
+2024-05-19 01:07:13.079354 : function insert_df_into_table, message: Data was inserted into heroes, database:dot_dev_silver.db 
+2024-05-19 01:07:13.079354 : function <function TableOperations.select_all_to_df at 0x0000019EB7672FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_bronze.db 
+2024-05-19 01:07:13.079354 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 01:07:13.079354 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: publicmatches, database:dot_dev_silver.db 
+2024-05-19 01:07:13.110587 : function insert_df_into_table, message: Data was inserted into publicmatches, database:dot_dev_silver.db 
+2024-05-19 01:07:13.110587 : function <function TableOperations.select_all_to_df at 0x0000019EB7672FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_bronze.db 
+2024-05-19 01:07:13.126209 : function select_all_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:07:13.126209 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: game_mode, database:dot_dev_silver.db 
+2024-05-19 01:07:13.157941 : function insert_df_into_table, message: Data was inserted into game_mode, database:dot_dev_silver.db 
+2024-05-19 01:07:13.157941 : function <function TableOperations.select_all_to_df at 0x0000019EB7672FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_bronze.db 
+2024-05-19 01:07:13.157941 : function select_all_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-19 01:07:13.157941 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: patch, database:dot_dev_silver.db 
+2024-05-19 01:07:13.196477 : function insert_df_into_table, message: Data was inserted into patch, database:dot_dev_silver.db 
+2024-05-19 01:07:13.196477 : function <function TableOperations.select_all_to_df at 0x0000019EB7672FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev_bronze.db 
+2024-05-19 01:07:13.196477 : function select_all_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-19 01:07:13.196477 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: lobby_type, database:dot_dev_silver.db 
+2024-05-19 01:07:13.232975 : function insert_df_into_table, message: Data was inserted into lobby_type, database:dot_dev_silver.db 
+2024-05-19 01:07:13.233971 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-19 01:07:13.235977 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-19 01:07:13.236977 : function <function TableOperations.select_all_to_df at 0x0000019EB7672FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-19 01:07:13.237977 : function select_all_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-19 01:07:13.238977 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: heroes, database: dot_dev_silver.db 
+2024-05-19 01:07:13.239977 : function select_cols_to_df, message: select_all_to_df method finished, heroes is hereby created as a dataframe 
+2024-05-19 01:07:13.241978 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: dim_heroes, database:dot_dev_gold.db 
+2024-05-19 01:07:13.260768 : function insert_df_into_table, message: Data was inserted into dim_heroes, database:dot_dev_gold.db 
+2024-05-19 01:07:13.260768 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 01:07:13.276409 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 01:07:13.276409 : function <function TableOperations.select_all_to_df at 0x0000019EB7672FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 01:07:13.276409 : function select_all_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 01:07:13.276409 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: publicmatches, database: dot_dev_silver.db 
+2024-05-19 01:07:13.276409 : function select_cols_to_df, message: select_all_to_df method finished, publicmatches is hereby created as a dataframe 
+2024-05-19 01:07:13.276409 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: f_pubs, database:dot_dev_gold.db 
+2024-05-19 01:07:13.323274 : function insert_df_into_table, message: Data was inserted into f_pubs, database:dot_dev_gold.db 
+2024-05-19 01:07:13.323274 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:07:13.323274 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:07:13.323274 : function <function TableOperations.select_all_to_df at 0x0000019EB7672FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:07:13.323274 : function select_all_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:07:13.323274 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: game_mode, database: dot_dev_silver.db 
+2024-05-19 01:07:13.323274 : function select_cols_to_df, message: select_all_to_df method finished, game_mode is hereby created as a dataframe 
+2024-05-19 01:07:13.338901 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_silver.db 
+2024-05-19 01:07:13.338901 : function select_cols_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-19 01:07:13.338901 : function <function TableOperations.select_all_to_df at 0x0000019EB7672FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_silver.db 
+2024-05-19 01:07:13.338901 : function select_all_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-19 01:07:13.338901 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: patch, database: dot_dev_silver.db 
+2024-05-19 01:07:13.338901 : function select_cols_to_df, message: select_all_to_df method finished, patch is hereby created as a dataframe 
+2024-05-19 01:07:13.349408 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev_silver.db 
+2024-05-19 01:07:13.349408 : function select_cols_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-19 01:07:13.349408 : function <function TableOperations.select_all_to_df at 0x0000019EB7672FC0>, message: select_all_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev_silver.db 
+2024-05-19 01:07:13.349408 : function select_all_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-19 01:07:13.354914 : function <function TableOperations.select_cols_to_df at 0x0000019EB7673060>, message: select_cols_to_df method started, table to select all from and insert into a pandas dataframe: lobby_type, database: dot_dev_silver.db 
+2024-05-19 01:07:13.354914 : function select_cols_to_df, message: select_all_to_df method finished, lobby_type is hereby created as a dataframe 
+2024-05-19 01:07:13.354914 : function insert_df_into_table, message: insert_df_into_table method started, table to delete all from: f_lobby_types, database:dot_dev_gold.db 
+2024-05-19 01:07:13.386170 : function insert_df_into_table, message: Data was inserted into f_lobby_types, database:dot_dev_gold.db 
