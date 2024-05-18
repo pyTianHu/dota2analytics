@@ -11,7 +11,13 @@ The data is collected via opendota API: https://docs.opendota.com/
 # Supporting links
 - JIRA board: https://pytian.atlassian.net/jira/software/projects/DOT/boards/2/backlog
 
-# Goal of the project
+# Goal
+This project is created to help analyze data of DoTA2 games.<br>
+Since DoTA2 is one of the most complex games out there, it is incredibly hard to improve and show constant progress if you don't know which area to focus, and how. <br>
+Fortunately, Valve does a great job in collecting game data and publishing it via public API's. <br>
+My goal here is to collect the necessary data, create a flow that ingests data, processes it from the raw all the way to the gold layer, making this data available for specific pipelines. Then, these pipelines will use the data on the gold layer to create metrics that will later be used in a data visualization tool for analytics purposes, searching for trends.
+
+# Scope of the project
 - Ingest data from the API
 - Transform the data and prepare it for analysis
 - Analyze data from multiple perspective
