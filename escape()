@@ -1,0 +1,438 @@
+[33mcommit a6649e87fe59d59f74bb29bd8ad0cbee002226bf[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mdot60-branch[m[33m, [m[1;32mmaster[m[33m)[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Thu May 23 16:02:22 2024 +0200
+
+    DOT-60 Incremental load of facts data, not added to main.py yet
+
+[33mcommit 79228a174a913f79565ab6d767fe02a11a086eec[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Thu May 23 16:01:29 2024 +0200
+
+    DOT-60 Incremental load of facts data, not added to main.py yet
+
+[33mcommit 126427efbe4fcc5753a6db25b8199888d8d08fa3[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Thu May 23 15:52:07 2024 +0200
+
+    DOT-60 Incremental load of facts data, not added to main.py yet
+
+[33mcommit 6618a6f53d6d27eec7d3007f3d35f38d0f3b6f04[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Thu May 23 15:45:53 2024 +0200
+
+    DOT-60 Incremental load of facts data, not added to main.py yet
+
+[33mcommit 818cbc66c9e1daa383758da29dc7561693b6a7ee[m[33m ([m[1;31morigin/master[m[33m)[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sun May 19 01:42:49 2024 +0200
+
+    Editing Readme
+
+[33mcommit ddc829d17a6fe910ec5232672c9b13e5556cb230[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sun May 19 01:37:20 2024 +0200
+
+    DOT57 Creating silver_to_gold transformation job
+
+[33mcommit 9d6d0b22dfa8ba127364c7f125183eb45e9d32d0[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sat May 11 01:13:48 2024 +0200
+
+    DOT-54 last commit of the day
+
+[33mcommit 1a0b47439919a08715539b35582a3f5723b7ef81[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sat May 11 00:55:27 2024 +0200
+
+    DOT-54 added column_rename in gold_utils.py
+
+[33mcommit 6a0459fc2d86d22a005217ad9645cd3dd83e4b64[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sat May 11 00:43:24 2024 +0200
+
+    DOT-54 added gold_utils.py
+
+[33mcommit a3bc81824d26de6880b1d2361473df6e31af5935[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sat May 11 00:18:57 2024 +0200
+
+    DOT-56 Added Silver data model and added raw model png
+
+[33mcommit bcbec2feedff28efbb1ae6c65aab8c0527ee3bb1[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sat May 11 00:01:03 2024 +0200
+
+    DOT-42 Creating bronze-to-silver transformation and load
+
+[33mcommit 06b049c06e257369c45e42e3e0230518bad55c10[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Fri May 10 22:42:46 2024 +0200
+
+    reverting back to previous commit
+
+[33mcommit 0f12bca3503f5b68de850162e4bd3a3930af2967[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Fri May 10 22:09:36 2024 +0200
+
+    This one to be reverted
+
+[33mcommit 6bbffd06b02fb71eb1c577becf47cc1d24cf4b21[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Thu May 9 00:21:41 2024 +0200
+
+    DOT-38 rename_log method and code refinement
+
+[33mcommit 58815d2d80e62fe2f9559c53c1682c4ee3d38843[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed May 8 23:51:08 2024 +0200
+
+    DOT-48 generic job to create new table and insert df to db
+
+[33mcommit 9b96e82f8562b76aec7e53cb31eb6873ccd41301[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed May 8 17:05:27 2024 +0200
+
+    DOT-48 generic_table_creation_mechanism created and modified main.py logic
+
+[33mcommit a3e4b8f9ae1fa5250db653c072a364a4fb321137[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed May 8 16:15:43 2024 +0200
+
+    DOT-48 generic_table_creation_mechanism
+
+[33mcommit dc438dad5dfe694b236218eea51494be1837124a[m[33m ([m[1;31morigin/temporary_branch[m[33m, [m[1;32mtemporary_branch[m[33m)[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed May 8 15:28:16 2024 +0200
+
+    DOT-46 Case handling of filter_rows method
+
+[33mcommit 25218b456641f56b4dcee99267e86425cf2decec[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed May 8 15:10:12 2024 +0200
+
+    DOT-45 Adding DataFrameOperations return_df and filter_rows methods
+
+[33mcommit bf542306d2235881c2633534ed7c881e58690769[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed May 8 12:07:05 2024 +0200
+
+    DOT-44 Restructured utils.py
+
+[33mcommit 3559f137d1effe9e803ed792a873a24966826630[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed May 8 10:44:26 2024 +0200
+
+    Added details to readme file
+
+[33mcommit 7715d5d5eadfdcd962204c2b012bf533c159ed7a[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed May 8 02:17:08 2024 +0200
+
+    Last commit of the day, generic code cleanup
+
+[33mcommit 14b1cd9c17702e3a85054c1929ef215bb32ddad3[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed May 8 01:45:09 2024 +0200
+
+    DOT-31 1st phase testing bronze transformation passed
+
+[33mcommit e066a8e0512065f4af8e8ca3a3f30a9e9d4fb662[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed May 8 01:25:35 2024 +0200
+
+    DOT-31 Added cols to select from relevant tables on bronze
+
+[33mcommit 2ce5a5d1c4cea78bf7d13f17fd3130228c0ca6dc[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed May 8 01:08:09 2024 +0200
+
+    DOT-31 Started bronze transformation method
+
+[33mcommit 552bc468854875a6b225096a16981d62dd70b0af[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue May 7 23:21:10 2024 +0200
+
+    DOT-37 finished defining write_status_log, added logger method to functions
+
+[33mcommit 368b4fb4786d29b70544dafea88464c32ba3244e[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sun May 5 02:39:57 2024 +0200
+
+    DOT-37 adding logger to methods and functions to start and finish
+
+[33mcommit a8274edefbffc56f90b5991e424050aadc233c45[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sun May 5 00:55:33 2024 +0200
+
+    Added self.ongoing_file in new_or_existing_run method due to better logic
+
+[33mcommit 783218c3d357e4bd3df9b52c95fdab456e81668d[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sun May 5 00:39:36 2024 +0200
+
+    DOT-37 Added placeholders to call logger method from functions
+
+[33mcommit 8f0ea432869896466016a584e07e9bcc1722a9dc[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sun May 5 00:28:07 2024 +0200
+
+    Modified README.md
+
+[33mcommit a3023feb2cda3cf1e2ffa4eced2ace30d8bd9b46[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sun May 5 00:25:01 2024 +0200
+
+    DOT-36 defined and tested create_new_log method
+
+[33mcommit 1dbc16f0e64125eaa8a30b4e67ca69308561c902[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sat May 4 23:45:30 2024 +0200
+
+    DOT-35 defined new_or_existing_run method in logger
+
+[33mcommit 85a612472f512a64df726c813f4ba2659777e0ac[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sat May 4 23:33:43 2024 +0200
+
+    DOT-23 Created skeleton process of logger class
+
+[33mcommit d7c4eeb5b2b3737ad1d1dcc6c9c91d53f90d5589[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sat May 4 22:58:48 2024 +0200
+
+    DOT-23 Added skeleton process of logging
+
+[33mcommit 4a29f41922a6423121093900d6057af406c3ed22[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Sat May 4 22:06:22 2024 +0200
+
+    DOT-23 added logger class
+
+[33mcommit 8d69f1e23fc72a1896349b9772aaf4c3329e529c[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 30 10:27:23 2024 +0200
+
+    DOT-23 and changing item_ids type-o to items_ids
+
+[33mcommit bc94c401563922ea343c778e1a55e5007be062dc[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 30 01:47:52 2024 +0200
+
+    DOT-31 Preparation for bronze transformation
+
+[33mcommit 06a3c5ab209799024eead5f2bb5a4f6dca0910b9[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 30 01:19:30 2024 +0200
+
+    Placeholder for bronze transformation function in job.py
+
+[33mcommit 74c4f31c681a595d3e6a56441d6dc0eeaac7ee0d[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 30 01:14:29 2024 +0200
+
+    DOT-30 cleanup after data model creation, last commit of the day
+
+[33mcommit c8765c14ebae9a4d39cbd3e9f52b945283a9cb54[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 30 01:11:45 2024 +0200
+
+    adding remaining 9 schemas to schemas.json file
+
+[33mcommit bf709e239abc54fe1fb3e3091305d6693e54b9ca[m
+Author: pyTianHu <76877245+pyTianHu@users.noreply.github.com>
+Date:   Tue Apr 30 00:56:47 2024 +0200
+
+    Create README.md
+
+[33mcommit e0b5d0ff1fbc5aba9a104395bb331182058d6980[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 30 00:43:40 2024 +0200
+
+    Renaming data model file
+
+[33mcommit cd7ecaa57a179a45db378365820a4c52baf55112[m
+Author: pyTianHu <76877245+pyTianHu@users.noreply.github.com>
+Date:   Tue Apr 30 00:42:08 2024 +0200
+
+    Data Model v1.drawio
+
+[33mcommit 22094c0d8308eb9d340d6a9782036651977e0ea2[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 30 00:41:05 2024 +0200
+
+    adding explicit index to item_ids ingestion
+
+[33mcommit aff46c6a340f0583a47c55a3361bdbf3010a7f49[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 30 00:21:33 2024 +0200
+
+    lobby_type_ingestion
+
+[33mcommit 3a61777be6b776c1aaaab32d9862e46cddfad694[m
+Merge: abb1f66 d294aae
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 30 00:19:06 2024 +0200
+
+    Merge branch 'master' of https://github.com/pyTianHu/dota2analytics
+
+[33mcommit abb1f66d31a0957d67c357f98e17c35ec8a1cd03[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 30 00:18:17 2024 +0200
+
+    Adding lobby_type_ingestion
+
+[33mcommit d294aaea2b83bb7f90e10b4b1d30419e73cf964a[m
+Author: pyTianHu <76877245+pyTianHu@users.noreply.github.com>
+Date:   Tue Apr 30 00:16:09 2024 +0200
+
+    Update Untitled Diagram.drawio
+
+[33mcommit 634d21618f591ba386b63e17cd57f8ee736cbf53[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 30 00:15:14 2024 +0200
+
+    Adding lobby_type ingestion as well
+
+[33mcommit caaae4efaa04357767c1b62b0997ded256cf64d1[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 30 00:11:30 2024 +0200
+
+    Deleted hero_constants_ingestion, as it is duplicate to 3 other ingestion jobs
+
+[33mcommit 91fc6c6b5c525e5dcd1dcc922ebeec9c3c2d9bbe[m
+Author: pyTianHu <76877245+pyTianHu@users.noreply.github.com>
+Date:   Tue Apr 30 00:02:25 2024 +0200
+
+    data_model_v1.drawio
+
+[33mcommit f2825f1d48e6626689501cc10c97089c1e255d34[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Mon Apr 29 23:59:46 2024 +0200
+
+    DOT-29 Creating ingestion function for necessary data
+
+[33mcommit a52e9e7e49684aa310686018dfe1a74416d35cae[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Mon Apr 29 23:09:58 2024 +0200
+
+    DOT-29 Creating publicmatches ingestion function
+
+[33mcommit 1977e10364fac86a2489b389946fe60f47039b8c[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Mon Apr 29 22:58:23 2024 +0200
+
+    Adding some draft to main.py
+
+[33mcommit f70e1258eb321f3c9c64b680b69dafa8ca4da1cd[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Mon Apr 29 19:57:37 2024 +0200
+
+    DOT-23 created write_status_log function placeholder in utils
+
+[33mcommit e999a6c39c7855fdb32aa80cfed15b1a5d302244[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Mon Apr 29 19:53:19 2024 +0200
+
+    DOT-28 Moving compile schema to utils from table_create_and_ingest function
+
+[33mcommit e6d1da6583194280cfd91ef1a466933d04281b23[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Mon Apr 29 19:43:33 2024 +0200
+
+    DOT-27 Moved list to str function to utils from table_create_and_ingest function
+
+[33mcommit 25884dffa3395709eb1b49c07cb468bf134573c8[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Mon Apr 29 19:39:29 2024 +0200
+
+    DOT-26 Added table function mapping dict to utils from the main data ingestion function
+
+[33mcommit 728a1121395d8623cb79b78402a66c1e4a11a234[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Mon Apr 29 19:35:16 2024 +0200
+
+    DOT-25 adding entry point
+
+[33mcommit 404de3cbdb658b73958a23f2238088fb5a6185ca[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Mon Apr 29 19:32:09 2024 +0200
+
+    DOT-24 job.py table_create_and_ingest and converting list to string
+
+[33mcommit 3d366d897a3a762837666befc6eccbcf5fd23810[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed Apr 24 23:26:39 2024 +0200
+
+    DOT-15 added function placeholder and modified schema
+
+[33mcommit c56785db4b386123c024a05a618d662b0fc54945[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed Apr 24 22:37:54 2024 +0200
+
+    DOT-15 creating ingestion, herostats schema and a test case
+
+[33mcommit 6c267d9eea07ce5089b7c84f29364098d4ed5be7[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed Apr 24 15:02:46 2024 +0200
+
+    DOT-14 Adding check in job pipeline whether table exists
+
+[33mcommit 9b97d7600f19709fa0a7e5f3377cf233f19a7cf7[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed Apr 24 14:49:04 2024 +0200
+
+    DOT-6 Code refined, established in job.py
+
+[33mcommit 889da7fdf11fcf0296259a4e638f5f69020aba17[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed Apr 24 14:39:22 2024 +0200
+
+    Deleting an unnecessary database file
+
+[33mcommit 1c80de580f20d6908a8460219a031653dc12c560[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed Apr 24 14:36:57 2024 +0200
+
+    DOT-6 creating insert_df_into_table method in TableOperations
+
+[33mcommit f6114d5632461f0ba489c0d843471d381621e071[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed Apr 24 01:01:44 2024 +0200
+
+    DOT-13 fixed syntax and updated with test case
+
+[33mcommit 7fc715259e6494400d6b4bfcc1955b965da5b41d[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed Apr 24 00:54:17 2024 +0200
+
+    DOT-13 Create check_if_table_exists in TableOperations
+
+[33mcommit e5adb22075d3445fca8a59b1490d587f92e7afde[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed Apr 24 00:43:36 2024 +0200
+
+    DOT-5 changing dev db name to proper one in test scenario
+
+[33mcommit 6d8e768e37e26b1f083259fad4876a796819dd43[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed Apr 24 00:42:24 2024 +0200
+
+    DOT-5 creating drop table in tableoperations
+
+[33mcommit 4bf9552060cfe2903f9cf8a7bf7ead902af1b6a0[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed Apr 24 00:35:12 2024 +0200
+
+    DOT-5 creating drop table in tableoperations
+
+[33mcommit f8f96cacd2abe6a7109ddee77df928fc2339a50e[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Wed Apr 24 00:01:04 2024 +0200
+
+    Redoing changes after the crash
+
+[33mcommit 84378f66917892939c37444a8df2358aaa8f8daa[m
+Author: Todik <Krisztian.Todik@altrata.com>
+Date:   Tue Apr 23 21:27:19 2024 +0200
+
+    DOT-11 and Initial commit

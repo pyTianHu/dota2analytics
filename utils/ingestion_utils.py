@@ -6,7 +6,7 @@ from scripts.data_ingestion import *
 table_function_mapping = {
         'heroes': heroes_ingestion(),
         'herostats': herostats_ingestion(),
-        'publicmatches': publicmatches_ingestion(),
+        #'publicmatches': publicmatches_ingestion(),
         'abilities': abilities_ingestion(),
         'ability_ids': ability_ids_ingestion(),
         'game_mode': game_mode_ingestion(),

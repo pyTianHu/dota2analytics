@@ -61,8 +61,8 @@ def test_case_d10(db_name, table_name):
 
     print(f"{table_name}, \n, {df.head()}")
 
-for table in goldtables:
-    test_case_d10('dot_dev_gold.db',table)
+for table in listoftables:
+    test_case_d10('dot_dev_bronze.db',table)
 
 #scols = TableOperations('dot_dev.db','publicmatches')
 #print(scols.select_cols_to_df())
