@@ -2,6 +2,7 @@ import sys
 sys.path.append('../dota2')
 
 selected_columns = {
+    'patch': ["name", "date", "id"],
     'heroes': ["id", "localized_name"],
     #'herostats': [],
     'publicmatches': ["match_id", "start_time", "radiant_win", "lobby_type", "game_mode", "radiant_team", "dire_team"],
@@ -11,13 +12,13 @@ selected_columns = {
     #'hero_abilities': [],
     #'items_ids': [],
     #'items': [],
-    'patch': ["name", "date", "id"],
     'lobby_type': ["id", "name"]
 }
 
 
 
 table_rename = {
+    'patch': 'f_patches',
     'heroes': 'dim_heroes',
     #'herostats': [],
     'publicmatches': 'f_pubs',
@@ -27,11 +28,15 @@ table_rename = {
     #'hero_abilities': [],
     #'items_ids': [],
     #'items': [],
-    'patch': 'f_patches',
     'lobby_type': 'f_lobby_types'
 }
 
 column_rename = {
+    'f_patches': {
+        'name': 'patch_name',
+        'date': 'patch_release_date',
+        'id': 'patch_id'
+    },
     'dim_heroes':{
         'id': 'heroes_id',
         'localized_name': 'hero_name'
@@ -49,11 +54,6 @@ column_rename = {
         'id': 'game_modes_id',
         'name': 'game_mode_name'
     },
-    'f_patches': {
-        'name': 'patch_name',
-        'date': 'patch_release_date',
-        'id': 'patch_id'
-    },
     'f_lobby_types': {
         'id': 'lobby_type_id',
         'name': 'lobby_type_name'
@@ -62,6 +62,11 @@ column_rename = {
 
 
 table_constraints = {
+    'f_patches': {
+        "patch_name": ("STRING", "NOT NULL"),
+        "patch_release_date": ("DATETIME", "NOT NULL"),
+        "patch_id": ("INTEGER", "PRIMARY KEY")
+    },
     'dim_heroes': {
         "heroes_id": ("INTEGER", "PRIMARY KEY"),
         "hero_name": ("STRING", "NOT NULL")
@@ -78,11 +83,6 @@ table_constraints = {
     'f_game_modes' :{
         "game_modes_id": ("INTEGER", "PRIMARY KEY"),
         "game_modes_name": ("STRING", "NOT NULL")
-    },
-    'f_patches': {
-        "patch_name": ("STRING", "NOT NULL"),
-        "patch_release_date": ("DATETIME", "NOT NULL"),
-        "patch_id": ("INTEGER", "PRIMARY KEY")
     },
     'f_lobby_types': {
         "lobby_type_id": ("INTEGER", "PRIMARY KEY"),

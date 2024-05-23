@@ -24,4 +24,12 @@ def copy_database(source_db_name, target_db_name):
     src_conn.close()
     dest_conn.close()
 
-copy_database('dot_dev.db', 'dot_hist_seventhirtyfive.db')
+#copy_database('dot_dev.db', 'dot_hist_seventhirtyfive.db')
+
+conn = sqlite3.connect('dot_hist_seventhirtyfive.db')
+cursor = conn.cursor()
+
+query = "SELECT * FROM patch"
+
+df = pd.read_sql_query(query,conn)
+print(df)

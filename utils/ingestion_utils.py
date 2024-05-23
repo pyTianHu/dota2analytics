@@ -4,6 +4,7 @@ sys.path.append('../dota2')
 from scripts.data_ingestion import *
 
 table_function_mapping = {
+        'patch': patch_ingestion(),
         'heroes': heroes_ingestion(),
         'herostats': herostats_ingestion(),
         #'publicmatches': publicmatches_ingestion(),
@@ -13,6 +14,5 @@ table_function_mapping = {
         'hero_abilities': hero_abilities_ingestion(),
         'items_ids': items_ids_ingestion(),
         'items': items_ingestion(),
-        'patch': patch_ingestion(),
         'lobby_type': lobby_type_ingestion()
     }
