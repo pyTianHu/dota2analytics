@@ -37,9 +37,9 @@ listoftables = [
 goldtables = [
     'dim_heroes',
     'f_pubs',
-    'f_game_modes',
-    'f_patches',
-    'f_lobby_types'
+    'dim_game_modes',
+    'dim_patches',
+    'dim_lobby_types'
     ] 
 
 silvertables = [
@@ -59,10 +59,11 @@ def test_case_d10(db_name, table_name):
 
     df = pd.read_sql_query(query, conn)
 
-    print(f"{table_name}, \n, {df.head()}")
+    #print(f"{table_name}, \n, {df.head()}")
+    print(f"{table_name} number of rows in table: {len(df)}")
 
-for table in listoftables:
-    test_case_d10('dot_dev_bronze.db',table)
+for table in goldtables:
+    test_case_d10('dot_dev_gold.db',table)
 
 #scols = TableOperations('dot_dev.db','publicmatches')
 #print(scols.select_cols_to_df())
@@ -72,22 +73,7 @@ def test_case_dot5(db_name, table_name):
     cursor = conn.cursor()
     
     table = TableOperations(db_name, table_name)
-    
 
-    #check if table exists
-    #check_table_query = f"SELECT name FROM sqlite_master WHERE type='table' AND name='{table_name}'"
-    #cursor.execute(check_table_query)
-
-    # Fetch the result
-    #result = cursor.fetchone()
-
-    ## Check if the table exists
-    #if result:
-    #    print(f"The table '{table_name}' exists in the database.")
-    #else:
-    #    print(f"The table '{table_name}' does not exist in the database.")
-
-    #drop table
     table.drop_table()
 
     #check if table exists
@@ -104,8 +90,8 @@ def test_case_dot5(db_name, table_name):
         print(f"The table '{table_name}' does not exist in the database.")
 
 
-#for table in goldtables:
-#    test_case_dot5('dot_dev_gold.db',table)
+#for table in listoftables:
+#    test_case_dot5('dot_dev.db',table)
 
 #print(bronze_transformation('dot_dev.db','heroes'))
 

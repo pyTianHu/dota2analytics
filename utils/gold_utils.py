@@ -18,21 +18,21 @@ selected_columns = {
 
 
 table_rename = {
-    'patch': 'f_patches',
+    'patch': 'dim_patches',
     'heroes': 'dim_heroes',
     #'herostats': [],
     'publicmatches': 'f_pubs',
     #'abilities': [],
     #'ability_ids': [],
-    'game_mode': 'f_game_modes',
+    'game_mode': 'dim_game_modes',
     #'hero_abilities': [],
     #'items_ids': [],
     #'items': [],
-    'lobby_type': 'f_lobby_types'
+    'lobby_type': 'dim_lobby_types'
 }
 
 column_rename = {
-    'f_patches': {
+    'dim_patches': {
         'name': 'patch_name',
         'date': 'patch_release_date',
         'id': 'patch_id'
@@ -50,11 +50,11 @@ column_rename = {
         'radiant_team': 'radiant_team_heroes',
         'dire_team': 'dire_team_heroes'
     },
-    'f_game_modes': {
+    'dim_game_modes': {
         'id': 'game_modes_id',
         'name': 'game_mode_name'
     },
-    'f_lobby_types': {
+    'dim_lobby_types': {
         'id': 'lobby_type_id',
         'name': 'lobby_type_name'
     }
@@ -62,7 +62,7 @@ column_rename = {
 
 
 table_constraints = {
-    'f_patches': {
+    'dim_patches': {
         "patch_name": ("STRING", "NOT NULL"),
         "patch_release_date": ("DATETIME", "NOT NULL"),
         "patch_id": ("INTEGER", "PRIMARY KEY")
@@ -80,11 +80,11 @@ table_constraints = {
         "radiant_team_heroes": ("STRING", "NOT NULL"), 
         "dire_team_heroes": ("STRING", "NOT NULL")
     },
-    'f_game_modes' :{
+    'dim_game_modes' :{
         "game_modes_id": ("INTEGER", "PRIMARY KEY"),
         "game_modes_name": ("STRING", "NOT NULL")
     },
-    'f_lobby_types': {
+    'dim_lobby_types': {
         "lobby_type_id": ("INTEGER", "PRIMARY KEY"),
         "lobby_type_name": ("STRING", "NOT NULL")
     }
