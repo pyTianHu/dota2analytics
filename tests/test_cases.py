@@ -67,11 +67,11 @@ def test_case_d10(db_name, table_name):
 
     df = pd.read_sql_query(query, conn)
 
-    print(f"{table_name} \n {df.head(10)}")
+    print(f"{table_name} - {len(df)} rows \n {df.head(10)}\n \n \n")
     #print(f"{table_name} number of rows in table: {len(df)}")
 
-#for table in bronzetables:
-#    test_case_d10('dot_dev_bronze.db',table)
+#for table in goldtables:
+#    test_case_d10('dot_dev_gold.db',table)
 
 #scols = TableOperations('dot_dev.db','publicmatches')
 #print(scols.select_cols_to_df())
@@ -98,8 +98,8 @@ def test_case_dot5(db_name, table_name):
         print(f"The table '{table_name}' does not exist in the database.")
 
 
-#for table in listoftables:
-#    test_case_dot5('dot_dev.db',table)
+for table in listoftables:
+    test_case_dot5('dot_dev.db',table)
 
 def table_update():
     update_hero = TableOperations('dot_dev_bronze.db', 'heroes')
@@ -113,9 +113,24 @@ def table_update():
     update_hero.update_row_in_table('active_current', "FALSE", 'id', 2)
     test_case_d10('dot_dev_bronze.db','heroes')
 
-table_update()
+#table_update()
 
 #print(bronze_transformation('dot_dev.db','heroes'))
+
+def select_all(db_name, table_name):
+    conn = sqlite3.connect(db_name)
+    cursor = conn.cursor()
+
+
+    query = f"SELECT * FROM {table_name}"
+
+    df = pd.read_sql_query(query, conn)
+
+    print(f"{table_name} - {len(df)} rows \n {df}\n \n \n")
+
+#select_all('dot_dev_bronze.db', 'lobby_type')
+
+
 
 def test_case_dot13():
     table_name = 'random'

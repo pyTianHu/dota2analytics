@@ -56,8 +56,8 @@ def main():
     ingest_dim()
     ingest_fact()
     raw_to_bronze_passthrough()
-    #bronze_to_silver_passthrough()
-    #silver_to_gold_passthrough()
+    bronze_to_silver_passthrough()
+    silver_to_gold_passthrough()
 
 if __name__ == "__main__":
     main()

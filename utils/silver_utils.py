@@ -19,17 +19,12 @@ selected_columns = {
 rows_isin = {
     'game_mode': {
         'id':{
-            'select':(1,2)
+            'select':(1,2, 22)
         }
     },
     'patch': {
         'id':{
             'drop':(range(0,54))
-        }
-    },
-    'lobby_type': {
-        'id':{
-            'select':(0,5,6,7)
         }
     }
 }

@@ -68,6 +68,8 @@ query = f"""
         where start_time >= {start_time}
         and radiant_team IS NOT NULL
         and dire_team IS NOT NULL
+        and game_mode in (1,2,22)
+        and lobby_type in (7)
         ORDER BY start_time ASC
         LIMIT 100000
     """
