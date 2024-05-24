@@ -16,7 +16,7 @@ from scripts.data_ingestion import *
 from classes.tableoperations import TableOperations
 from utils.utils import prepare_schema_for_df
 
-class Publicmatches_Ingestion():
+class Facts_Ingestion():
     def __init__(self,db_name, table_name):
         self.db_name = db_name
         self.table_name = table_name
@@ -41,13 +41,6 @@ class Publicmatches_Ingestion():
         deduplicated_source_df = source_df[~source_df['match_id'].isin(matchids['match_id'])]
 
         return deduplicated_source_df
-
-    def placeholder(self):
-        prepare_schema_for_df(self.table_name)
-        patch_release_735 = 1702579663 # hardcoding 2023-12-14 16:07:43.429000+00:00 = 1702579663 as unixtimestamp into the select query => date of 7.35 patch release.
-
-        table_object = TableOperations(self.db_name, self.table_name, self.schema_str)
-        exists = table_object.check_if_table_exists()
         
 
     def publicmatches_ingestion(self):

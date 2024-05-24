@@ -54,6 +54,12 @@ class logger():
     # if exists, get its ID, create new with ID incremented by 1
     # function's return result should be write_status_log(result) or write_status_log(exception)
     #2nd stage: add deleted, updated, inserted records as well - this will lead to versioning, disaster recovery etc later.
+
+    #example:
+    #table_exists = logger(f"{TableOperations.check_if_table_exists.__name__} method started, table to check: {self.table_name}, database:{self.db_name}", f"{TableOperations.check_if_table_exists.__name__}")
+    #table_exists.new_or_existing_run()
+    
+
     def __init__(self, message, function_name) -> None:
         self.message = message
         self.function_name = function_name

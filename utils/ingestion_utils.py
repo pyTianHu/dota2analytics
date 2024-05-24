@@ -7,7 +7,6 @@ table_function_mapping = {
         'patch': patch_ingestion(),
         'heroes': heroes_ingestion(),
         'herostats': herostats_ingestion(),
-        #'publicmatches': publicmatches_ingestion(),
         'abilities': abilities_ingestion(),
         'ability_ids': ability_ids_ingestion(),
         'game_mode': game_mode_ingestion(),
@@ -16,3 +15,7 @@ table_function_mapping = {
         'items': items_ingestion(),
         'lobby_type': lobby_type_ingestion()
     }
+
+fact_tables_mapping = {
+    'publicmatches'
+}
