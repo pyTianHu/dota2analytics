@@ -53,10 +53,10 @@ def bronze_transformation(raw_db_name, table_name, bronze_db_name):
 
     #SCD handling
     #get latest patch date
-    
+
 
     #add SCD fields to df
-    df['active_from'] = ""
+    df['active_from'] = "2020-05-23T05:26:05.242Z"
     df['active_to'] = ""
     df['active_current'] = "TRUE"
     

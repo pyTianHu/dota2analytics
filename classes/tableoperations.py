@@ -98,6 +98,17 @@ class TableOperations:
         return df
     
 
+    def update_row_in_table(self, set_field_name, set_value, conditional_field_name, conditional_value):
+        query = f"""
+                UPDATE {self.table_name}
+                SET {set_field_name} = "{set_value}"
+                WHERE {conditional_field_name} = "{conditional_value}"
+                """
+        self.cursor.execute(query)
+
+        self.conn.commit()
+
+    
     def select_sample_from_table(self):
         pass
 

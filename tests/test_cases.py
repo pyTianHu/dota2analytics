@@ -67,7 +67,7 @@ def test_case_d10(db_name, table_name):
 
     df = pd.read_sql_query(query, conn)
 
-    print(f"{table_name} \n {df.head()}")
+    print(f"{table_name} \n {df.head(10)}")
     #print(f"{table_name} number of rows in table: {len(df)}")
 
 #for table in bronzetables:
@@ -98,8 +98,22 @@ def test_case_dot5(db_name, table_name):
         print(f"The table '{table_name}' does not exist in the database.")
 
 
-for table in bronzetables:
-    test_case_dot5('dot_dev_bronze.db',table)
+#for table in listoftables:
+#    test_case_dot5('dot_dev.db',table)
+
+def table_update():
+    update_hero = TableOperations('dot_dev_bronze.db', 'heroes')
+    update_hero.update_row_in_table('localized_name', "Anti-Mage_old_value", 'id', 1)
+    update_hero.update_row_in_table('localized_name', "Axe_old_value", 'id', 2)
+    update_hero.update_row_in_table('active_from', "2020-05-23T05:26:05.242Z", 'id', 1)
+    update_hero.update_row_in_table('active_from', "2020-05-23T05:26:05.242Z", 'id', 2)
+    update_hero.update_row_in_table('active_to', "2024-05-23T05:26:05.242Z", 'id', 1)
+    update_hero.update_row_in_table('active_to', "2024-05-23T05:26:05.242Z", 'id', 2)
+    update_hero.update_row_in_table('active_current', "FALSE", 'id', 1)
+    update_hero.update_row_in_table('active_current', "FALSE", 'id', 2)
+    test_case_d10('dot_dev_bronze.db','heroes')
+
+table_update()
 
 #print(bronze_transformation('dot_dev.db','heroes'))
 
