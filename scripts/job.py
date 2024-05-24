@@ -51,13 +51,19 @@ def bronze_transformation(raw_db_name, table_name, bronze_db_name):
     table = TableOperations(raw_db_name,table_name)
     df = table.select_cols_to_df("bronze")
 
+    #SCD handling
+    #get latest patch date
+    
+
+    #add SCD fields to df
+    df['active_from'] = ""
+    df['active_to'] = ""
+    df['active_current'] = "TRUE"
+    
     #check if table exists in bronze, if not, create it
     bronze_table = TableOperations(bronze_db_name, table_name)
-    
     if bronze_table.check_if_table_exists() == False:
         bronze_table.create_table()
-    else:
-        pass
 
     #insert into bronze table
     df_to_table = TableOperations(bronze_db_name, table_name, data = df)

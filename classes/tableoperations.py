@@ -92,6 +92,11 @@ class TableOperations:
         except Exception as e:
             return e      
 
+    def get_latest_patch(self):
+        query = f"SELECT MAX(date) AS date FROM patch"
+        df = pd.read_sql(query, self.conn)
+        return df
+    
 
     def select_sample_from_table(self):
         pass

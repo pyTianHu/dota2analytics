@@ -22,31 +22,42 @@ def main():
         SILVER_DB = "dot_silver_prod.db"
        
     # API ingestion to Raw - dim tables
-    for table_name in table_function_mapping:
-        table_create_and_ingest(RAW_DB,table_name)
+    def ingest_dim(): 
+        for table_name in table_function_mapping:
+            table_create_and_ingest(RAW_DB,table_name)
     
     # API ingestion to Raw - fact tables
-    for table_name in fact_tables_mapping:
-        fact_obj = Facts_Ingestion(RAW_DB,table_name)
-        fact_obj.publicmatches_ingestion()
+    def ingest_fact():
+        for table_name in fact_tables_mapping:
+            fact_obj = Facts_Ingestion(RAW_DB,table_name)
+            fact_obj.publicmatches_ingestion()
 
     # Raw to Bronze => only selected columns
-    for table_name in bronze_selected_columns:
-        cols = bronze_selected_columns.get(table_name)
-        if len(cols) == 0:
-            pass
-        else:
-            bronze_transformation(RAW_DB, table_name, BRONZE_DB)
+    def raw_to_bronze_passthrough():
+        for table_name in bronze_selected_columns:
+            cols = bronze_selected_columns.get(table_name)
+            if len(cols) == 0:
+                pass
+            else:
+                bronze_transformation(RAW_DB, table_name, BRONZE_DB)
 
     # Bronze to Sivler => only selected columns
-    for table_name in silver_selected_columns:
-        bronze_to_silver_transformation(BRONZE_DB, table_name, SILVER_DB)
+    def bronze_to_silver_passthrough():
+        for table_name in silver_selected_columns:
+            bronze_to_silver_transformation(BRONZE_DB, table_name, SILVER_DB)
 
 
     # Silver to gold
-    for silver_table_name, gold_table_name in table_rename.items():
+    def silver_to_gold_passthrough():
+        for silver_table_name, gold_table_name in table_rename.items():
             silver_to_gold_transformation(SILVER_DB, silver_table_name, GOLD_DB, gold_table_name)
     
+
+    ingest_dim()
+    ingest_fact()
+    raw_to_bronze_passthrough()
+    #bronze_to_silver_passthrough()
+    #silver_to_gold_passthrough()
 
 if __name__ == "__main__":
     main()

@@ -34,6 +34,14 @@ listoftables = [
     'patch',
     'lobby_type'] 
 
+bronzetables = [
+    'patch',
+    'heroes',
+    'publicmatches',
+    'game_mode',
+    'lobby_type'
+]
+
 goldtables = [
     'dim_heroes',
     'f_pubs',
@@ -59,11 +67,11 @@ def test_case_d10(db_name, table_name):
 
     df = pd.read_sql_query(query, conn)
 
-    #print(f"{table_name}, \n, {df.head()}")
-    print(f"{table_name} number of rows in table: {len(df)}")
+    print(f"{table_name} \n {df.head()}")
+    #print(f"{table_name} number of rows in table: {len(df)}")
 
-for table in goldtables:
-    test_case_d10('dot_dev_gold.db',table)
+#for table in bronzetables:
+#    test_case_d10('dot_dev_bronze.db',table)
 
 #scols = TableOperations('dot_dev.db','publicmatches')
 #print(scols.select_cols_to_df())
@@ -90,8 +98,8 @@ def test_case_dot5(db_name, table_name):
         print(f"The table '{table_name}' does not exist in the database.")
 
 
-#for table in listoftables:
-#    test_case_dot5('dot_dev.db',table)
+for table in bronzetables:
+    test_case_dot5('dot_dev_bronze.db',table)
 
 #print(bronze_transformation('dot_dev.db','heroes'))
 
