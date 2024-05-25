@@ -55,23 +55,10 @@ pubs_modes_lobbies_heroes = pubs_modes_lobbies.drop(columns={'dire_team_heroes',
 
 pubs_modes_lobbies_heroes['winning_team'] = pubs_modes_lobbies_heroes['winning_team'].apply(lambda x: "Radiant" if x == 1 else "Dire")
 
-print(pubs_modes_lobbies_heroes.head(2))
+pubs_modes_lobbies_heroes['game_start_timestamp'] = pd.to_datetime(pubs_modes_lobbies_heroes['game_start_timestamp']).dt.tz_localize(None)
+dim_patch['patch_release_date'] = pd.to_datetime(dim_patch['patch_release_date']).dt.tz_localize(None)
 
-# Convert start_time and patch_release_date columns to datetime objects
-pubs_modes_lobbies['game_start_timestamp'] = pd.to_datetime(pubs_modes_lobbies['game_start_timestamp'])
-dim_patch['patch_release_date'] = pd.to_datetime(pd.to_datetime(dim_patch['patch_release_date']).dt.strftime('%Y-%m-%d %H:%M:%S'))
-
-# For each match, find the nearest patch_release_date that occurred before the game_start_timestamp
-pubs_modes_lobbies['nearest_patch_id'] = pubs_modes_lobbies['game_start_timestamp'].apply(lambda x: dim_patch.loc[dim_patch['patch_release_date'] <= x, 'patch_id'].max())
-
-
-pubs_modes_lobbies_patches = pd.merge(pubs_modes_lobbies, dim_patch, left_on = 'nearest_patch_id', right_on = 'patch_id', how = 'left').drop(columns={'nearest_patch_id', 'patch_id', 'patch_release_date'})
-
-
-######################
-# QUICKER SOLUTION  - NEED TO TEST #
-
-pubs_modes_lobbies_sorted = pubs_modes_lobbies.sort_values('game_start_timestamp')
+pubs_modes_lobbies_sorted = pubs_modes_lobbies_heroes.sort_values('game_start_timestamp')
 dim_patch_sorted = dim_patch.sort_values('patch_release_date')
 
 # Perform an asof merge to match each game_start_timestamp with the nearest patch_release_date
@@ -80,22 +67,11 @@ merged_data = pd.merge_asof(
     dim_patch_sorted,
     left_on='game_start_timestamp',
     right_on='patch_release_date',
-    by='nearest_patch_id',
-    direction='backward',  # Match the nearest patch_release_date before each game_start_timestamp
-    suffixes=('', '_patch')  # Suffixes for overlapping columns
+    direction='backward',
+    suffixes=('', '_patch')
 )
 
 # Drop unnecessary columns
 merged_data.drop(columns=['patch_id', 'patch_release_date'], inplace=True)
 
-###############################
-
-
-
-#print(pubs_modes_lobbies_patches.head(2))
-
-
-# Merge pubs and dim_patches based on nearest_patch_id
-
-#print(pubs_lobbies.head(5))
-#print(pubs_lobbies.head(5))
+print(merged_data.head(5))
