@@ -62,17 +62,13 @@ class Pubs_Prep_DF():
         merged_data['winning_team'] = merged_data['winning_team'].apply(lambda x: "Radiant" if x == 1 else "Dire")
         merged_data['game_mode_name'] = merged_data['game_mode_name'].apply(lambda x: 'All Pick' if x == "game_mode_all_draft" else x)
         merged_data['lobby_type_name'] = merged_data['lobby_type_name'].apply(lambda x: 'Ranked' if x == 'lobby_type_ranked' else x)
-
+        merged_data['radiant_team_heroes'] = merged_data['radiant_team_heroes'].apply(lambda x: ','.join(map(str, x)))
+        merged_data['dire_team_heroes'] = merged_data['dire_team_heroes'].apply(lambda x: ','.join(map(str, x)))
+        
         #Insert into gold database table db_name, table_name, schema = None, data = None
         df_object = TableOperations(db_name=self.db_name, table_name='pubs_prep', data=merged_data)
-
-        try:
-            df_object.append_df_into_table()
-            return True
-        except Exception as e:
-            return e
-
-
-df = Pubs_Prep_DF('dot_dev_gold.db')
-df_obj = df.main_line()
-print(df_obj)
+        
+        if not df_object.check_if_table_exists():
+            df_object.create_table()
+        #if exists, check for data differences, and append only the different data (in future release)- for now, it's just replace
+        df_object.insert_df_into_table()

@@ -47,7 +47,8 @@ goldtables = [
     'f_pubs',
     'dim_game_modes',
     'dim_patches',
-    'dim_lobby_types'
+    'dim_lobby_types',
+    'pubs_prep'
     ] 
 
 silvertables = [
@@ -56,7 +57,7 @@ silvertables = [
     'game_mode',
     'patch',
     'lobby_type'
-    ] 
+    ]
 
 def test_case_d10(db_name, table_name):
     conn = sqlite3.connect(db_name)
@@ -70,6 +71,7 @@ def test_case_d10(db_name, table_name):
     print(f"{table_name} - {len(df)} rows \n {df.head(10)}\n \n \n")
     #print(f"{table_name} number of rows in table: {len(df)}")
 
+test_case_d10('dot_dev_gold.db','pubs_prep')
 #for table in goldtables:
 #    test_case_d10('dot_dev_gold.db',table)
 
@@ -98,8 +100,8 @@ def test_case_dot5(db_name, table_name):
         print(f"The table '{table_name}' does not exist in the database.")
 
 
-for table in listoftables:
-    test_case_dot5('dot_dev.db',table)
+#for table in goldtables:
+#    test_case_dot5('dot_dev_gold.db',table)
 
 def table_update():
     update_hero = TableOperations('dot_dev_bronze.db', 'heroes')

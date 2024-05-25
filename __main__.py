@@ -4,6 +4,7 @@ from utils.ingestion_utils import table_function_mapping, fact_tables_mapping
 from utils.bronze_utils import selected_columns as bronze_selected_columns
 from utils.silver_utils import selected_columns as silver_selected_columns
 from utils.gold_utils import selected_columns as gold_selected_columns, table_rename
+from scripts.gold_pipelines.pubs_prep_df import Pubs_Prep_DF
 
 from utils.utils import logger
 
@@ -52,12 +53,16 @@ def main():
         for silver_table_name, gold_table_name in table_rename.items():
             silver_to_gold_transformation(SILVER_DB, silver_table_name, GOLD_DB, gold_table_name)
     
-
     ingest_dim()
     ingest_fact()
     raw_to_bronze_passthrough()
     bronze_to_silver_passthrough()
     silver_to_gold_passthrough()
+
+    # Gold metrics creation for frontend visualizations
+    df = Pubs_Prep_DF(GOLD_DB)
+    df.main_line()
+
 
 if __name__ == "__main__":
     main()
