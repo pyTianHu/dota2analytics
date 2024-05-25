@@ -60,6 +60,13 @@ class TableOperations:
             return True
         except Exception as e:
             return e
+    
+    def append_df_into_table(self):
+        try:
+            self.data.to_sql(self.table_name, self.conn, if_exists='append', index=False)
+            return True
+        except Exception as e:
+            return e
 
 
     def select_all_to_df(self):
