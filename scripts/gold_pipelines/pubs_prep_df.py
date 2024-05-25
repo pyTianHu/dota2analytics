@@ -75,3 +75,5 @@ merged_data = pd.merge_asof(
 merged_data.drop(columns=['patch_id', 'patch_release_date'], inplace=True)
 
 print(merged_data.head(5))
+print(merged_data.info())
+print(merged_data.dtypes)
